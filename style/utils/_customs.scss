@@ -51,3 +51,35 @@
     display: block;
   }
 }
+
+.button__first {
+  font-family: "Lexend Exa";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+  letter-spacing: -0.05em;
+
+  color: #202020;
+  padding: 15px 47px;
+  border: 1px solid #000000;
+  border-radius: 382.831px;
+  cursor: pointer;
+}
+
+.button__second {
+  font-family: "Lexend Exa";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+  letter-spacing: -0.05em;
+
+  color: #ffffff;
+  padding: 15px 47px;
+  background: #202020;
+  border-radius: 382.831px;
+  cursor: pointer;
+}

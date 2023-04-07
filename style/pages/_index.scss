@@ -126,3 +126,53 @@
     height: 140px;
   }
 }
+
+.integrations {
+  padding: 130px 0;
+}
+
+.integrations-block {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.integrations-content-title {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 65px;
+  line-height: 80px;
+  text-transform: uppercase;
+
+  color: #1e1e1e;
+  margin-bottom: 15px;
+}
+
+.integrations-content-desc {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 35px;
+
+  &-text {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 32px;
+    color: #000000;
+
+    opacity: 0.75;
+    max-width: 557px;
+  }
+}
+
+.integrations-content-buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.integrations-image-icon {
+  width: 100%;
+}

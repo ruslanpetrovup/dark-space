@@ -91,6 +91,36 @@ img {
   display: block;
 }
 
+.button__first {
+  font-family: "Lexend Exa";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+  letter-spacing: -0.05em;
+  color: #202020;
+  padding: 15px 47px;
+  border: 1px solid #000000;
+  border-radius: 382.831px;
+  cursor: pointer;
+}
+
+.button__second {
+  font-family: "Lexend Exa";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+  letter-spacing: -0.05em;
+  color: #ffffff;
+  padding: 15px 47px;
+  background: #202020;
+  border-radius: 382.831px;
+  cursor: pointer;
+}
+
 .header {
   padding: 15px 0;
 }
@@ -208,4 +238,51 @@ img {
   border-radius: 50%;
   width: 140px;
   height: 140px;
+}
+
+.integrations {
+  padding: 130px 0;
+}
+
+.integrations-block {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.integrations-content-title {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 65px;
+  line-height: 80px;
+  text-transform: uppercase;
+  color: #1e1e1e;
+  margin-bottom: 15px;
+}
+
+.integrations-content-desc {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 35px;
+}
+.integrations-content-desc-text {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 32px;
+  color: #000000;
+  opacity: 0.75;
+  max-width: 557px;
+}
+
+.integrations-content-buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.integrations-image-icon {
+  width: 100%;
 }/*# sourceMappingURL=main.css.map */
