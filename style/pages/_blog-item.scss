@@ -1,0 +1,176 @@
+.blog-article {
+  padding: 37px 0 140px 0;
+}
+
+.blog-article-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.blog-article-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.blog-article-content-article-title {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 37px;
+  text-transform: uppercase;
+
+  color: #000000;
+  margin-bottom: 13px;
+}
+
+.blog-article-content-article-image {
+  width: 100%;
+  max-width: 917px;
+}
+
+.blog-article-content-article-date {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 50px;
+}
+
+.blog-article-content-article-date-text {
+  font-family: "Lexend Exa";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 34px;
+  letter-spacing: -0.02em;
+
+  color: #727fa7;
+
+  opacity: 0.5;
+}
+
+.blog-article-content-article-desc {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: #404040;
+  margin-top: 40px;
+  max-width: 917px;
+}
+
+.blog-article-content-article-tags {
+  display: flex;
+  gap: 10px;
+  margin-top: 40px;
+
+  &-item {
+    font-family: "Lexend Exa";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 9px;
+    text-align: center;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+
+    color: #b1b9d2;
+    padding: 12px 18px;
+    background: rgba(179, 189, 211, 0.2);
+    box-shadow: inset 0px 0px 0.489794px rgba(255, 255, 255, 0.2),
+      inset 0px 0px 9.30609px rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(4.89794px);
+    border-radius: 2.93877px;
+  }
+}
+
+.blog-article-content-sidebar-title {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 42px;
+  text-transform: uppercase;
+
+  color: #262a32;
+  margin-bottom: 20px;
+}
+
+.blog-article-content-sidebar-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.blog-article-content-sidebar-cards-item {
+  display: flex;
+  flex-direction: column;
+  max-width: 326px;
+}
+
+.blog-article-content-sidebar-cards-content {
+  padding: 30px 30px 25px 30px;
+  border-bottom: 1px solid #c4c4c4;
+  border-left: 1px solid #c4c4c4;
+  border-right: 1px solid #c4c4c4;
+}
+
+.blog-article-content-sidebar-cards-content-title {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: uppercase;
+
+  color: #262a32;
+}
+
+.blog-article-content-sidebar-cards-content-date {
+  font-family: "Lexend Exa";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 34px;
+  letter-spacing: -0.02em;
+
+  color: #7e7e7e;
+
+  opacity: 0.5;
+}
+
+.blog-article-content-sidebar-cards-content-desc {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+
+  color: #404040;
+  margin-bottom: 5px;
+}
+.blog-article-content-sidebar-cards-content-read {
+  &-button {
+    position: relative;
+    font-family: "Lexend Exa";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 25px;
+    color: #262a32;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: calc(100% + 2px);
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background: #00d254;
+      border-radius: 47px;
+    }
+  }
+}

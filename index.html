@@ -11,7 +11,7 @@
     <header class="header">
       <div class="container">
         <nav class="navigation">
-          <a class="logo">
+          <a class="logo" href="./index.html">
             <img
               src="./assets/images/logo-black.svg"
               alt="logo"
@@ -21,7 +21,7 @@
 
           <ul class="menu">
             <li class="menu-item">
-              <a class="menu-link active">Home</a>
+              <a class="menu-link active" href="./index.html">Home</a>
             </li>
             <li class="menu-item">
               <div class="menu-link" id="solution">
@@ -202,8 +202,15 @@
             <h2 class="pricing-head-title">Pricing</h2>
             <div class="pricing-head-billing">
               <p class="pricing-head-billing-text">Monthly Billing</p>
-              <div class="pricing-head-billing-switch"></div>
-              <p class="pricing-head-billing-text">Annual Billing</p>
+
+              <button class="pricing-head-billing-switch">
+                <div class="pricing-head-billing-switch-bool"></div>
+              </button>
+
+              <div class="pricing-head-billing-second-block">
+                <p class="pricing-head-billing-second">Annual Billing</p>
+                <div class="notification__green">Save 30%</div>
+              </div>
             </div>
           </div>
           <div class="pricing-info">
@@ -385,7 +392,7 @@
           <div class="footer-info-block">
             <div class="footer-info-navigation">
               <div class="footer-info-logo">
-                <a class="footer-info-logo-link">
+                <a class="footer-info-logo-link" href="./index.html">
                   <img
                     class="footer-info-logo-img"
                     src="./assets/images/logo-white.svg"
@@ -409,7 +416,9 @@
               <div class="footer-info-menu">
                 <ul class="footer-info-menu-list">
                   <li class="footer-info-menu-item">
-                    <a class="footer-info-menu-link">home</a>
+                    <a class="footer-info-menu-link" href="./index.html"
+                      >home</a
+                    >
                   </li>
                   <li class="footer-info-menu-item">
                     <a class="footer-info-menu-link">solutions</a>
@@ -502,4 +511,5 @@
     </footer>
   </body>
   <script src="./js/solution-menu.js"></script>
+  <script src="./js/switch-price.js"></script>
 </html>

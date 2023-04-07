@@ -365,6 +365,58 @@
   color: #1e1e1e;
 }
 
+.pricing-head-billing {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.pricing-head-billing-text {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+
+  opacity: 0.2;
+}
+
+.pricing-head-billing-second-block {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 3px;
+}
+
+.pricing-head-billing-second {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+}
+
+.pricing-head-billing-switch {
+  display: flex;
+  justify-content: flex-start;
+  width: 61px;
+  height: 37px;
+  padding: 3px;
+  background: #b2b5bc;
+  border-radius: 1000px;
+  cursor: pointer;
+}
+
+.pricing-head-billing-switch-bool {
+  pointer-events: none;
+  background: #ffffff;
+  border-radius: 1000px;
+  width: 31px;
+  height: 31px;
+}
+
 .pricing-list {
   display: flex;
   gap: 16px;
