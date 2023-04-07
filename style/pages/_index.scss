@@ -28,10 +28,15 @@
     color: #000000;
     padding: 20px 0;
     cursor: pointer;
+    transition: color 250ms linear;
 
     &.active {
       font-weight: 700;
       border-bottom: 2px solid #00d254;
+    }
+
+    &:hover {
+      color: #00d254;
     }
   }
 }
@@ -119,6 +124,87 @@
   display: flex;
   align-items: center;
   gap: 12px;
+}
+
+.setting-lang {
+  position: relative;
+  width: 33px;
+
+  &:hover .setting-lang-list {
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  &:hover .setting-lang-current-icon {
+    transform: rotate(180deg);
+  }
+}
+
+.setting-lang-white {
+  position: relative;
+  width: 33px;
+
+  &:hover .setting-lang-list {
+    opacity: 1;
+    pointer-events: all;
+  }
+  & .setting-lang-current,
+  .setting-lang-item {
+    color: #ffffff;
+  }
+
+  &:hover .setting-lang-current-icon {
+    transform: rotate(180deg);
+  }
+}
+
+.setting-lang-current {
+  display: flex;
+
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 14px;
+  text-align: right;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+
+  color: #000000;
+  cursor: pointer;
+
+  &-icon {
+    margin-right: 5px;
+    transition: transform 250ms linear;
+  }
+}
+
+.setting-lang-list {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 250ms linear;
+}
+
+.setting-lang-item {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 14px;
+  text-align: right;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: #000000;
+  cursor: pointer;
 }
 
 .hero {
