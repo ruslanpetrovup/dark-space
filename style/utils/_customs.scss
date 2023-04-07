@@ -1,0 +1,53 @@
+.get-start__black {
+  position: relative;
+  background: #202020;
+  border-radius: 382.831px;
+  padding: 7px 15px;
+
+  font-family: "Lexend Exa";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: -0.05em;
+
+  color: #ffffff;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: calc(100% - 1px);
+    background-image: url("../../assets/images/before-button.svg");
+    width: 35px;
+    height: 30px;
+    display: block;
+  }
+}
+.get-start__white {
+  position: relative;
+  background: #ffffff;
+  border-radius: 382.831px;
+  padding: 7px 15px;
+
+  font-family: "Lexend Exa";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: -0.05em;
+
+  color: #1e1e1e;
+  cursor: pointer;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: calc(100% - 1px);
+    background-image: url("../../assets/images/before-button.svg");
+    width: 35px;
+    height: 30px;
+    display: block;
+  }
+}

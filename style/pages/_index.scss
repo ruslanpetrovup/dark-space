@@ -1,0 +1,128 @@
+.header {
+  padding: 15px 0;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 36px;
+
+  &-link {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-family: "Josefin Sans";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+    color: #000000;
+    padding: 20px 0;
+    cursor: pointer;
+
+    &.active {
+      font-weight: 700;
+      border-bottom: 2px solid #00d254;
+    }
+  }
+}
+
+.setting {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.hero {
+  padding: 97px 0;
+}
+.hero-block {
+  display: flex;
+  gap: 50px;
+  // align-items: center;
+}
+
+.hero-content-title-first {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 85px;
+  line-height: 123px;
+
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+
+  color: #000000;
+}
+
+.hero-content-title-second {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 85px;
+  line-height: 123px;
+  display: flex;
+  justify-content: flex-end;
+  text-transform: uppercase;
+
+  color: #00d254;
+}
+
+.hero-content-title-three {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 85px;
+  line-height: 123px;
+  text-transform: uppercase;
+  margin-left: 5%;
+
+  color: #000000;
+}
+
+.hero-content-desc {
+  display: flex;
+  align-items: flex-start;
+
+  &-text {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 32px;
+    color: #000000;
+    max-width: 570px;
+
+    opacity: 0.75;
+  }
+
+  &-link {
+    display: flex;
+    align-items: center;
+    margin-top: -30px;
+    justify-content: center;
+    font-family: "Lexend Exa";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 120%;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #ffffff;
+    background: #00d254;
+    border-radius: 50%;
+    width: 140px;
+    height: 140px;
+  }
+}
