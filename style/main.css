@@ -92,6 +92,7 @@ img {
 }
 
 .button__first {
+  display: inline-flex;
   font-family: "Lexend Exa";
   font-style: normal;
   font-weight: 500;
@@ -104,9 +105,16 @@ img {
   border: 1px solid #000000;
   border-radius: 382.831px;
   cursor: pointer;
+  transition: color 250ms linear;
+  transition-property: color, background;
+}
+.button__first:hover {
+  background: #202020;
+  color: #ffffff;
 }
 
 .button__second {
+  display: inline-flex;
   font-family: "Lexend Exa";
   font-style: normal;
   font-weight: 500;
@@ -119,6 +127,41 @@ img {
   background: #202020;
   border-radius: 382.831px;
   cursor: pointer;
+  transition: color 250ms linear;
+  transition-property: color, background;
+}
+.button__second:hover {
+  color: #ffffff;
+  background: #00d254;
+}
+
+.notification__green {
+  display: inline-flex;
+  font-family: "Lexend Exa";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+  text-align: center;
+  letter-spacing: -0.05em;
+  color: #ffffff;
+  padding: 1px 8px 2px 8px;
+  background: #00d254;
+  border-radius: 248.84px;
+}
+
+.notification__green-second {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 8px;
+  line-height: 5px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding: 7px 8px;
+  background: linear-gradient(90deg, #00973f -0.04%, #00f361 100.37%);
+  border-radius: 3px;
 }
 
 .header {
@@ -285,4 +328,389 @@ img {
 
 .integrations-image-icon {
   width: 100%;
+}
+
+.pricing {
+  padding: 120px 0;
+  background: #e6e7e8;
+}
+
+.pricing-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.pricing-head-title {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 65px;
+  line-height: 80px;
+  text-align: right;
+  text-transform: uppercase;
+  color: #1e1e1e;
+}
+
+.pricing-list {
+  display: flex;
+  gap: 16px;
+}
+
+.pricing-item {
+  display: flex;
+  flex-direction: column;
+  width: calc((100% - 32px) / 4);
+  padding: 20px 30px 30px 30px;
+  background: #ffffff;
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.1);
+}
+
+.pricing-item-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 16px;
+  border-bottom: 2px solid #e6e7e8;
+  margin-bottom: 20px;
+}
+
+.pricing-item-head-title {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 37px;
+  color: #000000;
+}
+
+.pricing-item-price {
+  border-bottom: 2px solid #e6e7e8;
+  padding-bottom: 20px;
+  margin-bottom: 15px;
+}
+.pricing-item-price-custom {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  color: #000000;
+  opacity: 0.75;
+  margin-bottom: 37px;
+}
+
+.pricing-item-price-count {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 65px;
+  line-height: 80px;
+  text-transform: uppercase;
+  color: #1e1e1e;
+}
+.pricing-item-price-count-up {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 21.9375px;
+  line-height: 27px;
+  text-transform: uppercase;
+  color: #1e1e1e;
+}
+.pricing-item-price-count-down {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 21.9375px;
+  line-height: 27px;
+  color: #1e1e1e;
+  text-transform: lowercase;
+}
+
+.pricing-item-price-desc {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 37px;
+  letter-spacing: -0.01em;
+  color: #a7acb6;
+}
+
+.pricing-item-service {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 14px;
+}
+
+.pricing-item-service-item {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 37px;
+  letter-spacing: -0.01em;
+  color: #a7acb6;
+}
+.pricing-item-service-item-bold {
+  font-weight: 700;
+  color: #000000;
+}
+
+.pricing-item-buttons {
+  margin-top: auto;
+}
+
+.blog {
+  padding: 130px 0;
+  background: #ffffff;
+}
+
+.blog-title {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 65px;
+  line-height: 80px;
+  text-transform: uppercase;
+  color: #1e1e1e;
+  margin-bottom: 45px;
+}
+
+.blog-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding-bottom: 50px;
+  border-bottom: 1px solid #bfbfbf;
+}
+
+.blog-item {
+  display: flex;
+  gap: 45px;
+}
+
+.blog-item-image {
+  width: 100%;
+  max-width: 409px;
+}
+
+.blog-item-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.blog-item-content-titles {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 13px;
+}
+
+.blog-item-content-title {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 37px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.blog-item-content-desc {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: #000000;
+  margin-bottom: 40px;
+}
+
+.blog-item-content-buttons {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.blog-item-content-button {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+  color: #000000;
+  padding: 8px 30px;
+  border: 2px solid #01e25b;
+  border-radius: 1000px;
+  cursor: pointer;
+  transition: color 250ms linear;
+  transition-property: color, background;
+}
+.blog-item-content-button:hover {
+  color: #ffffff;
+  background: #00d254;
+}
+
+.blog-item-content-date {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 36px;
+  text-align: right;
+  color: #000000;
+  opacity: 0.25;
+}
+
+.blog-all {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+.blog-all-button {
+  font-family: "Lexend Exa";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 34px;
+  text-align: center;
+  color: #bfbfbf;
+  border: 1px solid #bfbfbf;
+  border-radius: 7px;
+  padding: 11px 90px;
+  cursor: pointer;
+  transition: color 250ms linear;
+  transition-property: color, background, border;
+}
+.blog-all-button:hover {
+  color: #ffffff;
+  background: #00d254;
+  border-color: transparent;
+}
+
+.footer-info {
+  padding: 75px 0 65px 0;
+  background: #1e1e1e;
+}
+
+.footer-info-logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.footer-info-logo-link {
+  cursor: pointer;
+}
+
+.footer-info-block {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-info-navigation {
+  display: flex;
+  gap: 150px;
+}
+
+.footer-info-menu {
+  display: flex;
+  align-items: flex-start;
+  gap: 150px;
+}
+
+.footer-info-menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+
+.footer-info-menu-link {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.footer-info-contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.footer-info-contacts-mail {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 12px;
+  text-align: right;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-top: 35px;
+}
+
+.footer-info-contacts-social {
+  display: flex;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.footer-info-contacts-social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #4b4b4b;
+  padding: 6px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.footer-copyright {
+  background: #1e1e1e;
+  padding: 15px 0;
+  border-top: 1px solid #616161;
+}
+.footer-copyright-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-copyright-report {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 16px;
+  letter-spacing: 0.04em;
+  color: #808794;
+  padding: 5px 30px;
+  border: 1px solid #808794;
+  border-radius: 382.831px;
+}
+
+.footer-copyright-info {
+  font-family: "Proba Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  color: #808794;
 }/*# sourceMappingURL=main.css.map */
