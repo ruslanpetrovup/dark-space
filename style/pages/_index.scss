@@ -63,6 +63,7 @@
   position: absolute;
   top: 100%;
   right: -100%;
+  z-index: 1;
   opacity: 0;
   pointer-events: none;
   transition: opacity 250ms linear;

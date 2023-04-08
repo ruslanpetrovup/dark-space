@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/main.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <nav class="navigation">
+          <a class="logo" href="./index.html">
+            <img
+              src="./assets/images/logo-black.svg"
+              alt="logo"
+              class="logo-icon"
+            />
+          </a>
+
+          <ul class="menu">
+            <li class="menu-item">
+              <a class="menu-link" href="./index.html">Home</a>
+            </li>
+            <li class="menu-item">
+              <div class="menu-link active" id="solution">
+                Solutions<img
+                  class=""
+                  src="./assets/images/arrow.svg"
+                  alt="arrow"
+                  id="solution-icon"
+                />
+
+                <div class="solution-block">
+                  <div class="solution-modal">
+                    <div class="solution-image">
+                      <img
+                        class="solution-image-img"
+                        src="./assets/images/solution/code.png"
+                      />
+                    </div>
+                    <div class="solution-menu">
+                      <ul class="solution-menu-list">
+                        <li class="solution-menu-item">
+                          <a class="solution-menu-link">
+                            <img
+                              class="solution-menu-link-icon"
+                              src="./assets/images/arrow-left.svg"
+                              alt="solution"
+                            />
+                            QR CODES
+                          </a>
+                        </li>
+                        <li class="solution-menu-item">
+                          <a class="solution-menu-link">
+                            <img
+                              class="solution-menu-link-icon"
+                              src="./assets/images/arrow-left.svg"
+                              alt="solution"
+                            />
+                            BIO PAGES</a
+                          >
+                        </li>
+                        <li class="solution-menu-item">
+                          <a class="solution-menu-link">
+                            <img
+                              class="solution-menu-link-icon"
+                              src="./assets/images/arrow-left.svg"
+                              alt="solution"
+                            />
+                            FILE HOSTING</a
+                          >
+                        </li>
+                        <li class="solution-menu-item">
+                          <a class="solution-menu-link">
+                            <img
+                              class="solution-menu-link-icon"
+                              src="./assets/images/arrow-left.svg"
+                              alt="solution"
+                            />
+                            DEVS API</a
+                          >
+                        </li>
+                        <li class="solution-menu-item">
+                          <a class="solution-menu-link">
+                            <img
+                              class="solution-menu-link-icon"
+                              src="./assets/images/arrow-left.svg"
+                              alt="solution"
+                            />
+                            HELP CENTER</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="menu-item">
+              <a class="menu-link">Integrations</a>
+            </li>
+            <li class="menu-item">
+              <a class="menu-link">Pricing</a>
+            </li>
+            <li class="menu-item">
+              <a class="menu-link">Blog</a>
+            </li>
+          </ul>
+
+          <div class="setting">
+            <button class="get-start__black">Get started</button>
+
+            <div class="setting-lang">
+              <p class="setting-lang-current">
+                <img
+                  class="setting-lang-current-icon"
+                  src="./assets/images/arrow.svg"
+                />
+                EN
+              </p>
+              <ul class="setting-lang-list">
+                <li class="setting-lang-item">UA</li>
+                <li class="setting-lang-item">FR</li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <section class="dev-api">
+      <div class="container">
+        <div class="dev-api-block">
+          <div class="dev-api-sidebar">
+            <ul class="dev-api-sidebar-menu">
+              <li class="dev-api-sidebar-item">
+                <a class="dev-api-sidebar-link"
+                  >Getting Started
+                  <img
+                    class="dev-api-sidebar-link-icon"
+                    src="./assets/images/api-arrow.svg"
+                  />
+                </a>
+              </li>
+              <li class="dev-api-sidebar-item">
+                <a class="dev-api-sidebar-link"
+                  >Authentication
+                  <img
+                    class="dev-api-sidebar-link-icon"
+                    src="./assets/images/api-arrow.svg"
+                  />
+                </a>
+              </li>
+              <li class="dev-api-sidebar-item">
+                <a class="dev-api-sidebar-link"
+                  >Rate Limit
+                  <img
+                    class="dev-api-sidebar-link-icon"
+                    src="./assets/images/api-arrow.svg"
+                  />
+                </a>
+              </li>
+              <li class="dev-api-sidebar-item">
+                <a class="dev-api-sidebar-link"
+                  >Response Handling
+                  <img
+                    class="dev-api-sidebar-link-icon"
+                    src="./assets/images/api-arrow.svg"
+                  />
+                </a>
+              </li>
+              <li class="dev-api-sidebar-item">
+                <a class="dev-api-sidebar-sub">
+                  <img
+                    class="dev-api-sidebar-link-icon"
+                    src="./assets/images/api-minus.svg"
+                  />
+                  Account
+                </a>
+              </li>
+              <li class="dev-api-sidebar-item">
+                <a class="dev-api-sidebar-link"
+                  >Get Account
+                  <img
+                    class="dev-api-sidebar-link-icon"
+                    src="./assets/images/api-arrow.svg"
+                  />
+                </a>
+              </li>
+              <li class="dev-api-sidebar-item">
+                <a class="dev-api-sidebar-link"
+                  >Update Account
+                  <img
+                    class="dev-api-sidebar-link-icon"
+                    src="./assets/images/api-arrow.svg"
+                  />
+                </a>
+              </li>
+              <li class="dev-api-sidebar-item">
+                <a class="dev-api-sidebar-sub">
+                  <img
+                    class="dev-api-sidebar-link-icon"
+                    src="./assets/images/api-plus.svg"
+                  />
+                  Branded Domains
+                </a>
+              </li>
+              <li class="dev-api-sidebar-item">
+                <a class="dev-api-sidebar-sub">
+                  <img
+                    class="dev-api-sidebar-link-icon"
+                    src="./assets/images/api-plus.svg"
+                  />
+                  CTA Overlays
+                </a>
+              </li>
+              <li class="dev-api-sidebar-item">
+                <a class="dev-api-sidebar-sub">
+                  <img
+                    class="dev-api-sidebar-link-icon"
+                    src="./assets/images/api-plus.svg"
+                  />
+                  Campaigns
+                </a>
+              </li>
+              <li class="dev-api-sidebar-item">
+                <a class="dev-api-sidebar-sub">
+                  <img
+                    class="dev-api-sidebar-link-icon"
+                    src="./assets/images/api-plus.svg"
+                  />
+                  Channels
+                </a>
+              </li>
+              <li class="dev-api-sidebar-item">
+                <a class="dev-api-sidebar-sub">
+                  <img
+                    class="dev-api-sidebar-link-icon"
+                    src="./assets/images/api-plus.svg"
+                  />
+                  Custom Splash
+                </a>
+              </li>
+              <li class="dev-api-sidebar-item">
+                <a class="dev-api-sidebar-sub">
+                  <img
+                    class="dev-api-sidebar-link-icon"
+                    src="./assets/images/api-plus.svg"
+                  />
+                  Links
+                </a>
+              </li>
+              <li class="dev-api-sidebar-item">
+                <a class="dev-api-sidebar-sub">
+                  <img
+                    class="dev-api-sidebar-link-icon"
+                    src="./assets/images/api-plus.svg"
+                  />
+                  Pixels
+                </a>
+              </li>
+              <li class="dev-api-sidebar-item">
+                <a class="dev-api-sidebar-sub">
+                  <img
+                    class="dev-api-sidebar-link-icon"
+                    src="./assets/images/api-plus.svg"
+                  />
+                  QR Codes
+                </a>
+              </li>
+              <li class="dev-api-sidebar-item">
+                <a class="dev-api-sidebar-sub">
+                  <img
+                    class="dev-api-sidebar-link-icon"
+                    src="./assets/images/api-plus.svg"
+                  />
+                  Sens SMS
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="dev-api-content">
+            <div class="dev-api-content-item">
+              <h2 class="dev-api-content-title">
+                API Reference for Developers
+                <div class="notification__green">V3</div>
+              </h2>
+
+              <div class="dev-api-content-title-margin">
+                <h3 class="dev-api-content-title-second">Getting Started</h3>
+                <p class="dev-api-content-desc">
+                  An API key is required for requests to be processed by the
+                  system. Once a user registers, an API key is automatically
+                  generated for this user. The API key must be sent with each
+                  request (see full example below). If the API key is not sent
+                  or is expired, there will be an error. Please make sure to
+                  keep your API key secret to prevent abuse.
+                </p>
+              </div>
+              <div class="dev-api-content-title-margin">
+                <h3 class="dev-api-content-title-second">Authentication</h3>
+                <p class="dev-api-content-desc">
+                  To authenticate with the API system, you need to send your API
+                  key as an authorization token with each request. You can see
+                  sample code below.
+                </p>
+                <button class="button__second">Show the code</button>
+              </div>
+              <div class="dev-api-content-title-margin">
+                <h3 class="dev-api-content-title-second">Rate Limit</h3>
+                <p class="dev-api-content-desc">
+                  Our API has a rate limiter to safeguard against spike in
+                  requests to maximize its stability. Our rate limiter is
+                  currently caped at 30 requests per 1 minute. Several headers
+                  will be sent alongside the response and these can be examined
+                  to determine various information about the request.
+                </p>
+                <button class="button__first">Hide the code</button>
+                <div class="dev-api-content-code">
+                  <p class="dev-api-content-code-text"></p>
+                </div>
+              </div>
+              <div class="dev-api-content-title-margin">
+                <h3 class="dev-api-content-title-second">Response Handling</h3>
+                <p class="dev-api-content-desc">
+                  All API response are returned in JSON format by default. To
+                  convert this into usable data, the appropriate function will
+                  need to be used according to the language. In PHP, the
+                  function json_decode() can be used to convert the data to
+                  either an object (default) or an array (set the second
+                  parameter to true). It is very important to check the error
+                  key as that provides information on whether there was an error
+                  or not. You can also check the header code.
+                </p>
+                <button class="button__first">Show the code</button>
+                <div class="dev-api-content-code">
+                  <p class="dev-api-content-code-text"></p>
+                </div>
+              </div>
+            </div>
+            <div class="dev-api-content-item">
+              <h2 class="dev-api-content-title">Account</h2>
+
+              <div class="dev-api-content-title-margin">
+                <h3 class="dev-api-content-title-second">Getting Started</h3>
+                <div class="dev-api-content-method">
+                  <div class="notification__green">GET</div>
+                  <a
+                    class="dev-api-content-method-link"
+                    href="https://drk.ai/api/account"
+                    >https://drk.ai/api/account</a
+                  >
+                </div>
+                <p class="dev-api-content-desc">
+                  To get information on the account, you can send a request to
+                  this endpoint and it will return data on the account.
+                </p>
+
+                <button class="button__second">Show the code</button>
+              </div>
+              <div class="dev-api-content-title-margin">
+                <h3 class="dev-api-content-title-second">Authentication</h3>
+                <div class="dev-api-content-method">
+                  <div class="notification__green">PUT</div>
+                  <a
+                    class="dev-api-content-method-link"
+                    href="https://drk.ai/api/account/update"
+                    >https://drk.ai/api/account/update</a
+                  >
+                </div>
+                <p class="dev-api-content-desc">
+                  To update information on the account, you can send a request
+                  to this endpoint and it will update data on the account.
+                </p>
+                <button class="button__second">Show the code</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-info">
+        <div class="container">
+          <div class="footer-info-block">
+            <div class="footer-info-navigation">
+              <div class="footer-info-logo">
+                <a class="footer-info-logo-link" href="./index.html">
+                  <img
+                    class="footer-info-logo-img"
+                    src="./assets/images/logo-white.svg"
+                    alt="logo"
+                  />
+                </a>
+                <div class="setting-lang-white">
+                  <p class="setting-lang-current">
+                    <img
+                      class="setting-lang-current-icon"
+                      src="./assets/images/arrow-white.svg"
+                    />
+                    EN
+                  </p>
+                  <ul class="setting-lang-list">
+                    <li class="setting-lang-item">UA</li>
+                    <li class="setting-lang-item">FR</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="footer-info-menu">
+                <ul class="footer-info-menu-list">
+                  <li class="footer-info-menu-item">
+                    <a class="footer-info-menu-link" href="./index.html"
+                      >home</a
+                    >
+                  </li>
+                  <li class="footer-info-menu-item">
+                    <a class="footer-info-menu-link">solutions</a>
+                  </li>
+                  <li class="footer-info-menu-item">
+                    <a class="footer-info-menu-link">integrations</a>
+                  </li>
+                </ul>
+                <ul class="footer-info-menu-list">
+                  <li class="footer-info-menu-item">
+                    <a class="footer-info-menu-link">Pricing</a>
+                  </li>
+                  <li class="footer-info-menu-item">
+                    <a class="footer-info-menu-link">BLOG</a>
+                  </li>
+                  <li class="footer-info-menu-item">
+                    <a class="footer-info-menu-link">POLICY</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="footer-info-contacts">
+              <button class="get-start__white">Get started</button>
+              <p class="footer-info-contacts-mail">info@DRKTEAM.com</p>
+              <ul class="footer-info-contacts-social">
+                <li class="footer-info-contacts-social-item">
+                  <a class="footer-info-contacts-social-link">
+                    <img
+                      class="footer-info-contacts-social-img"
+                      alt="social"
+                      src="./assets/images/social/facebook.svg"
+                    />
+                  </a>
+                </li>
+                <li class="footer-info-contacts-social-item">
+                  <a class="footer-info-contacts-social-link">
+                    <img
+                      class="footer-info-contacts-social-img"
+                      alt="social"
+                      src="./assets/images/social/instagram.svg"
+                    />
+                  </a>
+                </li>
+                <li class="footer-info-contacts-social-item">
+                  <a class="footer-info-contacts-social-link">
+                    <img
+                      class="footer-info-contacts-social-img"
+                      alt="social"
+                      src="./assets/images/social/youtube.svg"
+                    />
+                  </a>
+                </li>
+                <li class="footer-info-contacts-social-item">
+                  <a class="footer-info-contacts-social-link">
+                    <img
+                      class="footer-info-contacts-social-img"
+                      alt="social"
+                      src="./assets/images/social/telegram.svg"
+                    />
+                  </a>
+                </li>
+                <li class="footer-info-contacts-social-item">
+                  <a class="footer-info-contacts-social-link">
+                    <img
+                      class="footer-info-contacts-social-img"
+                      alt="social"
+                      src="./assets/images/social/twiter.svg"
+                    />
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container">
+          <div class="footer-copyright-block">
+            <button class="footer-copyright-report">Report</button>
+            <p class="footer-copyright-info">© Copyright information 2022</p>
+            <img
+              class="footer-copyright-by"
+              src="./assets/images/by.svg"
+              alt="by"
+            />
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./js/solution-menu.js"></script>
+  </body>
+</html>
