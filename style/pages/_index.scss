@@ -290,10 +290,25 @@
     height: 140px;
   }
 }
+
+// SLIDER
+
 .slider-block {
   display: flex;
   gap: 15px;
   justify-content: center;
+}
+
+.slider-description {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 32px;
+  color: #000000;
+
+  opacity: 0.75;
+  margin-top: 38px;
 }
 .slide1 {
   overflow: hidden;
