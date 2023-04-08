@@ -1,15 +1,15 @@
-const swiper = new Swiper(".swiper", {
-  // Optional parameters
-  spaceBetween: 100,
-  // If we need pagination
+// const swiper = new Swiper(".swiper", {
+//   // Optional parameters
+//   spaceBetween: 100,
+//   // If we need pagination
 
-  // Navigation arrows
+//   // Navigation arrows
 
-  // And if we need scrollbar
-  scrollbar: {
-    el: ".swiper-scrollbar",
-  },
-});
+//   // And if we need scrollbar
+//   scrollbar: {
+//     el: ".swiper-scrollbar",
+//   },
+// });
 
 const slide1 = document.getElementById("slide1");
 const slide2 = document.getElementById("slide2");
