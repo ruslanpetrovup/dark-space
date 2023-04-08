@@ -64,3 +64,10 @@ slide5.addEventListener("click", () => {
   });
   slide5.classList.toggle("active");
 });
+
+const test33 = document.querySelector(".slack");
+test33.addEventListener("mouseover", () => {
+  console.dir(test33);
+  const oop = ``;
+  test33.innerHTML = ``;
+});

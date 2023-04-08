@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <nav class="navigation">
+          <a class="logo" href="./index.html">
+            <img
+              src="./assets/images/logo-black.svg"
+              alt="logo"
+              class="logo-icon"
+            />
+          </a>
+
+          <ul class="menu">
+            <li class="menu-item">
+              <a class="menu-link" href="./index.html">Home</a>
+            </li>
+            <li class="menu-item">
+              <div class="menu-link active" id="solution">
+                Solutions<img
+                  class=""
+                  src="./assets/images/arrow.svg"
+                  alt="arrow"
+                  id="solution-icon"
+                />
+
+                <div class="solution-block">
+                  <div class="solution-modal">
+                    <div class="solution-image">
+                      <img
+                        class="solution-image-img"
+                        src="./assets/images/solution/code.png"
+                      />
+                    </div>
+                    <div class="solution-menu">
+                      <ul class="solution-menu-list">
+                        <li class="solution-menu-item">
+                          <a class="solution-menu-link" href="./qr-codes.html">
+                            <img
+                              class="solution-menu-link-icon"
+                              src="./assets/images/arrow-left.svg"
+                              alt="solution"
+                            />
+                            QR CODES
+                          </a>
+                        </li>
+                        <li class="solution-menu-item">
+                          <a class="solution-menu-link" href="./bio-pages.html">
+                            <img
+                              class="solution-menu-link-icon"
+                              src="./assets/images/arrow-left.svg"
+                              alt="solution"
+                            />
+                            BIO PAGES</a
+                          >
+                        </li>
+                        <li class="solution-menu-item">
+                          <a
+                            class="solution-menu-link"
+                            href="./file-hosting.html"
+                          >
+                            <img
+                              class="solution-menu-link-icon"
+                              src="./assets/images/arrow-left.svg"
+                              alt="solution"
+                            />
+                            FILE HOSTING
+                          </a>
+                        </li>
+                        <li class="solution-menu-item">
+                          <a class="solution-menu-link" href="./dev-api.html">
+                            <img
+                              class="solution-menu-link-icon"
+                              src="./assets/images/arrow-left.svg"
+                              alt="solution"
+                            />
+                            DEVS API</a
+                          >
+                        </li>
+                        <li class="solution-menu-item">
+                          <a
+                            class="solution-menu-link"
+                            href="./help-center.html"
+                          >
+                            <img
+                              class="solution-menu-link-icon"
+                              src="./assets/images/arrow-left.svg"
+                              alt="solution"
+                            />
+                            HELP CENTER</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="menu-item">
+              <a class="menu-link">Integrations</a>
+            </li>
+            <li class="menu-item">
+              <a class="menu-link">Pricing</a>
+            </li>
+            <li class="menu-item">
+              <a class="menu-link">Blog</a>
+            </li>
+          </ul>
+
+          <div class="setting">
+            <button class="get-start__black">Get started</button>
+
+            <div class="setting-lang">
+              <p class="setting-lang-current">
+                <img
+                  class="setting-lang-current-icon"
+                  src="./assets/images/arrow.svg"
+                />
+                EN
+              </p>
+              <ul class="setting-lang-list">
+                <li class="setting-lang-item">UA</li>
+                <li class="setting-lang-item">FR</li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <section class="help-center-hero">
+      <div class="container">
+        <div class="help-center-hero-block">
+          <h1 class="help-center-hero-title">Help Center</h1>
+
+          <label class="help-center-hero-search">
+            <img
+              class="help-center-hero-search-icon"
+              src="./assets/images/search.svg"
+            />
+            <input
+              class="help-center-hero-search-input"
+              type="text"
+              placeholder="Search..."
+            />
+
+            <button class="help-center-hero-search-button">Search</button>
+          </label>
+        </div>
+      </div>
+    </section>
+
+    <section class="help-center-article">
+      <div class="container">
+        <div class="help-center-article-block">
+          <h2 class="help-center-article-title">Browse Topics</h2>
+
+          <div class="help-center-article-margin">
+            <div class="help-center-article-topic">
+              <div class="help-center-article-topic-block">
+                <img
+                  class="help-center-article-topic-img"
+                  src="./assets/images/api-plus.svg"
+                />
+                <div class="help-center-article-topic-info">
+                  <h2 class="help-center-article-topic-info-title">
+                    Pixels
+                    <div class="notification__green">7 articles</div>
+                  </h2>
+                  <p class="help-center-article-topic-info-desc">
+                    Pixels are great. Learn how to use to them.
+                  </p>
+                </div>
+              </div>
+
+              <div class="help-center-article-topic-show">
+                <div class="help-center-article-topic-show-side">
+                  <h3 class="help-center-article-topic-show-side-title">
+                    Google Tag Manager Pixel
+                  </h3>
+                  <p class="help-center-article-topic-show-side-desc">
+                    Google Tag Manager allows you to combine hundreds of pixels
+                    into a single pixel. Please make sure to add the correct
+                    "Container ID" otherwise events will not be tracked!
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="help-center-article-topic">
+              <img
+                class="help-center-article-topic-img"
+                src="./assets/images/api-plus.svg"
+              />
+              <div class="help-center-article-topic-info">
+                <h2 class="help-center-article-topic-info-title">
+                  Subscription
+                  <div class="notification__green">4 articles</div>
+                </h2>
+                <p class="help-center-article-topic-info-desc">
+                  Everything you need to know about your subscription.
+                </p>
+              </div>
+
+              <img
+                class="help-center-article-topic-icon"
+                src="./assets/images/help-center/background-topic.svg"
+              />
+            </div>
+          </div>
+          <h2 class="help-center-article-title">Common Questions</h2>
+
+          <div class="help-center-article-questions">
+            <div class="help-center-article-question">
+              <h2 class="help-center-article-question-title">AdRoll Pixel</h2>
+              <p class="help-center-article-question-desc">
+                The AdRoll Pixel is uniquely generated when you create an AdRoll
+                account. The AdRoll ID has two components: the Advertiser ID or
+                adroll_adv_id (X) and Pixel ID or adroll_pix_id (Y) for the
+                AdRoll Pixel. To use the AdRoll Pixel, merge the two components
+                together, separating them by a slash (/).
+              </p>
+              <img
+                class="help-center-article-question-icon"
+                src="./assets/images/help-center/background-topic2.svg"
+              />
+            </div>
+
+            <div class="help-center-article-question">
+              <h2 class="help-center-article-question-title">
+                What happens when I delete my account?
+              </h2>
+              <p class="help-center-article-question-desc">
+                Once your account has been deleted, your subscription will be
+                canceled and we will wipe all of your data from our servers
+                including but not limited to your links, traffic data, pixels
+                and all other associated data.
+              </p>
+              <img
+                class="help-center-article-question-icon"
+                src="./assets/images/help-center/background-topic2.svg"
+              />
+            </div>
+
+            <div class="help-center-article-question">
+              <h2 class="help-center-article-question-title">
+                Quora Pixel Pixel
+              </h2>
+              <p class="help-center-article-question-desc">
+                The Quora Pixel is a tool that is placed in your website code to
+                track traffic and conversions. When someone clicks on your ad
+                and lands on your website, the Quora Pixel allows you to
+                identify how many people are visiting your website and what
+                actions they are taking.
+              </p>
+              <img
+                class="help-center-article-question-icon"
+                src="./assets/images/help-center/background-topic2.svg"
+              />
+            </div>
+
+            <div class="help-center-article-question">
+              <h2 class="help-center-article-question-title">
+                How will I be charged?
+              </h2>
+              <p class="help-center-article-question-desc">
+                You will be charged at the beginning of each period
+                automatically until canceled.
+              </p>
+              <img
+                class="help-center-article-question-icon"
+                src="./assets/images/help-center/background-topic2.svg"
+              />
+            </div>
+            <div class="help-center-article-question">
+              <h2 class="help-center-article-question-title">
+                How do refunds work?
+              </h2>
+              <p class="help-center-article-question-desc">
+                Upon request, we will issue a refund at the moment of the
+                request for all upcoming
+              </p>
+              <img
+                class="help-center-article-question-icon"
+                src="./assets/images/help-center/background-topic2.svg"
+              />
+            </div>
+
+            <div class="help-center-article-question">
+              <h2 class="help-center-article-question-title">
+                Google Tag Manager Pixel
+              </h2>
+              <p class="help-center-article-question-desc">
+                Google Tag Manager allows you to combine hundreds of pixels into
+                a single pixel. Please make sure to add the correct "Container
+                ID" otherwise events will not be tracked!
+              </p>
+              <img
+                class="help-center-article-question-icon"
+                src="./assets/images/help-center/background-topic2.svg"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-info">
+        <div class="container">
+          <div class="footer-info-block">
+            <div class="footer-info-navigation">
+              <div class="footer-info-logo">
+                <a class="footer-info-logo-link" href="./index.html">
+                  <img
+                    class="footer-info-logo-img"
+                    src="./assets/images/logo-white.svg"
+                    alt="logo"
+                  />
+                </a>
+                <div class="setting-lang-white">
+                  <p class="setting-lang-current">
+                    <img
+                      class="setting-lang-current-icon"
+                      src="./assets/images/arrow-white.svg"
+                    />
+                    EN
+                  </p>
+                  <ul class="setting-lang-list">
+                    <li class="setting-lang-item">UA</li>
+                    <li class="setting-lang-item">FR</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="footer-info-menu">
+                <ul class="footer-info-menu-list">
+                  <li class="footer-info-menu-item">
+                    <a class="footer-info-menu-link" href="./index.html"
+                      >home</a
+                    >
+                  </li>
+                  <li class="footer-info-menu-item">
+                    <a class="footer-info-menu-link">solutions</a>
+                  </li>
+                  <li class="footer-info-menu-item">
+                    <a class="footer-info-menu-link">integrations</a>
+                  </li>
+                </ul>
+                <ul class="footer-info-menu-list">
+                  <li class="footer-info-menu-item">
+                    <a class="footer-info-menu-link">Pricing</a>
+                  </li>
+                  <li class="footer-info-menu-item">
+                    <a class="footer-info-menu-link">BLOG</a>
+                  </li>
+                  <li class="footer-info-menu-item">
+                    <a class="footer-info-menu-link">POLICY</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="footer-info-contacts">
+              <button class="get-start__white">Get started</button>
+              <p class="footer-info-contacts-mail">info@DRKTEAM.com</p>
+              <ul class="footer-info-contacts-social">
+                <li class="footer-info-contacts-social-item">
+                  <a class="footer-info-contacts-social-link">
+                    <img
+                      class="footer-info-contacts-social-img"
+                      alt="social"
+                      src="./assets/images/social/facebook.svg"
+                    />
+                  </a>
+                </li>
+                <li class="footer-info-contacts-social-item">
+                  <a class="footer-info-contacts-social-link">
+                    <img
+                      class="footer-info-contacts-social-img"
+                      alt="social"
+                      src="./assets/images/social/instagram.svg"
+                    />
+                  </a>
+                </li>
+                <li class="footer-info-contacts-social-item">
+                  <a class="footer-info-contacts-social-link">
+                    <img
+                      class="footer-info-contacts-social-img"
+                      alt="social"
+                      src="./assets/images/social/youtube.svg"
+                    />
+                  </a>
+                </li>
+                <li class="footer-info-contacts-social-item">
+                  <a class="footer-info-contacts-social-link">
+                    <img
+                      class="footer-info-contacts-social-img"
+                      alt="social"
+                      src="./assets/images/social/telegram.svg"
+                    />
+                  </a>
+                </li>
+                <li class="footer-info-contacts-social-item">
+                  <a class="footer-info-contacts-social-link">
+                    <img
+                      class="footer-info-contacts-social-img"
+                      alt="social"
+                      src="./assets/images/social/twiter.svg"
+                    />
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container">
+          <div class="footer-copyright-block">
+            <button class="footer-copyright-report">Report</button>
+            <p class="footer-copyright-info">© Copyright information 2022</p>
+            <img
+              class="footer-copyright-by"
+              src="./assets/images/by.svg"
+              alt="by"
+            />
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./js/solution-menu.js"></script>
+  </body>
+</html>
