@@ -450,7 +450,15 @@ img {
   height: 140px;
 }
 
+.slider-block {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
 .slide1 {
+  overflow: hidden;
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: flex-end;
@@ -458,9 +466,21 @@ img {
   border-radius: 8px;
   width: 149px;
   height: 406px;
-  background-image: url("../../assets/images/slider/qr.svg");
+  transition: width 250ms linear;
+  cursor: pointer;
+}
+.slide1-gray {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  filter: grayscale(1);
+  transition: left 250ms linear;
+  transition-property: left, filter;
 }
 .slide1-text {
+  position: absolute;
   transform: rotate(-90deg);
   margin-bottom: 80px;
   font-family: "Josefin Sans";
@@ -468,13 +488,102 @@ img {
   font-weight: 700;
   font-size: 24px;
   line-height: 24px;
-  display: flex;
-  align-items: center;
   text-transform: uppercase;
   color: #00d254;
+  z-index: 1;
+  transition: opacity 250ms linear;
 }
 .slide1-text-span {
   color: #000000;
+}
+.slide1.active {
+  width: 687px;
+}
+.slide1.active .slide1-text {
+  opacity: 0;
+}
+.slide1.active .slide1-content {
+  opacity: 1;
+}
+.slide1.active .slide1-gray {
+  position: absolute;
+  top: 0;
+  left: 65px;
+  filter: grayscale(0);
+}
+.slide1:hover .slide1-gray {
+  filter: grayscale(0);
+}
+
+.slide1-content {
+  position: absolute;
+  top: 45px;
+  right: 45px;
+  opacity: 0;
+  transition: opacity 250ms linear;
+}
+
+.slide1-content-title {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+  color: #00d254;
+  margin-bottom: 25px;
+}
+.slide1-content-title-span {
+  color: #000000;
+}
+
+.slide1-content-desc {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 32px;
+  color: #000000;
+  max-width: 322px;
+  margin-bottom: 37px;
+}
+
+.slide1-content-buttons {
+  display: flex;
+  align-items: center;
+}
+
+.slide1-content-buttons-text {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #00d254;
+  margin-right: 36px;
+}
+
+.slide1-content-buttons-line {
+  width: 82px;
+  height: 1px;
+  background: #00d254;
+  margin-right: 15px;
+}
+
+.slide1-content-buttons-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #00d254;
+  box-shadow: 0px 30px 16px rgba(0, 0, 0, 0.05);
+  border-radius: 50%;
+  width: 64px;
+  height: 64px;
+  cursor: pointer;
+}
+.slide1-content-buttons-button-icon {
+  width: 12px;
+  height: 16px;
 }
 
 .integrations {
