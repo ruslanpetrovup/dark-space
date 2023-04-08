@@ -196,7 +196,7 @@
           </div>
           <div class="slide1" id="slide2">
             <p class="slide1-text">
-              QR <span class="slide1-text-span">CODES</span>
+              BIO <span class="slide1-text-span"> PAGES</span>
             </p>
             <div class="slide1-gray">
               <img
@@ -207,7 +207,7 @@
             </div>
             <div class="slide1-content">
               <h2 class="slide1-content-title">
-                QR <span class="slide1-content-title-span">CODES</span>
+                BIO <span class="slide1-content-title-span">PAGES</span>
               </h2>
               <p class="slide1-content-desc">
                 Sed ut perspiciatis unde omnis iste natus error sit voluptatem
@@ -228,7 +228,7 @@
           </div>
           <div class="slide1" id="slide3">
             <p class="slide1-text">
-              QR <span class="slide1-text-span">CODES</span>
+              FILE <span class="slide1-text-span"> HOSTING</span>
             </p>
             <div class="slide1-gray">
               <img
@@ -239,7 +239,7 @@
             </div>
             <div class="slide1-content">
               <h2 class="slide1-content-title">
-                QR <span class="slide1-content-title-span">CODES</span>
+                FILE <span class="slide1-content-title-span">HOSTING</span>
               </h2>
               <p class="slide1-content-desc">
                 Sed ut perspiciatis unde omnis iste natus error sit voluptatem
@@ -260,7 +260,7 @@
           </div>
           <div class="slide1" id="slide4">
             <p class="slide1-text">
-              QR <span class="slide1-text-span">CODES</span>
+              DEVS <span class="slide1-text-span"> API</span>
             </p>
             <div class="slide1-gray">
               <img
@@ -271,7 +271,7 @@
             </div>
             <div class="slide1-content">
               <h2 class="slide1-content-title">
-                QR <span class="slide1-content-title-span">CODES</span>
+                DEVS <span class="slide1-content-title-span">API</span>
               </h2>
               <p class="slide1-content-desc">
                 Sed ut perspiciatis unde omnis iste natus error sit voluptatem
@@ -292,7 +292,7 @@
           </div>
           <div class="slide1" id="slide5">
             <p class="slide1-text">
-              QR <span class="slide1-text-span">CODES</span>
+              HELP <span class="slide1-text-span"> CENTER</span>
             </p>
             <div class="slide1-gray">
               <img
@@ -303,7 +303,7 @@
             </div>
             <div class="slide1-content">
               <h2 class="slide1-content-title">
-                QR <span class="slide1-content-title-span">CODES</span>
+                HELP <span class="slide1-content-title-span">CENTER</span>
               </h2>
               <p class="slide1-content-desc">
                 Sed ut perspiciatis unde omnis iste natus error sit voluptatem
@@ -332,19 +332,51 @@
       const slide4 = document.getElementById("slide4");
       const slide5 = document.getElementById("slide5");
 
+      const tempory = [slide1, slide2, slide3, slide4, slide5];
+
       slide1.addEventListener("click", () => {
+        if (slide1.classList.contains("active")) {
+          return slide1.classList.remove("active");
+        }
+        tempory.forEach((item) => {
+          item.classList.remove("active");
+        });
         slide1.classList.toggle("active");
       });
       slide2.addEventListener("click", () => {
+        if (slide2.classList.contains("active")) {
+          return slide2.classList.remove("active");
+        }
+        tempory.forEach((item) => {
+          item.classList.remove("active");
+        });
         slide2.classList.toggle("active");
       });
       slide3.addEventListener("click", () => {
+        if (slide3.classList.contains("active")) {
+          return slide3.classList.remove("active");
+        }
+        tempory.forEach((item) => {
+          item.classList.remove("active");
+        });
         slide3.classList.toggle("active");
       });
       slide4.addEventListener("click", () => {
+        if (slide4.classList.contains("active")) {
+          return slide4.classList.remove("active");
+        }
+        tempory.forEach((item) => {
+          item.classList.remove("active");
+        });
         slide4.classList.toggle("active");
       });
       slide5.addEventListener("click", () => {
+        if (slide5.classList.contains("active")) {
+          return slide5.classList.remove("active");
+        }
+        tempory.forEach((item) => {
+          item.classList.remove("active");
+        });
         slide5.classList.toggle("active");
       });
     </script>
