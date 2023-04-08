@@ -452,6 +452,7 @@ img {
 }
 
 .slider-block {
+  overflow: hidden;
   display: flex;
   gap: 15px;
   justify-content: center;
@@ -540,8 +541,28 @@ img {
 .slide1.active .slide1-gray-gradient {
   opacity: 0;
 }
+.slide1.active .slide1-content-buttons {
+  transform: translateY(0);
+}
 .slide1:hover .slide1-gray {
   filter: grayscale(0);
+}
+
+.slider-article {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+}
+.slider-article-title {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 65px;
+  line-height: 80px;
+  text-transform: uppercase;
+  color: #1e1e1e;
+  transform: rotate(-90deg);
 }
 
 .slide1-content {
@@ -579,6 +600,8 @@ img {
 .slide1-content-buttons {
   display: flex;
   align-items: center;
+  transform: translateY(150px);
+  transition: transform 250ms linear;
 }
 
 .slide1-content-buttons-text {
