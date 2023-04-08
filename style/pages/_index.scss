@@ -272,6 +272,7 @@
   }
 
   &-link {
+    position: relative;
     display: flex;
     align-items: center;
     margin-top: -30px;
@@ -289,6 +290,16 @@
     border-radius: 50%;
     width: 140px;
     height: 140px;
+
+    &-thoomb {
+      position: absolute;
+      bottom: 30px;
+      left: 40px;
+      width: 8px;
+      height: 8px;
+      background: #ffffff;
+      border-radius: 50%;
+    }
   }
 }
 
