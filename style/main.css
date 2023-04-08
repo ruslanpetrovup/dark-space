@@ -480,6 +480,9 @@ img {
   transition-property: left, filter;
 }
 .slide1-text {
+  display: flex;
+  align-items: center;
+  gap: 5px;
   position: absolute;
   transform: rotate(-90deg);
   margin-bottom: 80px;
@@ -489,6 +492,7 @@ img {
   font-size: 24px;
   line-height: 24px;
   text-transform: uppercase;
+  max-width: 177px;
   color: #00d254;
   z-index: 1;
   transition: opacity 250ms linear;
