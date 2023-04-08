@@ -522,6 +522,7 @@ img {
 }
 .slide1.active {
   width: 687px;
+  background: rgba(0, 210, 84, 0.1);
 }
 .slide1.active .slide1-text {
   opacity: 0;
