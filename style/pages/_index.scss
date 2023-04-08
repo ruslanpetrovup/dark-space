@@ -291,6 +291,36 @@
   }
 }
 
+.slide1 {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  border: 1px solid #00d254;
+  border-radius: 8px;
+  width: 149px;
+  height: 406px;
+  background-image: url("../../assets/images/slider/qr.svg");
+
+  &-text {
+    transform: rotate(-90deg);
+    margin-bottom: 80px;
+    font-family: "Josefin Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+
+    color: #00d254;
+
+    &-span {
+      color: #000000;
+    }
+  }
+}
+
 .integrations {
   padding: 130px 0;
 }
