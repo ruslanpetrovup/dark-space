@@ -24,6 +24,25 @@
     height: 30px;
     display: block;
   }
+
+  &.after {
+    margin-right: 35px;
+  }
+  &.after::after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: calc(100% - 1px);
+    background-image: url("./../assets/images/after-button.svg");
+    width: 35px;
+    height: 30px;
+    display: block;
+  }
+
+  &.after::before {
+    content: "";
+    background: none;
+  }
 }
 .get-start__white {
   position: relative;

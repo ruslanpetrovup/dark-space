@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/main.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <nav class="navigation">
+          <a class="logo" href="./index.html">
+            <img
+              src="./assets/images/logo-black.svg"
+              alt="logo"
+              class="logo-icon"
+            />
+          </a>
+
+          <ul class="menu">
+            <li class="menu-item">
+              <a class="menu-link" href="./index.html">Home</a>
+            </li>
+            <li class="menu-item">
+              <div class="menu-link" id="solution">
+                Solutions<img
+                  class=""
+                  src="./assets/images/arrow.svg"
+                  alt="arrow"
+                  id="solution-icon"
+                />
+
+                <div class="solution-block">
+                  <div class="solution-modal">
+                    <div class="solution-image">
+                      <img
+                        class="solution-image-img"
+                        src="./assets/images/solution/code.png"
+                      />
+                    </div>
+                    <div class="solution-menu">
+                      <ul class="solution-menu-list">
+                        <li class="solution-menu-item">
+                          <a class="solution-menu-link">
+                            <img
+                              class="solution-menu-link-icon"
+                              src="./assets/images/arrow-left.svg"
+                              alt="solution"
+                            />
+                            QR CODES
+                          </a>
+                        </li>
+                        <li class="solution-menu-item">
+                          <a class="solution-menu-link">
+                            <img
+                              class="solution-menu-link-icon"
+                              src="./assets/images/arrow-left.svg"
+                              alt="solution"
+                            />
+                            BIO PAGES</a
+                          >
+                        </li>
+                        <li class="solution-menu-item">
+                          <a class="solution-menu-link">
+                            <img
+                              class="solution-menu-link-icon"
+                              src="./assets/images/arrow-left.svg"
+                              alt="solution"
+                            />
+                            FILE HOSTING</a
+                          >
+                        </li>
+                        <li class="solution-menu-item">
+                          <a class="solution-menu-link">
+                            <img
+                              class="solution-menu-link-icon"
+                              src="./assets/images/arrow-left.svg"
+                              alt="solution"
+                            />
+                            DEVS API</a
+                          >
+                        </li>
+                        <li class="solution-menu-item">
+                          <a class="solution-menu-link">
+                            <img
+                              class="solution-menu-link-icon"
+                              src="./assets/images/arrow-left.svg"
+                              alt="solution"
+                            />
+                            HELP CENTER</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="menu-item">
+              <a class="menu-link">Integrations</a>
+            </li>
+            <li class="menu-item">
+              <a class="menu-link">Pricing</a>
+            </li>
+            <li class="menu-item">
+              <a class="menu-link">Blog</a>
+            </li>
+          </ul>
+
+          <div class="setting">
+            <button class="get-start__black after">Get started</button>
+
+            <div class="setting-lang">
+              <p class="setting-lang-current">
+                <img
+                  class="setting-lang-current-icon"
+                  src="./assets/images/arrow.svg"
+                />
+                EN
+              </p>
+              <ul class="setting-lang-list">
+                <li class="setting-lang-item">UA</li>
+                <li class="setting-lang-item">FR</li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <section class="statlink-hero">
+      <div class="statlink-hero-content">
+        <div class="container">
+          <div class="statlink-hero-content-block">
+            <div class="statlink-hero-content-info">
+              <div class="statlink-hero-content-info-head">
+                <img
+                  class="statlink-hero-content-info-head-img"
+                  src="./assets/images/statlink/ebay.jpg"
+                />
+                <div class="statlink-hero-content-info-head-information">
+                  <h2 class="statlink-hero-content-info-head-information-title">
+                    Ebay
+                  </h2>
+                  <a
+                    class="statlink-hero-content-info-head-information-link"
+                    href="https://drk.ai/LgvEy"
+                    >https://drk.ai/LgvEy
+                  </a>
+                  <p class="statlink-hero-content-info-head-information-desc">
+                    Description
+                  </p>
+                </div>
+              </div>
+
+              <div class="statlink-hero-content-info-titles">
+                <h1 class="statlink-hero-content-info-titles-head">Link</h1>
+                <h2 class="statlink-hero-content-info-titles-second">
+                  statistic
+                </h2>
+              </div>
+            </div>
+            <ul class="statlink-hero-content-list">
+              <li class="statlink-hero-content-list-item">
+                <div class="statlink-hero-content-list-item-titles">
+                  <img
+                    class="statlink-hero-content-list-item-icon"
+                    src="./assets/images/statlink/clicks.svg"
+                  />
+                  <h3 class="statlink-hero-content-list-item-title">
+                    Total Clicks
+                  </h3>
+                </div>
+                <div class="statlink-hero-content-list-item-score">
+                  <p class="statlink-hero-content-list-item-score-text">1237</p>
+                </div>
+                <div class="statlink-hero-content-list-item-info">
+                  <p class="statlink-hero-content-list-item-info-procent">
+                    +12%
+                  </p>
+                  <p class="statlink-hero-content-list-item-info-desc">
+                    relative to past statistics
+                  </p>
+                </div>
+              </li>
+              <li class="statlink-hero-content-list-item">
+                <div class="statlink-hero-content-list-item-titles">
+                  <img
+                    class="statlink-hero-content-list-item-icon"
+                    src="./assets/images/statlink/clicks.svg"
+                  />
+                  <h3 class="statlink-hero-content-list-item-title">
+                    Unique Clicks
+                  </h3>
+                </div>
+                <div class="statlink-hero-content-list-item-score">
+                  <p class="statlink-hero-content-list-item-score-text">441</p>
+                </div>
+                <div class="statlink-hero-content-list-item-info">
+                  <p class="statlink-hero-content-list-item-info-procent">
+                    -3%
+                  </p>
+                  <p class="statlink-hero-content-list-item-info-desc">
+                    relative to past statistics
+                  </p>
+                </div>
+              </li>
+              <li class="statlink-hero-content-list-item">
+                <div class="statlink-hero-content-list-item-titles">
+                  <img
+                    class="statlink-hero-content-list-item-icon"
+                    src="./assets/images/statlink/country.svg"
+                  />
+                  <h3 class="statlink-hero-content-list-item-title">
+                    TOP COUNTRY
+                  </h3>
+                </div>
+                <div class="statlink-hero-content-list-item-score">
+                  <p class="statlink-hero-content-list-item-score-text">
+                    Ukraine
+                  </p>
+                </div>
+                <div class="statlink-hero-content-list-item-info">
+                  <p class="statlink-hero-content-list-item-info-procent">
+                    Unknown
+                  </p>
+                  <p class="statlink-hero-content-list-item-info-desc">
+                    last country before
+                  </p>
+                </div>
+              </li>
+              <li class="statlink-hero-content-list-item">
+                <div class="statlink-hero-content-list-item-titles">
+                  <img
+                    class="statlink-hero-content-list-item-icon"
+                    src="./assets/images/statlink/referrer.svg"
+                  />
+                  <h3 class="statlink-hero-content-list-item-title">
+                    TOP REFErrer
+                  </h3>
+                </div>
+                <div class="statlink-hero-content-list-item-score">
+                  <p class="statlink-hero-content-list-item-score-text">
+                    Ebay.com
+                  </p>
+                </div>
+                <div class="statlink-hero-content-list-item-info">
+                  <p class="statlink-hero-content-list-item-info-procent">
+                    Unknown
+                  </p>
+                  <p class="statlink-hero-content-list-item-info-desc">
+                    last top referrer before
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="statlink-hero-green"></div>
+    </section>
+
+    <section class="statlink-main">
+      <div class="container">
+        <h2 class="statlink-main-title">Clicks</h2>
+
+        <!-- BUTTONS MENU -->
+        <div class="statlink-main-controle">
+          <div class="statlink-main-controle-buttons">
+            <a
+              href="./statlink-summary.html"
+              class="statlink-main-controle-button"
+              >Summary</a
+            >
+            <a href="#" class="statlink-main-controle-button">Countries</a>
+            <a
+              href="./statlink-platforms.html"
+              class="statlink-main-controle-button active"
+              >Platforms</a
+            >
+            <a
+              href="./statlink-browser.html"
+              class="statlink-main-controle-button"
+              >Browsers</a
+            >
+            <a
+              href="./statlink-languages.html"
+              class="statlink-main-controle-button"
+              >Languages</a
+            >
+            <a
+              href="./statlink-referrers.html"
+              class="statlink-main-controle-button"
+            >
+              Referrers
+            </a>
+          </div>
+
+          <!-- SELECT MENU -->
+          <div class="statlink-main-select">
+            <div class="statlink-main-select-current">
+              <p class="statlink-main-select-current-text">2022</p>
+              <img
+                class="statlink-main-select-current-icon"
+                src="./assets/images/statlink/statlink-arrow.svg"
+              />
+            </div>
+            <div class="statlink-main-select-list">
+              <div class="statlink-main-select-list-item">
+                <p class="statlink-main-select-list-item-text">2023</p>
+              </div>
+              <div class="statlink-main-select-list-item">
+                <p class="statlink-main-select-list-item-text">2024</p>
+              </div>
+            </div>
+          </div>
+          <!--  -->
+          <script type="module">
+            const selectElement = document.querySelector(
+              ".statlink-main-select-current"
+            );
+
+            const selectList = document.querySelector(
+              ".statlink-main-select-list"
+            );
+
+            selectElement.addEventListener("click", () => {
+              selectList.classList.toggle("active");
+              selectElement.classList.toggle("active");
+            });
+          </script>
+        </div>
+        <!--  -->
+
+        <div class="statlink-main-platforms">
+          <div class="statlink-main-platforms-chart">
+            <h2 class="statlink-main-platforms-chart-title">Platforms</h2>
+
+            <canvas id="myChart"></canvas>
+          </div>
+          <div class="statlink-main-platforms-top">
+            <h2 class="statlink-main-platforms-top-title">Top Platforms</h2>
+
+            <ul class="statlink-main-platforms-top-list">
+              <li class="statlink-main-platforms-top-item">
+                <div class="statlink-main-platforms-top-item-os">
+                  <img
+                    class="statlink-main-platforms-top-item-os-icon"
+                    src="./assets/images/statlink/os.svg"
+                  />
+                  <p class="statlink-main-platforms-top-item-os-text">
+                    Windows 10
+                  </p>
+                </div>
+                <div class="notification__green">126</div>
+              </li>
+              <li class="statlink-main-platforms-top-item">
+                <div class="statlink-main-platforms-top-item-os">
+                  <img
+                    class="statlink-main-platforms-top-item-os-icon"
+                    src="./assets/images/statlink/inet.svg"
+                  />
+                  <p class="statlink-main-platforms-top-item-os-text">
+                    Mac OS X
+                  </p>
+                </div>
+                <div class="notification__green">34</div>
+              </li>
+              <li class="statlink-main-platforms-top-item">
+                <div class="statlink-main-platforms-top-item-os">
+                  <img
+                    class="statlink-main-platforms-top-item-os-icon"
+                    src="./assets/images/statlink/inet.svg"
+                  />
+                  <p class="statlink-main-platforms-top-item-os-text">Linux</p>
+                </div>
+                <div class="notification__green">18</div>
+              </li>
+              <li class="statlink-main-platforms-top-item">
+                <div class="statlink-main-platforms-top-item-os">
+                  <img
+                    class="statlink-main-platforms-top-item-os-icon"
+                    src="./assets/images/statlink/inet.svg"
+                  />
+                  <p class="statlink-main-platforms-top-item-os-text">
+                    Android
+                  </p>
+                </div>
+                <div class="notification__green">16</div>
+              </li>
+              <li class="statlink-main-platforms-top-item">
+                <div class="statlink-main-platforms-top-item-os">
+                  <img
+                    class="statlink-main-platforms-top-item-os-icon"
+                    src="./assets/images/statlink/inet.svg"
+                  />
+                  <p class="statlink-main-platforms-top-item-os-text">Ubuntu</p>
+                </div>
+                <div class="notification__green">5</div>
+              </li>
+              <li class="statlink-main-platforms-top-item">
+                <div class="statlink-main-platforms-top-item-os">
+                  <img
+                    class="statlink-main-platforms-top-item-os-icon"
+                    src="./assets/images/statlink/inet.svg"
+                  />
+                  <p class="statlink-main-platforms-top-item-os-text">
+                    Windows 7
+                  </p>
+                </div>
+                <div class="notification__green">5</div>
+              </li>
+              <li class="statlink-main-platforms-top-item">
+                <div class="statlink-main-platforms-top-item-os">
+                  <img
+                    class="statlink-main-platforms-top-item-os-icon"
+                    src="./assets/images/statlink/inet.svg"
+                  />
+                  <p class="statlink-main-platforms-top-item-os-text">Iphone</p>
+                </div>
+                <div class="notification__green">2</div>
+              </li>
+              <li class="statlink-main-platforms-top-item">
+                <div class="statlink-main-platforms-top-item-os">
+                  <img
+                    class="statlink-main-platforms-top-item-os-icon"
+                    src="./assets/images/statlink/inet.svg"
+                  />
+                  <p class="statlink-main-platforms-top-item-os-text">
+                    Windows 8
+                  </p>
+                </div>
+                <div class="notification__green">1</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-info">
+        <div class="container">
+          <div class="footer-info-block">
+            <div class="footer-info-navigation">
+              <div class="footer-info-logo">
+                <a class="footer-info-logo-link" href="./index.html">
+                  <img
+                    class="footer-info-logo-img"
+                    src="./assets/images/logo-white.svg"
+                    alt="logo"
+                  />
+                </a>
+                <div class="setting-lang-white">
+                  <p class="setting-lang-current">
+                    <img
+                      class="setting-lang-current-icon"
+                      src="./assets/images/arrow-white.svg"
+                    />
+                    EN
+                  </p>
+                  <ul class="setting-lang-list">
+                    <li class="setting-lang-item">UA</li>
+                    <li class="setting-lang-item">FR</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="footer-info-menu">
+                <ul class="footer-info-menu-list">
+                  <li class="footer-info-menu-item">
+                    <a class="footer-info-menu-link" href="./index.html"
+                      >home</a
+                    >
+                  </li>
+                  <li class="footer-info-menu-item">
+                    <a class="footer-info-menu-link">solutions</a>
+                  </li>
+                  <li class="footer-info-menu-item">
+                    <a class="footer-info-menu-link">integrations</a>
+                  </li>
+                </ul>
+                <ul class="footer-info-menu-list">
+                  <li class="footer-info-menu-item">
+                    <a class="footer-info-menu-link">Pricing</a>
+                  </li>
+                  <li class="footer-info-menu-item">
+                    <a class="footer-info-menu-link">BLOG</a>
+                  </li>
+                  <li class="footer-info-menu-item">
+                    <a class="footer-info-menu-link">POLICY</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="footer-info-contacts">
+              <button class="get-start__white after">Get started</button>
+              <p class="footer-info-contacts-mail">info@DRKTEAM.com</p>
+              <ul class="footer-info-contacts-social">
+                <li class="footer-info-contacts-social-item">
+                  <a class="footer-info-contacts-social-link">
+                    <img
+                      class="footer-info-contacts-social-img"
+                      alt="social"
+                      src="./assets/images/social/facebook.svg"
+                    />
+                  </a>
+                </li>
+                <li class="footer-info-contacts-social-item">
+                  <a class="footer-info-contacts-social-link">
+                    <img
+                      class="footer-info-contacts-social-img"
+                      alt="social"
+                      src="./assets/images/social/instagram.svg"
+                    />
+                  </a>
+                </li>
+                <li class="footer-info-contacts-social-item">
+                  <a class="footer-info-contacts-social-link">
+                    <img
+                      class="footer-info-contacts-social-img"
+                      alt="social"
+                      src="./assets/images/social/youtube.svg"
+                    />
+                  </a>
+                </li>
+                <li class="footer-info-contacts-social-item">
+                  <a class="footer-info-contacts-social-link">
+                    <img
+                      class="footer-info-contacts-social-img"
+                      alt="social"
+                      src="./assets/images/social/telegram.svg"
+                    />
+                  </a>
+                </li>
+                <li class="footer-info-contacts-social-item">
+                  <a class="footer-info-contacts-social-link">
+                    <img
+                      class="footer-info-contacts-social-img"
+                      alt="social"
+                      src="./assets/images/social/twiter.svg"
+                    />
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container">
+          <div class="footer-copyright-block">
+            <button class="footer-copyright-report">Report</button>
+            <p class="footer-copyright-info">© Copyright information 2022</p>
+            <img
+              class="footer-copyright-by"
+              src="./assets/images/by.svg"
+              alt="by"
+            />
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script type="module">
+      const ctx = document.getElementById("myChart");
+
+      new Chart(ctx, {
+        type: "pie",
+        data: {
+          labels: [
+            "Windows 10",
+            "Mac OS X",
+            "Linux",
+            "Android",
+            "Ubuntu",
+            "Windows 7",
+            "Iphone",
+            "Windows 8",
+          ],
+          datasets: [
+            {
+              label: "# of Votes",
+              data: [126, 34, 18, 16, 5, 5, 2, 1],
+              borderWidth: 0,
+            },
+          ],
+        },
+        options: {
+          plugins: {
+            legend: {
+              position: "bottom",
+            },
+          },
+        },
+      });
+    </script>
+    <script src="./js/solution-menu.js"></script>
+  </body>
+</html>

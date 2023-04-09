@@ -333,10 +333,11 @@
   align-items: flex-end;
   border: 1px solid #00d254;
   border-radius: 8px;
-  width: 149px;
+  min-width: 149px;
   height: 406px;
   // width: 687px;
   transition: width 250ms linear;
+  transition-property: width, min-width;
   cursor: pointer;
 
   &-gray {
@@ -389,7 +390,7 @@
   }
 
   &.active {
-    width: 687px;
+    min-width: 687px;
     background: rgba(0, 210, 84, 0.1);
   }
 
