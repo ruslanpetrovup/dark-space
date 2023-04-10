@@ -174,3 +174,78 @@
     }
   }
 }
+
+@media screen and (max-width: 450px) {
+  .blog-article-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+
+    & .button__first {
+      padding: 15px 20px;
+    }
+  }
+
+  .blog-article-content {
+    flex-direction: column;
+  }
+
+  .blog-article-content-article-title {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .blog-article-content-article-image {
+    width: 100%;
+    max-width: 917px;
+  }
+
+  .blog-article-content-article-date {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 50px;
+  }
+
+  .blog-article-content-sidebar-title {
+    font-family: "Josefin Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    text-transform: uppercase;
+
+    color: #262a32;
+    margin-bottom: 20px;
+  }
+
+  .blog-article-content-sidebar-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .blog-article-content-sidebar-cards-item {
+    display: flex;
+    flex-direction: column;
+    max-width: 326px;
+  }
+
+  .blog-article-content-sidebar-cards-content {
+    padding: 30px 30px 25px 30px;
+    border-bottom: 1px solid #c4c4c4;
+    border-left: 1px solid #c4c4c4;
+    border-right: 1px solid #c4c4c4;
+  }
+
+  .blog-article-content-sidebar-cards-content-title {
+    font-family: "Josefin Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: uppercase;
+
+    color: #262a32;
+  }
+}
