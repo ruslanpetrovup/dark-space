@@ -1665,6 +1665,9 @@ img {
     font-size: 30px;
     line-height: 37px;
   }
+  .integrations-content-buttons {
+    justify-content: space-between;
+  }
   .pricing {
     padding: 60px 0;
   }
