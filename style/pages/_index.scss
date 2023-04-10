@@ -1271,20 +1271,8 @@
     flex-direction: column;
   }
 
-  .slider-description {
-    font-family: "Montserrat";
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 32px;
-    color: #000000;
-
-    opacity: 0.75;
-    margin-top: 38px;
-  }
   .slide1 {
-    // overflow: hidden;
-    overflow: auto;
+    overflow: hidden;
     position: relative;
     display: flex;
     justify-content: flex-start;
@@ -1339,23 +1327,29 @@
     }
 
     &.active {
-      // min-width: 687px;
+      min-width: unset;
       min-height: 484px;
       background: rgba(0, 210, 84, 0.1);
+      padding-bottom: 20px;
     }
 
     &.active .slide1-text {
       opacity: 0;
+      display: none;
     }
 
     &.active .slide1-content {
-      opacity: 1;
+      position: sticky;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 0px 17px;
     }
     &.active &-gray {
-      position: absolute;
-      top: 0;
-      left: 65px;
-      filter: grayscale(0);
+      left: 50%;
+      transform: translateX(-50%);
     }
 
     &.active &-gray-gradient {
@@ -1427,15 +1421,16 @@
   .slide1-content-buttons {
     display: flex;
     align-items: center;
-    transform: translateY(150px);
+    transform: translateY(0px);
     transition: transform 250ms linear;
+    justify-content: space-between;
   }
 
   .slide1-content-buttons-text {
     font-family: "Josefin Sans";
     font-style: normal;
     font-weight: 600;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 18px;
     text-transform: uppercase;
 
@@ -1457,8 +1452,8 @@
     background: #00d254;
     box-shadow: 0px 30px 16px rgba(0, 0, 0, 0.05);
     border-radius: 50%;
-    width: 64px;
-    height: 64px;
+    width: 44px;
+    height: 44px;
     cursor: pointer;
 
     &-icon {
