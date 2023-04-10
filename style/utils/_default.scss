@@ -46,5 +46,6 @@ img {
     max-width: 375px;
     margin: 0 auto;
     padding: 0 10px;
+    width: calc(100% - 20px);
   }
 }

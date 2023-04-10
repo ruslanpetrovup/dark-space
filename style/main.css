@@ -46,6 +46,7 @@ img {
     max-width: 375px;
     margin: 0 auto;
     padding: 0 10px;
+    width: calc(100% - 20px);
   }
 }
 .get-start__black {
@@ -2830,6 +2831,9 @@ img {
   height: 100%;
   display: flex;
 }
+.login-section .header {
+  display: none;
+}
 
 .login-prompt {
   display: flex;
@@ -3133,15 +3137,18 @@ img {
 
 @media screen and (max-width: 450px) {
   .login-section {
-    position: sticky;
-    padding: 45px 0;
+    position: static;
     flex-direction: column;
     max-width: 100%;
     top: unset;
     left: unset;
   }
+  .login-section .header {
+    display: flex;
+  }
   .login-prompt {
     width: 100%;
+    padding: 45px 0;
   }
   .login-prompt-flex {
     min-width: unset;

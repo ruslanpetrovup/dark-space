@@ -5,6 +5,10 @@
   width: 100%;
   height: 100%;
   display: flex;
+
+  & .header {
+    display: none;
+  }
 }
 
 .login-prompt {
@@ -330,16 +334,20 @@
 
 @media screen and (max-width: 450px) {
   .login-section {
-    position: sticky;
-    padding: 45px 0;
+    position: static;
     flex-direction: column;
     max-width: 100%;
     top: unset;
     left: unset;
+
+    & .header {
+      display: flex;
+    }
   }
 
   .login-prompt {
     width: 100%;
+    padding: 45px 0;
   }
 
   .login-prompt-flex {
