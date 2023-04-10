@@ -40,3 +40,11 @@ img {
   margin: 0 auto;
   padding: 0 15px;
 }
+
+@media screen and (max-width: 480px) {
+  .container {
+    max-width: 375px;
+    margin: 0 auto;
+    padding: 0 10px;
+  }
+}

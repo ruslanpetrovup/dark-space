@@ -200,6 +200,59 @@
   margin-bottom: 15px;
 }
 
+.statlink-main-chart {
+  &.shadow {
+    background: #ffffff;
+    box-shadow: 0px 23.0064px 60.5741px rgba(0, 0, 0, 0.0298054),
+      0px 6.84961px 41.3556px rgba(0, 0, 0, 0.0201946);
+    border-radius: 39px;
+    padding: 50px;
+  }
+
+  &-title {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 39px;
+    color: #292d30;
+    margin-bottom: 5px;
+  }
+
+  &-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 60px;
+    margin-bottom: 50px;
+  }
+
+  &-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: calc((100% - 180px) / 3);
+    padding: 25px 0;
+    border-bottom: 2px solid #e6e7e8;
+
+    &-first {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      &-text {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 30px;
+        color: #02040b;
+
+        opacity: 0.65;
+      }
+    }
+  }
+}
+
 .statlink-main-controle {
   display: flex;
   align-items: center;
@@ -335,6 +388,17 @@
   line-height: 39px;
   color: #000000;
   margin-bottom: 8px;
+}
+
+.startlink-main-activity-desc {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 30px;
+  color: #02040b;
+
+  opacity: 0.4;
 }
 
 .startlink-main-activity-list {

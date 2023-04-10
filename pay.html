@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <nav class="navigation">
+          <a class="logo" href="./index.html">
+            <img
+              src="./assets/images/logo-black.svg"
+              alt="logo"
+              class="logo-icon"
+            />
+          </a>
+
+          <ul class="menu">
+            <li class="menu-item">
+              <a class="menu-link active" href="./index.html">Home</a>
+            </li>
+            <li class="menu-item">
+              <div class="menu-link" id="solution">
+                Solutions<img
+                  class=""
+                  src="./assets/images/arrow.svg"
+                  alt="arrow"
+                  id="solution-icon"
+                />
+
+                <div class="solution-block">
+                  <div class="solution-modal">
+                    <div class="solution-image">
+                      <img
+                        class="solution-image-img"
+                        src="./assets/images/solution/code.png"
+                      />
+                    </div>
+                    <div class="solution-menu">
+                      <ul class="solution-menu-list">
+                        <li class="solution-menu-item">
+                          <a class="solution-menu-link" href="./qr-codes.html">
+                            <img
+                              class="solution-menu-link-icon"
+                              src="./assets/images/arrow-left.svg"
+                              alt="solution"
+                            />
+                            QR CODES
+                          </a>
+                        </li>
+                        <li class="solution-menu-item">
+                          <a class="solution-menu-link" href="./bio-pages.html">
+                            <img
+                              class="solution-menu-link-icon"
+                              src="./assets/images/arrow-left.svg"
+                              alt="solution"
+                            />
+                            BIO PAGES</a
+                          >
+                        </li>
+                        <li class="solution-menu-item">
+                          <a
+                            class="solution-menu-link"
+                            href="./file-hosting.html"
+                          >
+                            <img
+                              class="solution-menu-link-icon"
+                              src="./assets/images/arrow-left.svg"
+                              alt="solution"
+                            />
+                            FILE HOSTING
+                          </a>
+                        </li>
+                        <li class="solution-menu-item">
+                          <a class="solution-menu-link" href="./dev-api.html">
+                            <img
+                              class="solution-menu-link-icon"
+                              src="./assets/images/arrow-left.svg"
+                              alt="solution"
+                            />
+                            DEVS API</a
+                          >
+                        </li>
+                        <li class="solution-menu-item">
+                          <a
+                            class="solution-menu-link"
+                            href="./help-center.html"
+                          >
+                            <img
+                              class="solution-menu-link-icon"
+                              src="./assets/images/arrow-left.svg"
+                              alt="solution"
+                            />
+                            HELP CENTER</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="menu-item">
+              <a class="menu-link">Integrations</a>
+            </li>
+            <li class="menu-item">
+              <a class="menu-link">Pricing</a>
+            </li>
+            <li class="menu-item">
+              <a class="menu-link">Blog</a>
+            </li>
+          </ul>
+
+          <div class="setting">
+            <button class="get-start__black after">Get started</button>
+
+            <div class="setting-lang">
+              <p class="setting-lang-current">
+                <img
+                  class="setting-lang-current-icon"
+                  src="./assets/images/arrow.svg"
+                />
+                EN
+              </p>
+              <ul class="setting-lang-list">
+                <li class="setting-lang-item">UA</li>
+                <li class="setting-lang-item">FR</li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <section class="pay-section">
+      <div class="pay-section-first"></div>
+
+      <div class="pay-section-second">
+        <div class="container">
+          <div class="pay-section-second-data">
+            <div class="pay-section-second-data-prompt">
+              <div class="pay-section-second-data-prompt-titles">
+                <h2 class="pay-section-second-data-prompt-titles-title">
+                  Payment Method
+                </h2>
+                <a class="pay-section-second-data-prompt-titles-link"
+                  >Privacy Policy</a
+                >
+              </div>
+
+              <div class="pay-section-second-data-prompt-buttons">
+                <button class="pay-section-second-data-prompt-button active">
+                  Wayforpay
+                </button>
+                <button class="pay-section-second-data-prompt-button">
+                  Method 2
+                </button>
+                <button class="pay-section-second-data-prompt-button">
+                  Method 3
+                </button>
+                <button class="pay-section-second-data-prompt-button">
+                  Method 4
+                </button>
+                <button class="pay-section-second-data-prompt-button">
+                  Method 5
+                </button>
+              </div>
+
+              <div class="pay-section-second-data-prompt-pool">
+                <form class="pay-section-second-data-prompt-pool-form">
+                  <label
+                    class="pay-section-second-data-prompt-pool-form-number"
+                  >
+                    <h2
+                      class="pay-section-second-data-prompt-pool-form-number-title"
+                    >
+                      Card Number
+                    </h2>
+                    <p
+                      class="pay-section-second-data-prompt-pool-form-number-desc"
+                    >
+                      File name
+                    </p>
+                    <div
+                      class="pay-section-second-data-prompt-pool-form-number-input-card"
+                    >
+                      <img
+                        class="pay-section-second-data-prompt-pool-form-number-input-master"
+                        src="./assets/images/pay/mastercard-icon.svg"
+                      />
+                      <input
+                        type="text"
+                        class="pay-section-second-data-prompt-pool-form-number-input"
+                      />
+                      <img
+                        class="pay-section-second-data-prompt-pool-form-number-input-accept"
+                        src="./assets/images/pay/accept.svg"
+                      />
+                    </div>
+                  </label>
+
+                  <label class="pay-section-second-data-prompt-pool-form-cvv">
+                    <div
+                      class="pay-section-second-data-prompt-pool-form-cvv-titles"
+                    >
+                      <h2
+                        class="pay-section-second-data-prompt-pool-form-cvv-titles-title"
+                      >
+                        CVV Number
+                      </h2>
+                      <p
+                        class="pay-section-second-data-prompt-pool-form-cvv-titles-desc"
+                      >
+                        Enter the 3 or 4 digit number on the card
+                      </p>
+                    </div>
+
+                    <div
+                      class="pay-section-second-data-prompt-pool-form-cvv-inputs"
+                    >
+                      <input
+                        class="pay-section-second-data-prompt-pool-form-cvv-inputs-input"
+                        type="text"
+                      />
+                      <img
+                        class="pay-section-second-data-prompt-pool-form-cvv-inputs-icon"
+                        src="./assets/images/pay/cvv.svg"
+                      />
+                    </div>
+                  </label>
+
+                  <label class="pay-section-second-data-prompt-pool-form-date">
+                    <div
+                      class="pay-section-second-data-prompt-pool-form-date-titles"
+                    >
+                      <h2
+                        class="pay-section-second-data-prompt-pool-form-date-titles-title"
+                      >
+                        Expiry Date
+                      </h2>
+                      <p
+                        class="pay-section-second-data-prompt-pool-form-date-titles-desc"
+                      >
+                        Enter the expiration date of the card
+                      </p>
+                    </div>
+                    <div
+                      class="pay-section-second-data-prompt-pool-form-date-inputs"
+                    >
+                      <input
+                        class="pay-section-second-data-prompt-pool-form-date-input"
+                        type="text"
+                      />
+                      /
+                      <input
+                        class="pay-section-second-data-prompt-pool-form-date-input"
+                        type="text"
+                      />
+                    </div>
+                  </label>
+
+                  <label
+                    class="pay-section-second-data-prompt-pool-form-password"
+                  >
+                    <div
+                      class="pay-section-second-data-prompt-pool-form-password-titles"
+                    >
+                      <h2
+                        class="pay-section-second-data-prompt-pool-form-password-titles-title"
+                      >
+                        Password
+                      </h2>
+                      <p
+                        class="pay-section-second-data-prompt-pool-form-password-titles-desc"
+                      >
+                        Enter your account password
+                      </p>
+                    </div>
+                    <input
+                      class="pay-section-second-data-prompt-pool-form-password-input"
+                      type="text"
+                    />
+                  </label>
+
+                  <button
+                    class="pay-section-second-data-prompt-pool-form-submit"
+                  >
+                    Pay Now
+                  </button>
+                </form>
+              </div>
+            </div>
+
+            <div class="pay-section-second-data-card">
+              <div class="pay-section-second-data-card-block">
+                <div class="pay-section-second-data-card-plastic">
+                  <div class="pay-section-second-data-card-plastic-icons">
+                    <img
+                      class="pay-section-second-data-card-plastic-icons-nfs"
+                      src="./assets/images/pay/nfs.svg"
+                    />
+                    <img
+                      class="pay-section-second-data-card-plastic-icons-connect"
+                      src="./assets/images/pay/connect.svg"
+                    />
+                  </div>
+
+                  <div class="pay-section-second-data-card-plastic-info">
+                    <p class="pay-section-second-data-card-plastic-info-name">
+                      Taras Virnenko
+                    </p>
+                    <p class="pay-section-second-data-card-plastic-info-number">
+                      1234
+                    </p>
+
+                    <div class="pay-section-second-data-card-plastic-info-date">
+                      <p
+                        class="pay-section-second-data-card-plastic-info-date-text"
+                      >
+                        09/23
+                      </p>
+                      <img
+                        class="pay-section-second-data-card-plastic-info-date-icon"
+                        src="./assets/images/pay/mastercard.svg"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="pay-section-second-data-card-information">
+                  <div class="pay-section-second-data-card-information-titles">
+                    <h3
+                      class="pay-section-second-data-card-information-titles-title"
+                    >
+                      Company
+                    </h3>
+                    <p
+                      class="pay-section-second-data-card-information-titles-desc"
+                    >
+                      Dark Genius
+                    </p>
+                  </div>
+                  <div class="pay-section-second-data-card-information-titles">
+                    <h3
+                      class="pay-section-second-data-card-information-titles-title"
+                    >
+                      Service
+                    </h3>
+                    <p
+                      class="pay-section-second-data-card-information-titles-desc"
+                    >
+                      Dark Space
+                    </p>
+                  </div>
+                  <div class="pay-section-second-data-card-information-titles">
+                    <h3
+                      class="pay-section-second-data-card-information-titles-title"
+                    >
+                      Plan
+                    </h3>
+                    <p
+                      class="pay-section-second-data-card-information-titles-desc"
+                    >
+                      Start
+                    </p>
+                  </div>
+
+                  <button
+                    class="pay-section-second-data-card-information-promo"
+                  >
+                    Apply promo code
+                  </button>
+                </div>
+                <div class="pay-section-second-data-card-decor">
+                  <img
+                    class="pay-section-second-data-card-decor-icon"
+                    src="./assets/images/pay/decor.svg"
+                  />
+                </div>
+                <div class="pay-section-second-data-card-pay">
+                  <img
+                    class="pay-section-second-data-card-pay-icon"
+                    src="./assets/images/pay/bill.svg"
+                  />
+                  <div class="pay-section-second-data-card-pay-content">
+                    <p class="pay-section-second-data-card-pay-content-desc">
+                      You have to Pay
+                    </p>
+                    <p class="pay-section-second-data-card-pay-content-sum">
+                      10.99
+                      <span
+                        class="pay-section-second-data-card-pay-content-sum-span"
+                      >
+                        USD/ monthly
+                      </span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="pay-section-three"></div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-info">
+        <div class="container">
+          <div class="footer-info-block">
+            <div class="footer-info-navigation">
+              <div class="footer-info-logo">
+                <a class="footer-info-logo-link" href="./index.html">
+                  <img
+                    class="footer-info-logo-img"
+                    src="./assets/images/logo-white.svg"
+                    alt="logo"
+                  />
+                </a>
+                <div class="setting-lang-white">
+                  <p class="setting-lang-current">
+                    <img
+                      class="setting-lang-current-icon"
+                      src="./assets/images/arrow-white.svg"
+                    />
+                    EN
+                  </p>
+                  <ul class="setting-lang-list">
+                    <li class="setting-lang-item">UA</li>
+                    <li class="setting-lang-item">FR</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="footer-info-menu">
+                <ul class="footer-info-menu-list">
+                  <li class="footer-info-menu-item">
+                    <a class="footer-info-menu-link" href="./index.html"
+                      >home</a
+                    >
+                  </li>
+                  <li class="footer-info-menu-item">
+                    <a class="footer-info-menu-link">solutions</a>
+                  </li>
+                  <li class="footer-info-menu-item">
+                    <a class="footer-info-menu-link">integrations</a>
+                  </li>
+                </ul>
+                <ul class="footer-info-menu-list">
+                  <li class="footer-info-menu-item">
+                    <a class="footer-info-menu-link">Pricing</a>
+                  </li>
+                  <li class="footer-info-menu-item">
+                    <a class="footer-info-menu-link">BLOG</a>
+                  </li>
+                  <li class="footer-info-menu-item">
+                    <a class="footer-info-menu-link">POLICY</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="footer-info-contacts">
+              <button class="get-start__white after">Get started</button>
+              <p class="footer-info-contacts-mail">info@DRKTEAM.com</p>
+              <ul class="footer-info-contacts-social">
+                <li class="footer-info-contacts-social-item">
+                  <a class="footer-info-contacts-social-link">
+                    <img
+                      class="footer-info-contacts-social-img"
+                      alt="social"
+                      src="./assets/images/social/facebook.svg"
+                    />
+                  </a>
+                </li>
+                <li class="footer-info-contacts-social-item">
+                  <a class="footer-info-contacts-social-link">
+                    <img
+                      class="footer-info-contacts-social-img"
+                      alt="social"
+                      src="./assets/images/social/instagram.svg"
+                    />
+                  </a>
+                </li>
+                <li class="footer-info-contacts-social-item">
+                  <a class="footer-info-contacts-social-link">
+                    <img
+                      class="footer-info-contacts-social-img"
+                      alt="social"
+                      src="./assets/images/social/youtube.svg"
+                    />
+                  </a>
+                </li>
+                <li class="footer-info-contacts-social-item">
+                  <a class="footer-info-contacts-social-link">
+                    <img
+                      class="footer-info-contacts-social-img"
+                      alt="social"
+                      src="./assets/images/social/telegram.svg"
+                    />
+                  </a>
+                </li>
+                <li class="footer-info-contacts-social-item">
+                  <a class="footer-info-contacts-social-link">
+                    <img
+                      class="footer-info-contacts-social-img"
+                      alt="social"
+                      src="./assets/images/social/twiter.svg"
+                    />
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container">
+          <div class="footer-copyright-block">
+            <button class="footer-copyright-report">Report</button>
+            <p class="footer-copyright-info">© Copyright information 2022</p>
+            <img
+              class="footer-copyright-by"
+              src="./assets/images/by.svg"
+              alt="by"
+            />
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./js/solution-menu.js"></script>
+  </body>
+</html>

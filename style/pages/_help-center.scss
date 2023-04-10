@@ -203,6 +203,40 @@
 
   cursor: pointer;
   filter: drop-shadow(0px 4px 60px rgba(26, 28, 70, 0.1));
+  background: greenyellow;
+  clip-path: polygon(
+    0 80px,
+    80px 0,
+    100% 0,
+    100% calc(100% - 80px),
+    calc(100% - 80px) 100%,
+    0 100%
+  );
+
+  &:before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: greenyellow;
+    clip-path: polygon(
+      0 80px,
+      80px 0,
+      100% 0,
+      100% calc(100% - 80px),
+      calc(100% - 80px) 100%,
+      0 100%,
+      0 80px,
+      2px calc(80px + 0.83px),
+      2px calc(100% - 2px),
+      calc(100% - 80px - 0.83px) calc(100% - 2px),
+      calc(100% - 2px) calc(100% - 80px - 0.83px),
+      calc(100% - 2px) 2px,
+      calc(80px + 0.83px) 2px,
+      2px calc(80px + 0.83px)
+    );
+
+    filter: drop-shadow(0px 4px 60px rgba(26, 28, 70, 0.1));
+  }
 }
 
 .help-center-article-question-title {
@@ -235,4 +269,5 @@
   height: 100%;
   top: 0;
   left: 0;
+  display: none;
 }

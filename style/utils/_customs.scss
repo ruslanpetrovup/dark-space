@@ -10,6 +10,7 @@
   font-size: 12px;
   line-height: 15px;
   letter-spacing: -0.05em;
+  margin-left: 35px;
 
   color: #ffffff;
   cursor: pointer;
@@ -20,6 +21,8 @@
     top: 0px;
     right: calc(100% - 1px);
     background-image: url("./../assets/images/before-button.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 35px;
     height: 30px;
     display: block;
@@ -56,6 +59,7 @@
   font-size: 12px;
   line-height: 15px;
   letter-spacing: -0.05em;
+  margin-left: 35px;
 
   color: #1e1e1e;
   cursor: pointer;
