@@ -3679,13 +3679,13 @@ img {
   .upload-section {
     position: static;
   }
-  .upload-section-container {
-    width: calc(100% - 40px);
-    margin: 0 20px;
-  }
   .upload-section-block {
     width: calc(100% - 40px);
     margin: 20px;
+  }
+  .upload-section-header-block {
+    width: calc(100% - 40px);
+    margin: 0 20px;
   }
   .upload-section-header-nav {
     display: none;
