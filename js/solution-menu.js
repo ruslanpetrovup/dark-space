@@ -1,4 +1,10 @@
 const menuSolution = document.querySelector(".solution-menu-list");
+const menuSolutionMobile = document.querySelector(
+  ".menu-mobile-modal-list-solution-modal"
+);
+const buttonSolutionMobile = document.querySelector(
+  ".menu-mobile-modal-list-solution-open"
+);
 
 const changeImage = ({ target }) => {
   if (target.classList.value !== "solution-menu-link") return;
@@ -22,3 +28,7 @@ const changeImage = ({ target }) => {
 };
 
 menuSolution.addEventListener("mouseover", changeImage);
+
+buttonSolutionMobile.addEventListener("click", () => {
+  menuSolutionMobile.classList.toggle("active");
+});
