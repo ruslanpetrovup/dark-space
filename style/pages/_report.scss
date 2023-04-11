@@ -204,3 +204,49 @@
   display: flex;
   cursor: pointer;
 }
+
+@media screen and (max-width: 450px) {
+  .report-section {
+    flex-direction: column;
+  }
+
+  .report-content {
+    width: calc(100% - 40px);
+    margin: 0 20px;
+    padding: 60px 0;
+  }
+
+  .report-content-title {
+    font-size: 30px;
+    line-height: 37px;
+  }
+
+  .report-prompt {
+    width: 100%;
+    padding: 60px 0;
+
+    &-block {
+      width: calc(100% - 40px);
+      margin: 0 20px;
+    }
+  }
+
+  .contact-prompt {
+    width: 100%;
+    padding: 60px 0;
+  }
+
+  .report-prompt-form {
+    width: 100%;
+    padding: 60px 27px;
+    box-sizing: border-box;
+  }
+
+  .report-prompt-form-label {
+    min-width: unset;
+  }
+
+  .report-content-image {
+    width: 100%;
+  }
+}

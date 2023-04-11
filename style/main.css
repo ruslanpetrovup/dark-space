@@ -3531,6 +3531,43 @@ img {
   cursor: pointer;
 }
 
+@media screen and (max-width: 450px) {
+  .report-section {
+    flex-direction: column;
+  }
+  .report-content {
+    width: calc(100% - 40px);
+    margin: 0 20px;
+    padding: 60px 0;
+  }
+  .report-content-title {
+    font-size: 30px;
+    line-height: 37px;
+  }
+  .report-prompt {
+    width: 100%;
+    padding: 60px 0;
+  }
+  .report-prompt-block {
+    width: calc(100% - 40px);
+    margin: 0 20px;
+  }
+  .contact-prompt {
+    width: 100%;
+    padding: 60px 0;
+  }
+  .report-prompt-form {
+    width: 100%;
+    padding: 60px 27px;
+    box-sizing: border-box;
+  }
+  .report-prompt-form-label {
+    min-width: unset;
+  }
+  .report-content-image {
+    width: 100%;
+  }
+}
 .upload-section {
   position: absolute;
   top: 0;
@@ -3594,6 +3631,9 @@ img {
   align-items: center;
   padding: 80px 0;
 }
+.upload-section-content-mobile {
+  display: none;
+}
 
 .upload-section-content-info {
   max-width: 331px;
@@ -3635,6 +3675,67 @@ img {
   color: #474747;
 }
 
+@media screen and (max-width: 450px) {
+  .upload-section {
+    position: static;
+  }
+  .upload-section-container {
+    width: calc(100% - 40px);
+    margin: 0 20px;
+  }
+  .upload-section-block {
+    width: calc(100% - 40px);
+    margin: 20px;
+  }
+  .upload-section-header-nav {
+    display: none;
+  }
+  .upload-section-content {
+    flex-direction: column;
+    padding-bottom: 0;
+  }
+  .upload-section-content-download {
+    width: calc(100% - 40px);
+    margin: 0 20px;
+  }
+  .upload-section-content-download-icon {
+    width: 100%;
+  }
+  .upload-section-content-info {
+    width: calc(100% - 40px);
+    margin: 0 20px;
+  }
+  .upload-section-content-mobile {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    border-top: 2px solid #ededed;
+    width: 100%;
+  }
+  .upload-section-content-mobile-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 50px;
+    font-family: "Josefin Sans";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #000000;
+    opacity: 0.4;
+  }
+  .upload-section-content-mobile-button:first-child {
+    width: 50%;
+    border-right: 1px solid #ededed;
+  }
+  .upload-section-content-mobile-button:last-child {
+    width: 50%;
+    border-left: 1px solid #ededed;
+  }
+}
 .statlink-hero-content {
   background: url("../../assets/images/statlink/statlink-hero.jpg");
   background-position: center;
