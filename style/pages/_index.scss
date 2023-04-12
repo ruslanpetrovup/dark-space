@@ -237,6 +237,20 @@
   text-transform: uppercase;
 
   color: #000000;
+
+  @media screen and (max-width: 1230px) {
+    font-size: 60px;
+    line-height: 100px;
+  }
+
+  @media screen and (max-width: 1110px) {
+    font-size: 55px;
+    line-height: 100px;
+  }
+  @media screen and (max-width: 1010px) {
+    font-size: 45px;
+    line-height: 80px;
+  }
 }
 
 .hero-content-title-second {
@@ -250,6 +264,19 @@
   text-transform: uppercase;
 
   color: #00d254;
+
+  @media screen and (max-width: 1230px) {
+    font-size: 65px;
+    line-height: 100px;
+  }
+  @media screen and (max-width: 1110px) {
+    font-size: 55px;
+    line-height: 100px;
+  }
+  @media screen and (max-width: 1010px) {
+    font-size: 45px;
+    line-height: 80px;
+  }
 }
 
 .hero-content-title-three {
@@ -262,6 +289,19 @@
   margin-left: 5%;
 
   color: #000000;
+
+  @media screen and (max-width: 1230px) {
+    font-size: 65px;
+    line-height: 100px;
+  }
+  @media screen and (max-width: 1110px) {
+    font-size: 55px;
+    line-height: 100px;
+  }
+  @media screen and (max-width: 1010px) {
+    font-size: 45px;
+    line-height: 80px;
+  }
 }
 
 .hero-content-desc {
@@ -521,6 +561,8 @@
   cursor: pointer;
 
   &-icon {
+    pointer-events: none;
+    user-select: none;
     width: 12px;
     height: 16px;
   }

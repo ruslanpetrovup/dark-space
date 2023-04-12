@@ -1,838 +1,693 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style/main.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
-    />
-    <title>Document</title>
-  </head>
-  <body>
-    <header class="header">
-      <div class="container">
-        <nav class="navigation">
-          <a class="logo" href="./index.html">
-            <img
-              src="./assets/images/logo-black.svg"
-              alt="logo"
-              class="logo-icon"
-            />
-          </a>
 
-          <ul class="menu">
-            <li class="menu-item">
-              <a class="menu-link active" href="./index.html">Home</a>
-            </li>
-            <li class="menu-item">
-              <div class="menu-link" id="solution">
-                Solutions<img
-                  class=""
-                  src="./assets/images/arrow.svg"
-                  alt="arrow"
-                  id="solution-icon"
-                />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./style/main.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <title>Document</title>
+</head>
 
-                <div class="solution-block">
-                  <div class="solution-modal">
-                    <div class="solution-image">
-                      <img
-                        class="solution-image-img"
-                        src="./assets/images/solution/code.png"
-                      />
-                    </div>
-                    <div class="solution-menu">
-                      <ul class="solution-menu-list">
-                        <li class="solution-menu-item">
-                          <a class="solution-menu-link" href="./qr-codes.html">
-                            <img
-                              class="solution-menu-link-icon"
-                              src="./assets/images/arrow-left.svg"
-                              alt="solution"
-                            />
-                            QR CODES
-                          </a>
-                        </li>
-                        <li class="solution-menu-item">
-                          <a class="solution-menu-link" href="./bio-pages.html">
-                            <img
-                              class="solution-menu-link-icon"
-                              src="./assets/images/arrow-left.svg"
-                              alt="solution"
-                            />
-                            BIO PAGES</a
-                          >
-                        </li>
-                        <li class="solution-menu-item">
-                          <a
-                            class="solution-menu-link"
-                            href="./file-hosting.html"
-                          >
-                            <img
-                              class="solution-menu-link-icon"
-                              src="./assets/images/arrow-left.svg"
-                              alt="solution"
-                            />
-                            FILE HOSTING
-                          </a>
-                        </li>
-                        <li class="solution-menu-item">
-                          <a class="solution-menu-link" href="./dev-api.html">
-                            <img
-                              class="solution-menu-link-icon"
-                              src="./assets/images/arrow-left.svg"
-                              alt="solution"
-                            />
-                            DEVS API</a
-                          >
-                        </li>
-                        <li class="solution-menu-item">
-                          <a
-                            class="solution-menu-link"
-                            href="./help-center.html"
-                          >
-                            <img
-                              class="solution-menu-link-icon"
-                              src="./assets/images/arrow-left.svg"
-                              alt="solution"
-                            />
-                            HELP CENTER</a
-                          >
-                        </li>
-                      </ul>
-                    </div>
+<body>
+  <header class="header">
+    <div class="container">
+      <nav class="navigation">
+        <a class="logo" href="./index.html">
+          <img src="./assets/images/logo-black.svg" alt="logo" class="logo-icon" />
+        </a>
+
+        <ul class="menu">
+          <li class="menu-item">
+            <a class="menu-link active" href="./index.html">Home</a>
+          </li>
+          <li class="menu-item">
+            <div class="menu-link" id="solution">
+              Solutions<img class="" src="./assets/images/arrow.svg" alt="arrow" id="solution-icon" />
+
+              <div class="solution-block">
+                <div class="solution-modal">
+                  <div class="solution-image">
+                    <img class="solution-image-img" src="./assets/images/solution/code.png" />
+                  </div>
+                  <div class="solution-menu">
+                    <ul class="solution-menu-list">
+                      <li class="solution-menu-item">
+                        <a class="solution-menu-link" href="./qr-codes.html">
+                          <img class="solution-menu-link-icon" src="./assets/images/arrow-left.svg" alt="solution" />
+                          QR CODES
+                        </a>
+                      </li>
+                      <li class="solution-menu-item">
+                        <a class="solution-menu-link" href="./bio-pages.html">
+                          <img class="solution-menu-link-icon" src="./assets/images/arrow-left.svg" alt="solution" />
+                          BIO PAGES</a>
+                      </li>
+                      <li class="solution-menu-item">
+                        <a class="solution-menu-link" href="./file-hosting.html">
+                          <img class="solution-menu-link-icon" src="./assets/images/arrow-left.svg" alt="solution" />
+                          FILE HOSTING
+                        </a>
+                      </li>
+                      <li class="solution-menu-item">
+                        <a class="solution-menu-link" href="./dev-api.html">
+                          <img class="solution-menu-link-icon" src="./assets/images/arrow-left.svg" alt="solution" />
+                          DEVS API</a>
+                      </li>
+                      <li class="solution-menu-item">
+                        <a class="solution-menu-link" href="./help-center.html">
+                          <img class="solution-menu-link-icon" src="./assets/images/arrow-left.svg" alt="solution" />
+                          HELP CENTER</a>
+                      </li>
+                    </ul>
                   </div>
                 </div>
               </div>
+            </div>
+          </li>
+          <li class="menu-item">
+            <a class="menu-link" href="./index.html#integration">Integrations</a>
+          </li>
+          <li class="menu-item">
+            <a class="menu-link" href="./index.html#pricing">Pricing</a>
+          </li>
+          <li class="menu-item">
+            <a class="menu-link">Blog</a>
+          </li>
+        </ul>
+
+        <div class="setting">
+          <button class="get-start__black">Get started</button>
+
+          <div class="setting-lang">
+            <p class="setting-lang-current">
+              <img class="setting-lang-current-icon" src="./assets/images/arrow.svg" />
+              EN
+            </p>
+            <ul class="setting-lang-list">
+              <li class="setting-lang-item">UA</li>
+              <li class="setting-lang-item">FR</li>
+            </ul>
+          </div>
+        </div>
+
+        <button class="menu-mobile-button">
+          <img class="menu-mobile-button-icon" src="./assets/images/menu-mobile-open.svg" />
+        </button>
+
+        <div class="menu-mobile-modal">
+          <div class="container">
+            <a class="menu-mobile-modal-logo" href="./index.html">
+              <img class="menu-mobile-modal-logo-link" src="./assets/images/logo-black.svg" />
+            </a>
+
+            <button class="menu-mobile-modal-close">
+              <img class="menu-mobile-modal-close-icon" src="./assets/images/menu-mobile-close.svg" />
+            </button>
+
+            <div class="menu-mobile-modal-block">
+              <ul class="menu-mobile-modal-list">
+                <li class="menu-mobile-modal-list-item">
+                  <a class="menu-mobile-modal-list-link" href="./index.html">Home</a>
+                </li>
+                <li class="menu-mobile-modal-list-item">
+                  <div class="menu-mobile-modal-list-solution-modal">
+                    <button class="menu-mobile-modal-list-solution-open">
+                      solutions
+                      <img class="menu-mobile-modal-list-solution-open-icon" src="./assets/images/arrow.svg" />
+                    </button>
+
+                    <div class="menu-mobile-modal-list-solution">
+                      <a class="menu-mobile-modal-list-solution-link" href="./qr-codes.html">QR CODES
+                      </a>
+                      <a class="menu-mobile-modal-list-solution-link" href="./bio-pages.html">
+                        BIO PAGES
+                      </a>
+                      <a class="menu-mobile-modal-list-solution-link" href="./file-hosting.html">
+                        FILE HOSTING
+                      </a>
+                      <a class="menu-mobile-modal-list-solution-link" href="./dev-api.html">
+                        DEVS API
+                      </a>
+                      <a class="menu-mobile-modal-list-solution-link" href="./help-center.html">
+                        HELP CENTER
+                      </a>
+                    </div>
+                  </div>
+                </li>
+                <li class="menu-mobile-modal-list-item">
+                  <a class="menu-mobile-modal-list-link">integrations</a>
+                </li>
+                <li class="menu-mobile-modal-list-item">
+                  <a class="menu-mobile-modal-list-link">pricing</a>
+                </li>
+                <li class="menu-mobile-modal-list-item">
+                  <a class="menu-mobile-modal-list-link">blog</a>
+                </li>
+              </ul>
+
+              <div class="menu-mobile-modal-center">
+                <a class="get-start__black">Get started</a>
+              </div>
+
+              <div class="menu-mobile-modal-footer">
+                <div class="container">
+                  <div class="menu-mobile-modal-footer-block">
+                    <button class="footer-copyright-report">Report</button>
+                    <div class="setting-lang">
+                      <p class="setting-lang-current">
+                        <img class="setting-lang-current-icon" src="./assets/images/arrow.svg" />
+                        EN
+                      </p>
+                      <ul class="setting-lang-list">
+                        <li class="setting-lang-item">UA</li>
+                        <li class="setting-lang-item">FR</li>
+                      </ul>
+                    </div>
+                    <img class="footer-copyright-by" src="./assets/images/by-black.svg" alt="by" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <div class="hero-block">
+        <img class="hero-img" src="./assets/images/hero.svg" alt="hero" />
+
+        <div class="hero-content">
+          <div class="hero-content-titles">
+            <h1 class="hero-content-title-first">Space for</h1>
+            <h2 class="hero-content-title-second">Professional</h2>
+            <h2 class="hero-content-title-three">solutions</h2>
+          </div>
+
+          <div class="hero-content-desc">
+            <p class="hero-content-desc-text">
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+              quae ab illo inventore veritatis et quasi architecto beatae
+              vitae dicta sunt explicabo. Nemo enim
+            </p>
+            <a class="hero-content-desc-link">
+              learn<br />
+              more
+
+              <div class="hero-content-desc-link-thoomb"></div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="hero-slider"></div>
+    </div>
+  </section>
+
+  <section class="slider">
+    <div class="container">
+      <div class="slider-block">
+        <div class="slider-article">
+          <p class="slider-article-title">solutions</p>
+        </div>
+        <div class="slide1" id="slide1">
+          <p class="slide1-text">
+            QR <span class="slide1-text-span">CODES</span>
+          </p>
+          <div class="slide1-gray">
+            <img class="slide1-gray-img" src="./assets/images/slider/qr.svg" alt="slide" />
+            <div class="slide1-gray-gradient"></div>
+          </div>
+          <div class="slide1-content">
+            <h2 class="slide1-content-title">
+              QR <span class="slide1-content-title-span">CODES</span>
+            </h2>
+            <p class="slide1-content-desc">
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+              quae ab illo inventore veritatis et quasi archit...
+            </p>
+            <div class="slide1-content-buttons">
+              <p class="slide1-content-buttons-text">learn more</p>
+              <div class="slide1-content-buttons-line"></div>
+              <a class="slide1-content-buttons-button" href="./qr-codes.html">
+                <img class="slide1-content-buttons-button-icon" src="./assets/images/slider/arrow.svg" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="slide1" id="slide2">
+          <p class="slide1-text">
+            BIO <span class="slide1-text-span"> PAGES</span>
+          </p>
+          <div class="slide1-gray">
+            <img class="slide1-gray-img" src="./assets/images/slider/bio.svg" alt="slide" />
+            <div class="slide1-gray-gradient"></div>
+          </div>
+          <div class="slide1-content">
+            <h2 class="slide1-content-title">
+              BIO <span class="slide1-content-title-span">PAGES</span>
+            </h2>
+            <p class="slide1-content-desc">
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+              quae ab illo inventore veritatis et quasi archit...
+            </p>
+            <div class="slide1-content-buttons">
+              <p class="slide1-content-buttons-text">learn more</p>
+              <div class="slide1-content-buttons-line"></div>
+              <a class="slide1-content-buttons-button" href="./bio-pages.html">
+                <img class="slide1-content-buttons-button-icon" src="./assets/images/slider/arrow.svg" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="slide1" id="slide3">
+          <p class="slide1-text">
+            FILE <span class="slide1-text-span"> HOSTING</span>
+          </p>
+          <div class="slide1-gray">
+            <img class="slide1-gray-img" src="./assets/images/slider/file.svg" alt="slide" />
+            <div class="slide1-gray-gradient"></div>
+          </div>
+          <div class="slide1-content">
+            <h2 class="slide1-content-title">
+              FILE <span class="slide1-content-title-span">HOSTING</span>
+            </h2>
+            <p class="slide1-content-desc">
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+              quae ab illo inventore veritatis et quasi archit...
+            </p>
+            <div class="slide1-content-buttons">
+              <p class="slide1-content-buttons-text">learn more</p>
+              <div class="slide1-content-buttons-line"></div>
+              <a class="slide1-content-buttons-button" href="./file-hosting.html">
+                <img class="slide1-content-buttons-button-icon" src="./assets/images/slider/arrow.svg" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="slider-article">
+          <p class="slider-article-title">Resources</p>
+        </div>
+        <div class="slide1" id="slide4">
+          <p class="slide1-text">
+            DEVS <span class="slide1-text-span"> API</span>
+          </p>
+          <div class="slide1-gray">
+            <img class="slide1-gray-img" src="./assets/images/slider/api.svg" alt="slide" />
+            <div class="slide1-gray-gradient"></div>
+          </div>
+          <div class="slide1-content">
+            <h2 class="slide1-content-title">
+              DEVS <span class="slide1-content-title-span">API</span>
+            </h2>
+            <p class="slide1-content-desc">
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+              quae ab illo inventore veritatis et quasi archit...
+            </p>
+            <div class="slide1-content-buttons">
+              <p class="slide1-content-buttons-text">learn more</p>
+              <div class="slide1-content-buttons-line"></div>
+              <a class="slide1-content-buttons-button" href="./dev-api.html">
+                <img class="slide1-content-buttons-button-icon" src="./assets/images/slider/arrow.svg" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="slide1" id="slide5">
+          <p class="slide1-text">
+            HELP <span class="slide1-text-span"> CENTER</span>
+          </p>
+          <div class="slide1-gray">
+            <img class="slide1-gray-img" src="./assets/images/slider/help.svg" alt="slide" />
+            <div class="slide1-gray-gradient"></div>
+          </div>
+          <div class="slide1-content">
+            <h2 class="slide1-content-title">
+              HELP <span class="slide1-content-title-span">CENTER</span>
+            </h2>
+            <p class="slide1-content-desc">
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+              quae ab illo inventore veritatis et quasi archit...
+            </p>
+            <div class="slide1-content-buttons">
+              <p class="slide1-content-buttons-text">learn more</p>
+              <div class="slide1-content-buttons-line"></div>
+              <a class="slide1-content-buttons-button" href="./help-center.html">
+                <img class="slide1-content-buttons-button-icon" src="./assets/images/slider/arrow.svg" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="slider-description">
+        Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+        accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae
+        ab illo inventore veritatis et quasi architecto beatae vitae dicta
+        sunt explicabo. Nemo enim
+      </p>
+    </div>
+  </section>
+
+  <section class="integrations" id="integration">
+    <div class="container">
+      <div class="integrations-block">
+        <div class="integrations-content">
+          <h2 class="integrations-content-title">Integrations</h2>
+          <div class="integrations-content-desc">
+            <p class="integrations-content-desc-text">
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+              quae ab illo inventore veritatis et quasi architecto beatae
+              vitae dicta sunt explicabo. Nemo enim illo inventore veritatis
+              et qeare
+            </p>
+            <p class="integrations-content-desc-text">
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+              at accusantium doloremque laudantium, totam rem aperiam, eaque
+              ipsa quae ab illo inventore veritatis et quasi architecto beatae
+              vitae dicta sunt explicabo. Nemo enim
+            </p>
+          </div>
+
+          <div class="integrations-content-buttons">
+            <a class="button__first">Read more</a>
+            <a class="button__second">Check it out</a>
+          </div>
+        </div>
+        <div class="integrations-image">
+          <img class="integrations-image-img" src="./assets/images/integration.svg" />
+
+          <div class="integrations-image-icons" style="display: none;">
+            <div class="integrations-image-icons-item"><img src="" alt="" class="active">
+              <span>test 01</span>
+            </div>
+            <div class="integrations-image-icons-item">
+              <span>test 02</span>
+            </div>
+            <div class="integrations-image-icons-item">
+              <span>test 03</span>
+            </div>
+            <div class="integrations-image-icons-item"><img src="" alt="" class="active"><img src="" alt=""
+                class="default"></div>
+            <div class="integrations-image-icons-item"><img src="" alt="" class="active"><img src="" alt=""
+                class="default"></div>
+            <div class="integrations-image-icons-item"><img src="" alt="" class="active"><img src="" alt=""
+                class="default"></div>
+            <div class="integrations-image-icons-item"><img src="" alt="" class="active"><img src="" alt=""
+                class="default"></div>
+            <div class="integrations-image-icons-item"><img src="" alt="" class="active"><img src="" alt=""
+                class="default"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="pricing" id="pricing">
+    <div class="container">
+      <div class="pricing-block">
+        <div class="pricing-head">
+          <h2 class="pricing-head-title">Pricing</h2>
+          <div class="pricing-head-billing">
+            <p class="pricing-head-billing-text">Monthly Billing</p>
+
+            <button class="pricing-head-billing-switch">
+              <div class="pricing-head-billing-switch-bool"></div>
+            </button>
+
+            <div class="pricing-head-billing-second-block">
+              <p class="pricing-head-billing-second">Annual Billing</p>
+              <div class="notification__green">Save 30%</div>
+            </div>
+          </div>
+        </div>
+        <div class="pricing-info">
+          <ul class="pricing-list">
+            <li class="pricing-item">
+              <div class="pricing-item-head">
+                <h3 class="pricing-item-head-title">Starter</h3>
+              </div>
+              <div class="pricing-item-price">
+                <p class="pricing-item-price-count">FREE</p>
+                <p class="pricing-item-price-desc">
+                  Plan has limits and showing ads
+                </p>
+              </div>
+              <ul class="pricing-item-service">
+                <li class="pricing-item-service-item">
+                  <p class="pricing-item-service-item-bold">Access</p>
+                  to standart services
+                </li>
+                <li class="pricing-item-service-item">
+                  <p class="pricing-item-service-item-bold">X / day</p>
+                  use of services
+                </li>
+              </ul>
+              <div class="pricing-item-buttons">
+                <a class="button__first">Try it out</a>
+              </div>
             </li>
-            <li class="menu-item">
-              <a class="menu-link">Integrations</a>
+            <li class="pricing-item">
+              <div class="pricing-item-head">
+                <h3 class="pricing-item-head-title">Basic</h3>
+                <div class="notification__green">Save 30%</div>
+              </div>
+              <div class="pricing-item-price">
+                <p class="pricing-item-price-count">
+                  <sup class="pricing-item-price-count-up"> $ </sup>
+                  <span>9</span><sub class="pricing-item-price-count-down">/ mo</sub>
+                </p>
+                <p class="pricing-item-price-desc">Billed as $108 per year</p>
+              </div>
+              <ul class="pricing-item-service">
+                <li class="pricing-item-service-item">
+                  <p class="pricing-item-service-item-bold">Access</p>
+                  to standart services
+                </li>
+                <li class="pricing-item-service-item">
+                  <p class="pricing-item-service-item-bold">XX / day</p>
+                  use of services
+                </li>
+              </ul>
+              <div class="pricing-item-buttons">
+                <a class="button__second">Get this plan</a>
+              </div>
             </li>
-            <li class="menu-item">
-              <a class="menu-link">Pricing</a>
+            <li class="pricing-item">
+              <div class="pricing-item-head">
+                <h3 class="pricing-item-head-title">
+                  <img src="./assets/images/fire.svg" alt="fire" />Professional
+                </h3>
+                <div class="notification__green">Save 30%</div>
+              </div>
+              <div class="pricing-item-price">
+                <p class="pricing-item-price-count">
+                  <sup class="pricing-item-price-count-up"> $ </sup>
+                  <span>19</span><sub class="pricing-item-price-count-down">/ mo</sub>
+                </p>
+                <p class="pricing-item-price-desc">Billed as $228 per year</p>
+              </div>
+              <ul class="pricing-item-service">
+                <li class="pricing-item-service-item">
+                  <p class="pricing-item-service-item-bold">Full access</p>
+                  to all services
+                </li>
+                <li class="pricing-item-service-item">
+                  <p class="pricing-item-service-item-bold">Unlimited</p>
+                  service features
+                </li>
+              </ul>
+              <div class="pricing-item-buttons">
+                <a class="button__second">Get this plan</a>
+              </div>
             </li>
-            <li class="menu-item">
-              <a class="menu-link">Blog</a>
+            <li class="pricing-item">
+              <div class="pricing-item-head">
+                <h3 class="pricing-item-head-title">Custom</h3>
+                <div class="notification__green">Special</div>
+              </div>
+              <p class="pricing-item-price-custom">
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                accusantium doloremque laudantium, totam rem aperiam, eaque
+                ipsa quae ab illo inventore veritatis et quasi architecto
+                beatae vitae dicta sunt
+              </p>
+
+              <div class="pricing-item-buttons">
+                <a class="button__second">Contact us</a>
+              </div>
             </li>
           </ul>
+        </div>
+      </div>
+    </div>
+  </section>
 
-          <div class="setting">
-            <button class="get-start__black">Get started</button>
+  <section class="blog">
+    <div class="container">
+      <h2 class="blog-title">Blog</h2>
+      <ul class="blog-list">
+        <li class="blog-item">
+          <img class="blog-item-image" src="./assets/images/blog/dia.png" alt="blog" />
+          <div class="blog-item-content">
+            <div class="blog-item-content-titles">
+              <h3 class="blog-item-content-title">
+                service received partner support from Diia
+              </h3>
+              <div class="notification__green-second">solutions</div>
+            </div>
+            <p class="blog-item-content-desc">
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+              quae ab illo inventore veritatis et quasi architecto beatae
+              vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia
+              voluptas sit aspernatur aut odit aut fugit, sed quia
+              consequuntur ratione nesciunt...
+            </p>
+            <div class="blog-item-content-buttons">
+              <a class="blog-item-content-button" href="./blog-item.html">Read more</a>
 
-            <div class="setting-lang">
-              <p class="setting-lang-current">
-                <img
-                  class="setting-lang-current-icon"
-                  src="./assets/images/arrow.svg"
-                />
-                EN
-              </p>
-              <ul class="setting-lang-list">
-                <li class="setting-lang-item">UA</li>
-                <li class="setting-lang-item">FR</li>
+              <p class="blog-item-content-date">9 hours before</p>
+            </div>
+          </div>
+        </li>
+        <li class="blog-item">
+          <img class="blog-item-image" src="./assets/images/blog/revert.png" alt="blog" />
+          <div class="blog-item-content">
+            <div class="blog-item-content-titles">
+              <h3 class="blog-item-content-title">
+                upcoming updates to our service
+              </h3>
+              <div class="notification__green-second">Pricing</div>
+            </div>
+            <p class="blog-item-content-desc">
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+              quae ab illo inventore veritatis et quasi architecto beatae
+              vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia
+              voluptas sit aspernatur aut odit aut fugit, sed quia
+              consequuntur ratione nesciunt...
+            </p>
+            <div class="blog-item-content-buttons">
+              <a class="blog-item-content-button" href="./blog-item.html">Read more</a>
+
+              <p class="blog-item-content-date">9 hours before</p>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <div class="blog-all">
+        <button class="blog-all-button">Read more news</button>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-info">
+      <div class="container">
+        <div class="footer-info-block">
+          <div class="footer-info-navigation">
+            <div class="footer-info-logo">
+              <a class="footer-info-logo-link" href="./index.html">
+                <img class="footer-info-logo-img" src="./assets/images/logo-white.svg" alt="logo" />
+              </a>
+              <div class="setting-lang-white">
+                <p class="setting-lang-current">
+                  <img class="setting-lang-current-icon" src="./assets/images/arrow-white.svg" />
+                  EN
+                </p>
+                <ul class="setting-lang-list">
+                  <li class="setting-lang-item">UA</li>
+                  <li class="setting-lang-item">FR</li>
+                </ul>
+              </div>
+            </div>
+            <div class="footer-info-menu">
+              <ul class="footer-info-menu-list">
+                <li class="footer-info-menu-item">
+                  <a class="footer-info-menu-link" href="./index.html">home</a>
+                </li>
+                <li class="footer-info-menu-item">
+                  <a class="footer-info-menu-link">solutions</a>
+                </li>
+                <li class="footer-info-menu-item">
+                  <a class="footer-info-menu-link">integrations</a>
+                </li>
+              </ul>
+              <ul class="footer-info-menu-list">
+                <li class="footer-info-menu-item">
+                  <a class="footer-info-menu-link">Pricing</a>
+                </li>
+                <li class="footer-info-menu-item">
+                  <a class="footer-info-menu-link">BLOG</a>
+                </li>
+                <li class="footer-info-menu-item">
+                  <a class="footer-info-menu-link">POLICY</a>
+                </li>
               </ul>
             </div>
           </div>
 
-          <button class="menu-mobile-button">
-            <img
-              class="menu-mobile-button-icon"
-              src="./assets/images/menu-mobile-open.svg"
-            />
-          </button>
-
-          <div class="menu-mobile-modal">
-            <div class="container">
-              <a class="menu-mobile-modal-logo" href="./index.html">
-                <img
-                  class="menu-mobile-modal-logo-link"
-                  src="./assets/images/logo-black.svg"
-                />
-              </a>
-
-              <button class="menu-mobile-modal-close">
-                <img
-                  class="menu-mobile-modal-close-icon"
-                  src="./assets/images/menu-mobile-close.svg"
-                />
-              </button>
-
-              <div class="menu-mobile-modal-block">
-                <ul class="menu-mobile-modal-list">
-                  <li class="menu-mobile-modal-list-item">
-                    <a class="menu-mobile-modal-list-link" href="./index.html"
-                      >Home</a
-                    >
-                  </li>
-                  <li class="menu-mobile-modal-list-item">
-                    <div class="menu-mobile-modal-list-solution-modal">
-                      <button class="menu-mobile-modal-list-solution-open">
-                        solutions
-                        <img
-                          class="menu-mobile-modal-list-solution-open-icon"
-                          src="./assets/images/arrow.svg"
-                        />
-                      </button>
-
-                      <div class="menu-mobile-modal-list-solution">
-                        <a
-                          class="menu-mobile-modal-list-solution-link"
-                          href="./qr-codes.html"
-                          >QR CODES
-                        </a>
-                        <a
-                          class="menu-mobile-modal-list-solution-link"
-                          href="./bio-pages.html"
-                        >
-                          BIO PAGES
-                        </a>
-                        <a
-                          class="menu-mobile-modal-list-solution-link"
-                          href="./file-hosting.html"
-                        >
-                          FILE HOSTING
-                        </a>
-                        <a
-                          class="menu-mobile-modal-list-solution-link"
-                          href="./dev-api.html"
-                        >
-                          DEVS API
-                        </a>
-                        <a
-                          class="menu-mobile-modal-list-solution-link"
-                          href="./help-center.html"
-                        >
-                          HELP CENTER
-                        </a>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="menu-mobile-modal-list-item">
-                    <a class="menu-mobile-modal-list-link">integrations</a>
-                  </li>
-                  <li class="menu-mobile-modal-list-item">
-                    <a class="menu-mobile-modal-list-link">pricing</a>
-                  </li>
-                  <li class="menu-mobile-modal-list-item">
-                    <a class="menu-mobile-modal-list-link">blog</a>
-                  </li>
-                </ul>
-
-                <div class="menu-mobile-modal-center">
-                  <a class="get-start__black">Get started</a>
-                </div>
-
-                <div class="menu-mobile-modal-footer">
-                  <div class="container">
-                    <div class="menu-mobile-modal-footer-block">
-                      <button class="footer-copyright-report">Report</button>
-                      <div class="setting-lang">
-                        <p class="setting-lang-current">
-                          <img
-                            class="setting-lang-current-icon"
-                            src="./assets/images/arrow.svg"
-                          />
-                          EN
-                        </p>
-                        <ul class="setting-lang-list">
-                          <li class="setting-lang-item">UA</li>
-                          <li class="setting-lang-item">FR</li>
-                        </ul>
-                      </div>
-                      <img
-                        class="footer-copyright-by"
-                        src="./assets/images/by-black.svg"
-                        alt="by"
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </nav>
-      </div>
-    </header>
-
-    <section class="hero">
-      <div class="container">
-        <div class="hero-block">
-          <img class="hero-img" src="./assets/images/hero.svg" alt="hero" />
-
-          <div class="hero-content">
-            <div class="hero-content-titles">
-              <h1 class="hero-content-title-first">Space for</h1>
-              <h2 class="hero-content-title-second">Professional</h2>
-              <h2 class="hero-content-title-three">solutions</h2>
-            </div>
-
-            <div class="hero-content-desc">
-              <p class="hero-content-desc-text">
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-                quae ab illo inventore veritatis et quasi architecto beatae
-                vitae dicta sunt explicabo. Nemo enim
-              </p>
-              <a class="hero-content-desc-link">
-                learn<br />
-                more
-
-                <div class="hero-content-desc-link-thoomb"></div>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="hero-slider"></div>
-      </div>
-    </section>
-
-    <section class="slider">
-      <div class="container">
-        <div class="slider-block">
-          <div class="slider-article">
-            <p class="slider-article-title">solutions</p>
-          </div>
-          <div class="slide1" id="slide1">
-            <p class="slide1-text">
-              QR <span class="slide1-text-span">CODES</span>
-            </p>
-            <div class="slide1-gray">
-              <img
-                class="slide1-gray-img"
-                src="./assets/images/slider/qr.svg"
-                alt="slide"
-              />
-              <div class="slide1-gray-gradient"></div>
-            </div>
-            <div class="slide1-content">
-              <h2 class="slide1-content-title">
-                QR <span class="slide1-content-title-span">CODES</span>
-              </h2>
-              <p class="slide1-content-desc">
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-                quae ab illo inventore veritatis et quasi archit...
-              </p>
-              <div class="slide1-content-buttons">
-                <p class="slide1-content-buttons-text">learn more</p>
-                <div class="slide1-content-buttons-line"></div>
-                <a class="slide1-content-buttons-button">
-                  <img
-                    class="slide1-content-buttons-button-icon"
-                    src="./assets/images/slider/arrow.svg"
-                  />
+          <div class="footer-info-contacts">
+            <button class="get-start__white">Get started</button>
+            <p class="footer-info-contacts-mail">info@DRKTEAM.com</p>
+            <ul class="footer-info-contacts-social">
+              <li class="footer-info-contacts-social-item">
+                <a class="footer-info-contacts-social-link">
+                  <img class="footer-info-contacts-social-img" alt="social" src="./assets/images/social/facebook.svg" />
                 </a>
-              </div>
-            </div>
-          </div>
-          <div class="slide1" id="slide2">
-            <p class="slide1-text">
-              BIO <span class="slide1-text-span"> PAGES</span>
-            </p>
-            <div class="slide1-gray">
-              <img
-                class="slide1-gray-img"
-                src="./assets/images/slider/bio.svg"
-                alt="slide"
-              />
-              <div class="slide1-gray-gradient"></div>
-            </div>
-            <div class="slide1-content">
-              <h2 class="slide1-content-title">
-                BIO <span class="slide1-content-title-span">PAGES</span>
-              </h2>
-              <p class="slide1-content-desc">
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-                quae ab illo inventore veritatis et quasi archit...
-              </p>
-              <div class="slide1-content-buttons">
-                <p class="slide1-content-buttons-text">learn more</p>
-                <div class="slide1-content-buttons-line"></div>
-                <a class="slide1-content-buttons-button">
-                  <img
-                    class="slide1-content-buttons-button-icon"
-                    src="./assets/images/slider/arrow.svg"
-                  />
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="slide1" id="slide3">
-            <p class="slide1-text">
-              FILE <span class="slide1-text-span"> HOSTING</span>
-            </p>
-            <div class="slide1-gray">
-              <img
-                class="slide1-gray-img"
-                src="./assets/images/slider/file.svg"
-                alt="slide"
-              />
-              <div class="slide1-gray-gradient"></div>
-            </div>
-            <div class="slide1-content">
-              <h2 class="slide1-content-title">
-                FILE <span class="slide1-content-title-span">HOSTING</span>
-              </h2>
-              <p class="slide1-content-desc">
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-                quae ab illo inventore veritatis et quasi archit...
-              </p>
-              <div class="slide1-content-buttons">
-                <p class="slide1-content-buttons-text">learn more</p>
-                <div class="slide1-content-buttons-line"></div>
-                <a class="slide1-content-buttons-button">
-                  <img
-                    class="slide1-content-buttons-button-icon"
-                    src="./assets/images/slider/arrow.svg"
-                  />
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="slider-article">
-            <p class="slider-article-title">Resources</p>
-          </div>
-          <div class="slide1" id="slide4">
-            <p class="slide1-text">
-              DEVS <span class="slide1-text-span"> API</span>
-            </p>
-            <div class="slide1-gray">
-              <img
-                class="slide1-gray-img"
-                src="./assets/images/slider/api.svg"
-                alt="slide"
-              />
-              <div class="slide1-gray-gradient"></div>
-            </div>
-            <div class="slide1-content">
-              <h2 class="slide1-content-title">
-                DEVS <span class="slide1-content-title-span">API</span>
-              </h2>
-              <p class="slide1-content-desc">
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-                quae ab illo inventore veritatis et quasi archit...
-              </p>
-              <div class="slide1-content-buttons">
-                <p class="slide1-content-buttons-text">learn more</p>
-                <div class="slide1-content-buttons-line"></div>
-                <a class="slide1-content-buttons-button">
-                  <img
-                    class="slide1-content-buttons-button-icon"
-                    src="./assets/images/slider/arrow.svg"
-                  />
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="slide1" id="slide5">
-            <p class="slide1-text">
-              HELP <span class="slide1-text-span"> CENTER</span>
-            </p>
-            <div class="slide1-gray">
-              <img
-                class="slide1-gray-img"
-                src="./assets/images/slider/help.svg"
-                alt="slide"
-              />
-              <div class="slide1-gray-gradient"></div>
-            </div>
-            <div class="slide1-content">
-              <h2 class="slide1-content-title">
-                HELP <span class="slide1-content-title-span">CENTER</span>
-              </h2>
-              <p class="slide1-content-desc">
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-                quae ab illo inventore veritatis et quasi archit...
-              </p>
-              <div class="slide1-content-buttons">
-                <p class="slide1-content-buttons-text">learn more</p>
-                <div class="slide1-content-buttons-line"></div>
-                <a class="slide1-content-buttons-button">
-                  <img
-                    class="slide1-content-buttons-button-icon"
-                    src="./assets/images/slider/arrow.svg"
-                  />
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <p class="slider-description">
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-          accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae
-          ab illo inventore veritatis et quasi architecto beatae vitae dicta
-          sunt explicabo. Nemo enim
-        </p>
-      </div>
-    </section>
-
-    <section class="integrations">
-      <div class="container">
-        <div class="integrations-block">
-          <div class="integrations-content">
-            <h2 class="integrations-content-title">Integrations</h2>
-            <div class="integrations-content-desc">
-              <p class="integrations-content-desc-text">
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-                quae ab illo inventore veritatis et quasi architecto beatae
-                vitae dicta sunt explicabo. Nemo enim illo inventore veritatis
-                et qeare
-              </p>
-              <p class="integrations-content-desc-text">
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                at accusantium doloremque laudantium, totam rem aperiam, eaque
-                ipsa quae ab illo inventore veritatis et quasi architecto beatae
-                vitae dicta sunt explicabo. Nemo enim
-              </p>
-            </div>
-
-            <div class="integrations-content-buttons">
-              <a class="button__first">Read more</a>
-              <a class="button__second">Check it out</a>
-            </div>
-          </div>
-          <div class="integrations-image">
-            <img
-              class="integrations-image-img"
-              src="./assets/images/integration.svg"
-            />
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="pricing">
-      <div class="container">
-        <div class="pricing-block">
-          <div class="pricing-head">
-            <h2 class="pricing-head-title">Pricing</h2>
-            <div class="pricing-head-billing">
-              <p class="pricing-head-billing-text">Monthly Billing</p>
-
-              <button class="pricing-head-billing-switch">
-                <div class="pricing-head-billing-switch-bool"></div>
-              </button>
-
-              <div class="pricing-head-billing-second-block">
-                <p class="pricing-head-billing-second">Annual Billing</p>
-                <div class="notification__green">Save 30%</div>
-              </div>
-            </div>
-          </div>
-          <div class="pricing-info">
-            <ul class="pricing-list">
-              <li class="pricing-item">
-                <div class="pricing-item-head">
-                  <h3 class="pricing-item-head-title">Starter</h3>
-                </div>
-                <div class="pricing-item-price">
-                  <p class="pricing-item-price-count">FREE</p>
-                  <p class="pricing-item-price-desc">
-                    Plan has limits and showing ads
-                  </p>
-                </div>
-                <ul class="pricing-item-service">
-                  <li class="pricing-item-service-item">
-                    <p class="pricing-item-service-item-bold">Access</p>
-                    to standart services
-                  </li>
-                  <li class="pricing-item-service-item">
-                    <p class="pricing-item-service-item-bold">X / day</p>
-                    use of services
-                  </li>
-                </ul>
-                <div class="pricing-item-buttons">
-                  <a class="button__first">Try it out</a>
-                </div>
               </li>
-              <li class="pricing-item">
-                <div class="pricing-item-head">
-                  <h3 class="pricing-item-head-title">Basic</h3>
-                  <div class="notification__green">Save 30%</div>
-                </div>
-                <div class="pricing-item-price">
-                  <p class="pricing-item-price-count">
-                    <sup class="pricing-item-price-count-up"> $ </sup>
-                    <span>9</span
-                    ><sub class="pricing-item-price-count-down">/ mo</sub>
-                  </p>
-                  <p class="pricing-item-price-desc">Billed as $108 per year</p>
-                </div>
-                <ul class="pricing-item-service">
-                  <li class="pricing-item-service-item">
-                    <p class="pricing-item-service-item-bold">Access</p>
-                    to standart services
-                  </li>
-                  <li class="pricing-item-service-item">
-                    <p class="pricing-item-service-item-bold">XX / day</p>
-                    use of services
-                  </li>
-                </ul>
-                <div class="pricing-item-buttons">
-                  <a class="button__second">Get this plan</a>
-                </div>
+              <li class="footer-info-contacts-social-item">
+                <a class="footer-info-contacts-social-link">
+                  <img class="footer-info-contacts-social-img" alt="social"
+                    src="./assets/images/social/instagram.svg" />
+                </a>
               </li>
-              <li class="pricing-item">
-                <div class="pricing-item-head">
-                  <h3 class="pricing-item-head-title">
-                    <img
-                      src="./assets/images/fire.svg"
-                      alt="fire"
-                    />Professional
-                  </h3>
-                  <div class="notification__green">Save 30%</div>
-                </div>
-                <div class="pricing-item-price">
-                  <p class="pricing-item-price-count">
-                    <sup class="pricing-item-price-count-up"> $ </sup>
-                    <span>19</span
-                    ><sub class="pricing-item-price-count-down">/ mo</sub>
-                  </p>
-                  <p class="pricing-item-price-desc">Billed as $228 per year</p>
-                </div>
-                <ul class="pricing-item-service">
-                  <li class="pricing-item-service-item">
-                    <p class="pricing-item-service-item-bold">Full access</p>
-                    to all services
-                  </li>
-                  <li class="pricing-item-service-item">
-                    <p class="pricing-item-service-item-bold">Unlimited</p>
-                    service features
-                  </li>
-                </ul>
-                <div class="pricing-item-buttons">
-                  <a class="button__second">Get this plan</a>
-                </div>
+              <li class="footer-info-contacts-social-item">
+                <a class="footer-info-contacts-social-link">
+                  <img class="footer-info-contacts-social-img" alt="social" src="./assets/images/social/youtube.svg" />
+                </a>
               </li>
-              <li class="pricing-item">
-                <div class="pricing-item-head">
-                  <h3 class="pricing-item-head-title">Custom</h3>
-                  <div class="notification__green">Special</div>
-                </div>
-                <p class="pricing-item-price-custom">
-                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                  accusantium doloremque laudantium, totam rem aperiam, eaque
-                  ipsa quae ab illo inventore veritatis et quasi architecto
-                  beatae vitae dicta sunt
-                </p>
-
-                <div class="pricing-item-buttons">
-                  <a class="button__second">Contact us</a>
-                </div>
+              <li class="footer-info-contacts-social-item">
+                <a class="footer-info-contacts-social-link">
+                  <img class="footer-info-contacts-social-img" alt="social" src="./assets/images/social/telegram.svg" />
+                </a>
+              </li>
+              <li class="footer-info-contacts-social-item">
+                <a class="footer-info-contacts-social-link">
+                  <img class="footer-info-contacts-social-img" alt="social" src="./assets/images/social/twiter.svg" />
+                </a>
               </li>
             </ul>
           </div>
         </div>
       </div>
-    </section>
-
-    <section class="blog">
+    </div>
+    <div class="footer-copyright">
       <div class="container">
-        <h2 class="blog-title">Blog</h2>
-        <ul class="blog-list">
-          <li class="blog-item">
-            <img
-              class="blog-item-image"
-              src="./assets/images/blog/dia.png"
-              alt="blog"
-            />
-            <div class="blog-item-content">
-              <div class="blog-item-content-titles">
-                <h3 class="blog-item-content-title">
-                  service received partner support from Diia
-                </h3>
-                <div class="notification__green-second">solutions</div>
-              </div>
-              <p class="blog-item-content-desc">
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-                quae ab illo inventore veritatis et quasi architecto beatae
-                vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia
-                voluptas sit aspernatur aut odit aut fugit, sed quia
-                consequuntur ratione nesciunt...
-              </p>
-              <div class="blog-item-content-buttons">
-                <a class="blog-item-content-button" href="./blog-item.html"
-                  >Read more</a
-                >
-
-                <p class="blog-item-content-date">9 hours before</p>
-              </div>
-            </div>
-          </li>
-          <li class="blog-item">
-            <img
-              class="blog-item-image"
-              src="./assets/images/blog/revert.png"
-              alt="blog"
-            />
-            <div class="blog-item-content">
-              <div class="blog-item-content-titles">
-                <h3 class="blog-item-content-title">
-                  upcoming updates to our service
-                </h3>
-                <div class="notification__green-second">Pricing</div>
-              </div>
-              <p class="blog-item-content-desc">
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-                quae ab illo inventore veritatis et quasi architecto beatae
-                vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia
-                voluptas sit aspernatur aut odit aut fugit, sed quia
-                consequuntur ratione nesciunt...
-              </p>
-              <div class="blog-item-content-buttons">
-                <a class="blog-item-content-button" href="./blog-item.html"
-                  >Read more</a
-                >
-
-                <p class="blog-item-content-date">9 hours before</p>
-              </div>
-            </div>
-          </li>
-        </ul>
-        <div class="blog-all">
-          <button class="blog-all-button">Read more news</button>
+        <div class="footer-copyright-block">
+          <button class="footer-copyright-report">Report</button>
+          <p class="footer-copyright-info">© Copyright information 2022</p>
+          <img class="footer-copyright-by" src="./assets/images/by.svg" alt="by" />
         </div>
       </div>
-    </section>
+    </div>
+  </footer>
 
-    <footer class="footer">
-      <div class="footer-info">
-        <div class="container">
-          <div class="footer-info-block">
-            <div class="footer-info-navigation">
-              <div class="footer-info-logo">
-                <a class="footer-info-logo-link" href="./index.html">
-                  <img
-                    class="footer-info-logo-img"
-                    src="./assets/images/logo-white.svg"
-                    alt="logo"
-                  />
-                </a>
-                <div class="setting-lang-white">
-                  <p class="setting-lang-current">
-                    <img
-                      class="setting-lang-current-icon"
-                      src="./assets/images/arrow-white.svg"
-                    />
-                    EN
-                  </p>
-                  <ul class="setting-lang-list">
-                    <li class="setting-lang-item">UA</li>
-                    <li class="setting-lang-item">FR</li>
-                  </ul>
-                </div>
-              </div>
-              <div class="footer-info-menu">
-                <ul class="footer-info-menu-list">
-                  <li class="footer-info-menu-item">
-                    <a class="footer-info-menu-link" href="./index.html"
-                      >home</a
-                    >
-                  </li>
-                  <li class="footer-info-menu-item">
-                    <a class="footer-info-menu-link">solutions</a>
-                  </li>
-                  <li class="footer-info-menu-item">
-                    <a class="footer-info-menu-link">integrations</a>
-                  </li>
-                </ul>
-                <ul class="footer-info-menu-list">
-                  <li class="footer-info-menu-item">
-                    <a class="footer-info-menu-link">Pricing</a>
-                  </li>
-                  <li class="footer-info-menu-item">
-                    <a class="footer-info-menu-link">BLOG</a>
-                  </li>
-                  <li class="footer-info-menu-item">
-                    <a class="footer-info-menu-link">POLICY</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
+  <script src="./js/solution-menu.js"></script>
+  <script src="./js/switch-price.js"></script>
+  <script src="./js/mobile-menu.js"></script>
+  <script src="./js/slider.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+</body>
 
-            <div class="footer-info-contacts">
-              <button class="get-start__white">Get started</button>
-              <p class="footer-info-contacts-mail">info@DRKTEAM.com</p>
-              <ul class="footer-info-contacts-social">
-                <li class="footer-info-contacts-social-item">
-                  <a class="footer-info-contacts-social-link">
-                    <img
-                      class="footer-info-contacts-social-img"
-                      alt="social"
-                      src="./assets/images/social/facebook.svg"
-                    />
-                  </a>
-                </li>
-                <li class="footer-info-contacts-social-item">
-                  <a class="footer-info-contacts-social-link">
-                    <img
-                      class="footer-info-contacts-social-img"
-                      alt="social"
-                      src="./assets/images/social/instagram.svg"
-                    />
-                  </a>
-                </li>
-                <li class="footer-info-contacts-social-item">
-                  <a class="footer-info-contacts-social-link">
-                    <img
-                      class="footer-info-contacts-social-img"
-                      alt="social"
-                      src="./assets/images/social/youtube.svg"
-                    />
-                  </a>
-                </li>
-                <li class="footer-info-contacts-social-item">
-                  <a class="footer-info-contacts-social-link">
-                    <img
-                      class="footer-info-contacts-social-img"
-                      alt="social"
-                      src="./assets/images/social/telegram.svg"
-                    />
-                  </a>
-                </li>
-                <li class="footer-info-contacts-social-item">
-                  <a class="footer-info-contacts-social-link">
-                    <img
-                      class="footer-info-contacts-social-img"
-                      alt="social"
-                      src="./assets/images/social/twiter.svg"
-                    />
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="footer-copyright">
-        <div class="container">
-          <div class="footer-copyright-block">
-            <button class="footer-copyright-report">Report</button>
-            <p class="footer-copyright-info">© Copyright information 2022</p>
-            <img
-              class="footer-copyright-by"
-              src="./assets/images/by.svg"
-              alt="by"
-            />
-          </div>
-        </div>
-      </div>
-    </footer>
-
-    <script src="./js/solution-menu.js"></script>
-    <script src="./js/switch-price.js"></script>
-    <script src="./js/mobile-menu.js"></script>
-    <script src="./js/slider.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-  </body>
 </html>

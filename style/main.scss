@@ -10,3 +10,24 @@
 @import "./pages/upload";
 @import "./pages/statlink";
 @import "./pages/pay";
+
+.integrations-image-icons {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(5, 100px);
+}
+
+.integrations-image-icons .integrations-image-icons-item:nth-child(1) {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+.integrations-image-icons .integrations-image-icons-item:nth-child(2) {
+  grid-column: 3 / 4;
+  grid-row: 1 / 2;
+}
+
+.integrations-image-icons .integrations-image-icons-item:nth-child(3) {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}

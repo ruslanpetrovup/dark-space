@@ -552,6 +552,24 @@ img {
   text-transform: uppercase;
   color: #000000;
 }
+@media screen and (max-width: 1230px) {
+  .hero-content-title-first {
+    font-size: 60px;
+    line-height: 100px;
+  }
+}
+@media screen and (max-width: 1110px) {
+  .hero-content-title-first {
+    font-size: 55px;
+    line-height: 100px;
+  }
+}
+@media screen and (max-width: 1010px) {
+  .hero-content-title-first {
+    font-size: 45px;
+    line-height: 80px;
+  }
+}
 
 .hero-content-title-second {
   font-family: "Jost";
@@ -564,6 +582,24 @@ img {
   text-transform: uppercase;
   color: #00d254;
 }
+@media screen and (max-width: 1230px) {
+  .hero-content-title-second {
+    font-size: 65px;
+    line-height: 100px;
+  }
+}
+@media screen and (max-width: 1110px) {
+  .hero-content-title-second {
+    font-size: 55px;
+    line-height: 100px;
+  }
+}
+@media screen and (max-width: 1010px) {
+  .hero-content-title-second {
+    font-size: 45px;
+    line-height: 80px;
+  }
+}
 
 .hero-content-title-three {
   font-family: "Jost";
@@ -574,6 +610,24 @@ img {
   text-transform: uppercase;
   margin-left: 5%;
   color: #000000;
+}
+@media screen and (max-width: 1230px) {
+  .hero-content-title-three {
+    font-size: 65px;
+    line-height: 100px;
+  }
+}
+@media screen and (max-width: 1110px) {
+  .hero-content-title-three {
+    font-size: 55px;
+    line-height: 100px;
+  }
+}
+@media screen and (max-width: 1010px) {
+  .hero-content-title-three {
+    font-size: 45px;
+    line-height: 80px;
+  }
 }
 
 .hero-content-desc {
@@ -806,6 +860,10 @@ img {
   cursor: pointer;
 }
 .slide1-content-buttons-button-icon {
+  pointer-events: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
   width: 12px;
   height: 16px;
 }
@@ -4816,4 +4874,25 @@ img {
   font-size: 18px;
   line-height: 49px;
   color: #7782a3;
+}
+
+.integrations-image-icons {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(5, 100px);
+}
+
+.integrations-image-icons .integrations-image-icons-item:nth-child(1) {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+.integrations-image-icons .integrations-image-icons-item:nth-child(2) {
+  grid-column: 3/4;
+  grid-row: 1/2;
+}
+
+.integrations-image-icons .integrations-image-icons-item:nth-child(3) {
+  grid-column: 2/3;
+  grid-row: 2/3;
 }/*# sourceMappingURL=main.css.map */

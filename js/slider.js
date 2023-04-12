@@ -19,7 +19,8 @@ const slide5 = document.getElementById("slide5");
 
 const tempory = [slide1, slide2, slide3, slide4, slide5];
 
-slide1.addEventListener("click", () => {
+slide1.addEventListener("click", ({ target }) => {
+  if (target.nodeName === "A") return;
   if (slide1.classList.contains("active")) {
     return slide1.classList.remove("active");
   }
@@ -28,7 +29,8 @@ slide1.addEventListener("click", () => {
   });
   slide1.classList.toggle("active");
 });
-slide2.addEventListener("click", () => {
+slide2.addEventListener("click", ({ target }) => {
+  if (target.nodeName === "A") return;
   if (slide2.classList.contains("active")) {
     return slide2.classList.remove("active");
   }
@@ -37,7 +39,8 @@ slide2.addEventListener("click", () => {
   });
   slide2.classList.toggle("active");
 });
-slide3.addEventListener("click", () => {
+slide3.addEventListener("click", ({ target }) => {
+  if (target.nodeName === "A") return;
   if (slide3.classList.contains("active")) {
     return slide3.classList.remove("active");
   }
@@ -46,7 +49,8 @@ slide3.addEventListener("click", () => {
   });
   slide3.classList.toggle("active");
 });
-slide4.addEventListener("click", () => {
+slide4.addEventListener("click", ({ target }) => {
+  if (target.nodeName === "A") return;
   if (slide4.classList.contains("active")) {
     return slide4.classList.remove("active");
   }
@@ -55,7 +59,8 @@ slide4.addEventListener("click", () => {
   });
   slide4.classList.toggle("active");
 });
-slide5.addEventListener("click", () => {
+slide5.addEventListener("click", ({ target }) => {
+  if (target.nodeName === "A") return;
   if (slide5.classList.contains("active")) {
     return slide5.classList.remove("active");
   }
