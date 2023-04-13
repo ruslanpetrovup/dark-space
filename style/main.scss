@@ -11,23 +11,1137 @@
 @import "./pages/statlink";
 @import "./pages/pay";
 
-.integrations-image-icons {
-  display: grid;
-  grid-template-columns: repeat(7, 1fr);
-  grid-template-rows: repeat(5, 100px);
+@media screen and (min-width: 900px) {
+  .integrations-image-icons {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(5, 100px);
+
+    &-item {
+      width: 60px;
+      height: 60px;
+    }
+  }
+
+  .integrations-image-icons .integrations-image-icons-item:nth-child(1) {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    position: relative;
+    cursor: pointer;
+
+    & .default {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      transition: all 250ms linear;
+    }
+
+    & .active {
+      opacity: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 60px;
+      height: 60px;
+      transform: translate(-50%, -50%);
+      transition: all 250ms linear;
+    }
+
+    &:hover .default {
+      opacity: 0;
+    }
+
+    &:hover .active {
+      opacity: 1;
+      transform: translate(-50%, -50%) scale(1.4);
+    }
+  }
+
+  .integrations-image-icons .integrations-image-icons-item:nth-child(2) {
+    grid-column: 5 / 6;
+    grid-row: 1 / 2;
+    position: relative;
+    cursor: pointer;
+
+    & .default {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      transition: all 250ms linear;
+      z-index: 1;
+    }
+
+    & .active {
+      opacity: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 60px;
+      height: 60px;
+      transform: translate(-50%, -50%);
+      transition: all 250ms linear;
+      z-index: 1;
+    }
+
+    &:hover .default {
+      opacity: 0;
+    }
+
+    &:hover .active {
+      opacity: 1;
+      transform: translate(-50%, -50%) scale(1.4);
+    }
+  }
+
+  .integrations-image-icons .integrations-image-icons-item:nth-child(3) {
+    grid-column: 9 / 10;
+    grid-row: 1 / 2;
+    position: relative;
+    cursor: pointer;
+
+    & .default {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      transition: all 250ms linear;
+    }
+
+    & .active {
+      opacity: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 60px;
+      height: 60px;
+      transform: translate(-50%, -50%);
+      transition: all 250ms linear;
+    }
+    &:hover .default {
+      opacity: 0;
+    }
+
+    &:hover .active {
+      opacity: 1;
+      transform: translate(-50%, -50%) scale(1.4);
+    }
+  }
+
+  .integrations-image-icons .integrations-image-icons-item:nth-child(4) {
+    grid-column: 15 / 16;
+    grid-row: 1 / 2;
+    position: relative;
+    cursor: pointer;
+
+    & .default {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      transition: all 250ms linear;
+    }
+
+    & .active {
+      opacity: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 60px;
+      height: 60px;
+      transform: translate(-50%, -50%);
+      transition: all 250ms linear;
+    }
+    &:hover .default {
+      opacity: 0;
+    }
+
+    &:hover .active {
+      opacity: 1;
+      transform: translate(-50%, -50%) scale(1.4);
+    }
+  }
+
+  .integrations-image-icons .integrations-image-icons-item:nth-child(5) {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+    position: relative;
+    cursor: pointer;
+
+    & .default {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      transition: all 250ms linear;
+    }
+
+    & .active {
+      opacity: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 60px;
+      height: 60px;
+      transform: translate(-50%, -50%);
+      transition: all 250ms linear;
+    }
+    &:hover .default {
+      opacity: 0;
+    }
+
+    &:hover .active {
+      opacity: 1;
+      transform: translate(-50%, -50%) scale(1.4);
+    }
+  }
+
+  .integrations-image-icons .integrations-image-icons-item:nth-child(6) {
+    grid-column: 7 / 8;
+    grid-row: 2 / 3;
+    position: relative;
+    cursor: pointer;
+
+    & .default {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      transition: all 250ms linear;
+    }
+
+    & .active {
+      opacity: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 60px;
+      height: 60px;
+      transform: translate(-50%, -50%);
+      transition: all 250ms linear;
+    }
+    &:hover .default {
+      opacity: 0;
+    }
+
+    &:hover .active {
+      opacity: 1;
+      transform: translate(-50%, -50%) scale(1.4);
+    }
+  }
+
+  .integrations-image-icons .integrations-image-icons-item:nth-child(7) {
+    grid-column: 11 / 12;
+    grid-row: 2 / 3;
+    position: relative;
+    cursor: pointer;
+
+    & .default {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      transition: all 250ms linear;
+    }
+
+    & .active {
+      opacity: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 60px;
+      height: 60px;
+      transform: translate(-50%, -50%);
+      transition: all 250ms linear;
+    }
+    &:hover .default {
+      opacity: 0;
+    }
+
+    &:hover .active {
+      opacity: 1;
+      transform: translate(-50%, -50%) scale(1.4);
+    }
+  }
+  .integrations-image-icons .integrations-image-icons-item:nth-child(8) {
+    grid-column: 5 / 6;
+    grid-row: 3 / 3;
+    position: relative;
+    cursor: pointer;
+
+    & .default {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      transition: all 250ms linear;
+    }
+
+    & .active {
+      opacity: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 60px;
+      height: 60px;
+      transform: translate(-50%, -50%);
+      transition: all 250ms linear;
+    }
+    &:hover .default {
+      opacity: 0;
+    }
+
+    &:hover .active {
+      opacity: 1;
+      transform: translate(-50%, -50%) scale(1.4);
+    }
+  }
+  .integrations-image-icons .integrations-image-icons-item:nth-child(9) {
+    grid-column: 9 / 10;
+    grid-row: 3 / 3;
+    position: relative;
+    cursor: pointer;
+
+    & .default {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      transition: all 250ms linear;
+    }
+
+    & .active {
+      opacity: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 60px;
+      height: 60px;
+      transform: translate(-50%, -50%);
+      transition: all 250ms linear;
+    }
+    &:hover .default {
+      opacity: 0;
+    }
+
+    &:hover .active {
+      opacity: 1;
+      transform: translate(-50%, -50%) scale(1.4);
+    }
+  }
+  .integrations-image-icons .integrations-image-icons-item:nth-child(10) {
+    grid-column: 3 / 4;
+    grid-row: 4 / 4;
+    position: relative;
+    cursor: pointer;
+
+    & .default {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      transition: all 250ms linear;
+    }
+
+    & .active {
+      opacity: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 60px;
+      height: 60px;
+      transform: translate(-50%, -50%);
+      transition: all 250ms linear;
+    }
+    &:hover .default {
+      opacity: 0;
+    }
+
+    &:hover .active {
+      opacity: 1;
+      transform: translate(-50%, -50%) scale(1.4);
+    }
+  }
+
+  .integrations-image-icons .integrations-image-icons-item:nth-child(11) {
+    grid-column: 7 / 8;
+    grid-row: 4 / 4;
+    position: relative;
+    cursor: pointer;
+
+    & .default {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      transition: all 250ms linear;
+    }
+
+    & .active {
+      opacity: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 60px;
+      height: 60px;
+      transform: translate(-50%, -50%);
+      transition: all 250ms linear;
+    }
+    &:hover .default {
+      opacity: 0;
+    }
+
+    &:hover .active {
+      opacity: 1;
+      transform: translate(-50%, -50%) scale(1.4);
+    }
+  }
+
+  .integrations-image-icons .integrations-image-icons-item:nth-child(12) {
+    grid-column: 11 / 12;
+    grid-row: 4 / 4;
+    position: relative;
+    cursor: pointer;
+
+    & .default {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      transition: all 250ms linear;
+    }
+
+    & .active {
+      opacity: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 60px;
+      height: 60px;
+      transform: translate(-50%, -50%);
+      transition: all 250ms linear;
+    }
+    &:hover .default {
+      opacity: 0;
+    }
+
+    &:hover .active {
+      opacity: 1;
+      transform: translate(-50%, -50%) scale(1.4);
+    }
+  }
+
+  .integrations-image-icons .integrations-image-icons-item:nth-child(13) {
+    grid-column: 1 / 2;
+    grid-row: 5 / 5;
+    position: relative;
+    cursor: pointer;
+
+    & .default {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      transition: all 250ms linear;
+    }
+
+    & .active {
+      opacity: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 60px;
+      height: 60px;
+      transform: translate(-50%, -50%);
+      transition: all 250ms linear;
+    }
+    &:hover .default {
+      opacity: 0;
+    }
+
+    &:hover .active {
+      opacity: 1;
+      transform: translate(-50%, -50%) scale(1.4);
+    }
+  }
+
+  .integrations-image-icons .integrations-image-icons-item:nth-child(14) {
+    grid-column: 5 / 6;
+    grid-row: 5 / 5;
+    position: relative;
+    cursor: pointer;
+
+    & .default {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      transition: all 250ms linear;
+    }
+
+    & .active {
+      opacity: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 60px;
+      height: 60px;
+      transform: translate(-50%, -50%);
+      transition: all 250ms linear;
+    }
+    &:hover .default {
+      opacity: 0;
+    }
+
+    &:hover .active {
+      opacity: 1;
+      transform: translate(-50%, -50%) scale(1.4);
+    }
+  }
+
+  .integrations-image-icons .integrations-image-icons-item:nth-child(15) {
+    grid-column: 9 / 10;
+    grid-row: 5 / 5;
+    position: relative;
+    cursor: pointer;
+    width: 60px;
+
+    & .default {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      transition: all 250ms linear;
+    }
+
+    & .active {
+      opacity: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 60px;
+      height: 60px;
+      transform: translate(-50%, -50%);
+      transition: all 250ms linear;
+    }
+
+    &:hover .default {
+      opacity: 0;
+    }
+
+    &:hover .active {
+      opacity: 1;
+      transform: translate(-50%, -50%) scale(1.4);
+    }
+  }
+
+  .integrations-image-icons .integrations-image-icons-item:nth-child(16) {
+    grid-column: 15 / 16;
+    grid-row: 5 / 5;
+    position: relative;
+    cursor: pointer;
+
+    & .default {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      transition: all 250ms linear;
+    }
+
+    & .active {
+      opacity: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 60px;
+      height: 60px;
+      transform: translate(-50%, -50%);
+      transition: all 250ms linear;
+    }
+    &:hover .default {
+      opacity: 0;
+    }
+
+    &:hover .active {
+      opacity: 1;
+      transform: translate(-50%, -50%) scale(1.4);
+    }
+  }
 }
 
-.integrations-image-icons .integrations-image-icons-item:nth-child(1) {
-  grid-column: 1 / 2;
-  grid-row: 1 / 2;
-}
+@media screen and (max-width: 450px) {
+  .integrations-image-icons {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(7, 80px);
+    width: calc(100% - 20px);
+    margin: 0 auto;
 
-.integrations-image-icons .integrations-image-icons-item:nth-child(2) {
-  grid-column: 3 / 4;
-  grid-row: 1 / 2;
-}
+    &-item {
+      position: relative;
+      width: 50px;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
 
-.integrations-image-icons .integrations-image-icons-item:nth-child(3) {
-  grid-column: 2 / 3;
-  grid-row: 2 / 3;
+      & .default {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 50px;
+        height: 50px;
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
+
+  .integrations-image-icons .integrations-image-icons-item:nth-child(1) {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    position: relative;
+    cursor: pointer;
+
+    & .default {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      transition: all 250ms linear;
+    }
+
+    & .active {
+      opacity: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 60px;
+      height: 60px;
+      transform: translate(-50%, -50%);
+      transition: all 250ms linear;
+    }
+
+    &:hover .default {
+      opacity: 0;
+    }
+
+    &:hover .active {
+      opacity: 1;
+      transform: translate(-50%, -50%) scale(1.4);
+    }
+  }
+
+  .integrations-image-icons .integrations-image-icons-item:nth-child(2) {
+    grid-column: 11 / 12;
+    grid-row: 1 / 2;
+    position: relative;
+    cursor: pointer;
+
+    & .default {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      transition: all 250ms linear;
+      z-index: 1;
+    }
+
+    & .active {
+      opacity: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 60px;
+      height: 60px;
+      transform: translate(-50%, -50%);
+      transition: all 250ms linear;
+      z-index: 1;
+    }
+
+    &:hover .default {
+      opacity: 0;
+    }
+
+    &:hover .active {
+      opacity: 1;
+      transform: translate(-50%, -50%) scale(1.4);
+    }
+  }
+
+  .integrations-image-icons .integrations-image-icons-item:nth-child(3) {
+    grid-column: 3 / 4;
+    grid-row: 2 / 2;
+    position: relative;
+    cursor: pointer;
+
+    & .default {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      transition: all 250ms linear;
+    }
+
+    & .active {
+      opacity: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 60px;
+      height: 60px;
+      transform: translate(-50%, -50%);
+      transition: all 250ms linear;
+    }
+    &:hover .default {
+      opacity: 0;
+    }
+
+    &:hover .active {
+      opacity: 1;
+      transform: translate(-50%, -50%) scale(1.4);
+    }
+  }
+
+  .integrations-image-icons .integrations-image-icons-item:nth-child(4) {
+    grid-column: 7 / 8;
+    grid-row: 2 / 2;
+    position: relative;
+    cursor: pointer;
+
+    & .default {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      transition: all 250ms linear;
+    }
+
+    & .active {
+      opacity: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 60px;
+      height: 60px;
+      transform: translate(-50%, -50%);
+      transition: all 250ms linear;
+    }
+    &:hover .default {
+      opacity: 0;
+    }
+
+    &:hover .active {
+      opacity: 1;
+      transform: translate(-50%, -50%) scale(1.4);
+    }
+  }
+
+  .integrations-image-icons .integrations-image-icons-item:nth-child(5) {
+    grid-column: 5 / 6;
+    grid-row: 3 / 3;
+    position: relative;
+    cursor: pointer;
+
+    & .default {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      transition: all 250ms linear;
+    }
+
+    & .active {
+      opacity: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 60px;
+      height: 60px;
+      transform: translate(-50%, -50%);
+      transition: all 250ms linear;
+    }
+    &:hover .default {
+      opacity: 0;
+    }
+
+    &:hover .active {
+      opacity: 1;
+      transform: translate(-50%, -50%) scale(1.4);
+    }
+  }
+
+  .integrations-image-icons .integrations-image-icons-item:nth-child(6) {
+    grid-column: 1 / 2;
+    grid-row: 3 / 3;
+    position: relative;
+    cursor: pointer;
+
+    & .default {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      transition: all 250ms linear;
+    }
+
+    & .active {
+      opacity: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 60px;
+      height: 60px;
+      transform: translate(-50%, -50%);
+      transition: all 250ms linear;
+    }
+    &:hover .default {
+      opacity: 0;
+    }
+
+    &:hover .active {
+      opacity: 1;
+      transform: translate(-50%, -50%) scale(1.4);
+    }
+  }
+
+  .integrations-image-icons .integrations-image-icons-item:nth-child(7) {
+    grid-column: 11 / 12;
+    grid-row: 3 / 3;
+    position: relative;
+    cursor: pointer;
+
+    & .default {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      transition: all 250ms linear;
+    }
+
+    & .active {
+      opacity: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 60px;
+      height: 60px;
+      transform: translate(-50%, -50%);
+      transition: all 250ms linear;
+    }
+    &:hover .default {
+      opacity: 0;
+    }
+
+    &:hover .active {
+      opacity: 1;
+      transform: translate(-50%, -50%) scale(1.4);
+    }
+  }
+  .integrations-image-icons .integrations-image-icons-item:nth-child(8) {
+    grid-column: 3 / 4;
+    grid-row: 4/ 4;
+    position: relative;
+    cursor: pointer;
+
+    & .default {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      transition: all 250ms linear;
+    }
+
+    & .active {
+      opacity: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 60px;
+      height: 60px;
+      transform: translate(-50%, -50%);
+      transition: all 250ms linear;
+    }
+    &:hover .default {
+      opacity: 0;
+    }
+
+    &:hover .active {
+      opacity: 1;
+      transform: translate(-50%, -50%) scale(1.4);
+    }
+  }
+  .integrations-image-icons .integrations-image-icons-item:nth-child(9) {
+    grid-column: 7 / 7;
+    grid-row: 4 / 4;
+    position: relative;
+    cursor: pointer;
+
+    & .default {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      transition: all 250ms linear;
+    }
+
+    & .active {
+      opacity: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 60px;
+      height: 60px;
+      transform: translate(-50%, -50%);
+      transition: all 250ms linear;
+    }
+    &:hover .default {
+      opacity: 0;
+    }
+
+    &:hover .active {
+      opacity: 1;
+      transform: translate(-50%, -50%) scale(1.4);
+    }
+  }
+  .integrations-image-icons .integrations-image-icons-item:nth-child(10) {
+    grid-column: 1 / 2;
+    grid-row: 5 / 5;
+    position: relative;
+    cursor: pointer;
+
+    & .default {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      transition: all 250ms linear;
+    }
+
+    & .active {
+      opacity: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 60px;
+      height: 60px;
+      transform: translate(-50%, -50%);
+      transition: all 250ms linear;
+    }
+    &:hover .default {
+      opacity: 0;
+    }
+
+    &:hover .active {
+      opacity: 1;
+      transform: translate(-50%, -50%) scale(1.4);
+    }
+  }
+
+  .integrations-image-icons .integrations-image-icons-item:nth-child(11) {
+    grid-column: 5 / 5;
+    grid-row: 5 / 5;
+    position: relative;
+    cursor: pointer;
+
+    & .default {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      transition: all 250ms linear;
+    }
+
+    & .active {
+      opacity: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 60px;
+      height: 60px;
+      transform: translate(-50%, -50%);
+      transition: all 250ms linear;
+    }
+    &:hover .default {
+      opacity: 0;
+    }
+
+    &:hover .active {
+      opacity: 1;
+      transform: translate(-50%, -50%) scale(1.4);
+    }
+  }
+
+  .integrations-image-icons .integrations-image-icons-item:nth-child(12) {
+    grid-column: 10 / 12;
+    grid-row: 5 / 5;
+    position: relative;
+    cursor: pointer;
+
+    & .default {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      transition: all 250ms linear;
+    }
+
+    & .active {
+      opacity: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 60px;
+      height: 60px;
+      transform: translate(-50%, -50%);
+      transition: all 250ms linear;
+    }
+    &:hover .default {
+      opacity: 0;
+    }
+
+    &:hover .active {
+      opacity: 1;
+      transform: translate(-50%, -50%) scale(1.4);
+    }
+  }
+
+  .integrations-image-icons .integrations-image-icons-item:nth-child(13) {
+    grid-column: 3 / 4;
+    grid-row: 6 / 6;
+    position: relative;
+    cursor: pointer;
+
+    & .default {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      transition: all 250ms linear;
+    }
+
+    & .active {
+      opacity: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 60px;
+      height: 60px;
+      transform: translate(-50%, -50%);
+      transition: all 250ms linear;
+    }
+    &:hover .default {
+      opacity: 0;
+    }
+
+    &:hover .active {
+      opacity: 1;
+      transform: translate(-50%, -50%) scale(1.4);
+    }
+  }
+
+  .integrations-image-icons .integrations-image-icons-item:nth-child(14) {
+    grid-column: 7 / 7;
+    grid-row: 6 / 6;
+    position: relative;
+    cursor: pointer;
+
+    & .default {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      transition: all 250ms linear;
+    }
+
+    & .active {
+      opacity: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 60px;
+      height: 60px;
+      transform: translate(-50%, -50%);
+      transition: all 250ms linear;
+    }
+    &:hover .default {
+      opacity: 0;
+    }
+
+    &:hover .active {
+      opacity: 1;
+      transform: translate(-50%, -50%) scale(1.4);
+    }
+  }
+
+  .integrations-image-icons .integrations-image-icons-item:nth-child(15) {
+    grid-column: 1 / 2;
+    grid-row: 7 / 7;
+    position: relative;
+    cursor: pointer;
+    width: 60px;
+
+    & .default {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      transition: all 250ms linear;
+    }
+
+    & .active {
+      opacity: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 60px;
+      height: 60px;
+      transform: translate(-50%, -50%);
+      transition: all 250ms linear;
+    }
+
+    &:hover .default {
+      opacity: 0;
+    }
+
+    &:hover .active {
+      opacity: 1;
+      transform: translate(-50%, -50%) scale(1.4);
+    }
+  }
+
+  .integrations-image-icons .integrations-image-icons-item:nth-child(16) {
+    grid-column: 11 / 11;
+    grid-row: 7 / 7;
+    position: relative;
+    cursor: pointer;
+
+    & .default {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      transition: all 250ms linear;
+    }
+
+    & .active {
+      opacity: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 60px;
+      height: 60px;
+      transform: translate(-50%, -50%);
+      transition: all 250ms linear;
+    }
+    &:hover .default {
+      opacity: 0;
+    }
+
+    &:hover .active {
+      opacity: 1;
+      transform: translate(-50%, -50%) scale(1.4);
+    }
+  }
 }

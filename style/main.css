@@ -912,7 +912,12 @@ img {
 }
 
 .integrations-image-img {
-  width: 100%;
+  width: 50%;
+}
+@media screen and (max-width: 450px) {
+  .integrations-image-img {
+    width: 100%;
+  }
 }
 
 .pricing {
@@ -4876,23 +4881,1005 @@ img {
   color: #7782a3;
 }
 
-.integrations-image-icons {
-  display: grid;
-  grid-template-columns: repeat(7, 1fr);
-  grid-template-rows: repeat(5, 100px);
+@media screen and (min-width: 900px) {
+  .integrations-image-icons {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(5, 100px);
+  }
+  .integrations-image-icons-item {
+    width: 60px;
+    height: 60px;
+  }
+  .integrations-image-icons .integrations-image-icons-item:nth-child(1) {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    position: relative;
+    cursor: pointer;
+  }
+  .integrations-image-icons .integrations-image-icons-item:nth-child(1) .default {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 250ms linear;
+  }
+  .integrations-image-icons .integrations-image-icons-item:nth-child(1) .active {
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 60px;
+    height: 60px;
+    transform: translate(-50%, -50%);
+    transition: all 250ms linear;
+  }
+  .integrations-image-icons .integrations-image-icons-item:nth-child(1):hover .default {
+    opacity: 0;
+  }
+  .integrations-image-icons .integrations-image-icons-item:nth-child(1):hover .active {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.4);
+  }
+  .integrations-image-icons .integrations-image-icons-item:nth-child(2) {
+    grid-column: 5/6;
+    grid-row: 1/2;
+    position: relative;
+    cursor: pointer;
+  }
+  .integrations-image-icons .integrations-image-icons-item:nth-child(2) .default {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 250ms linear;
+    z-index: 1;
+  }
+  .integrations-image-icons .integrations-image-icons-item:nth-child(2) .active {
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 60px;
+    height: 60px;
+    transform: translate(-50%, -50%);
+    transition: all 250ms linear;
+    z-index: 1;
+  }
+  .integrations-image-icons .integrations-image-icons-item:nth-child(2):hover .default {
+    opacity: 0;
+  }
+  .integrations-image-icons .integrations-image-icons-item:nth-child(2):hover .active {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.4);
+  }
+  .integrations-image-icons .integrations-image-icons-item:nth-child(3) {
+    grid-column: 9/10;
+    grid-row: 1/2;
+    position: relative;
+    cursor: pointer;
+  }
+  .integrations-image-icons .integrations-image-icons-item:nth-child(3) .default {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 250ms linear;
+  }
+  .integrations-image-icons .integrations-image-icons-item:nth-child(3) .active {
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 60px;
+    height: 60px;
+    transform: translate(-50%, -50%);
+    transition: all 250ms linear;
+  }
+  .integrations-image-icons .integrations-image-icons-item:nth-child(3):hover .default {
+    opacity: 0;
+  }
+  .integrations-image-icons .integrations-image-icons-item:nth-child(3):hover .active {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.4);
+  }
+  .integrations-image-icons .integrations-image-icons-item:nth-child(4) {
+    grid-column: 15/16;
+    grid-row: 1/2;
+    position: relative;
+    cursor: pointer;
+  }
+  .integrations-image-icons .integrations-image-icons-item:nth-child(4) .default {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 250ms linear;
+  }
+  .integrations-image-icons .integrations-image-icons-item:nth-child(4) .active {
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 60px;
+    height: 60px;
+    transform: translate(-50%, -50%);
+    transition: all 250ms linear;
+  }
+  .integrations-image-icons .integrations-image-icons-item:nth-child(4):hover .default {
+    opacity: 0;
+  }
+  .integrations-image-icons .integrations-image-icons-item:nth-child(4):hover .active {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.4);
+  }
+  .integrations-image-icons .integrations-image-icons-item:nth-child(5) {
+    grid-column: 3/4;
+    grid-row: 2/3;
+    position: relative;
+    cursor: pointer;
+  }
+  .integrations-image-icons .integrations-image-icons-item:nth-child(5) .default {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 250ms linear;
+  }
+  .integrations-image-icons .integrations-image-icons-item:nth-child(5) .active {
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 60px;
+    height: 60px;
+    transform: translate(-50%, -50%);
+    transition: all 250ms linear;
+  }
+  .integrations-image-icons .integrations-image-icons-item:nth-child(5):hover .default {
+    opacity: 0;
+  }
+  .integrations-image-icons .integrations-image-icons-item:nth-child(5):hover .active {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.4);
+  }
+  .integrations-image-icons .integrations-image-icons-item:nth-child(6) {
+    grid-column: 7/8;
+    grid-row: 2/3;
+    position: relative;
+    cursor: pointer;
+  }
+  .integrations-image-icons .integrations-image-icons-item:nth-child(6) .default {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 250ms linear;
+  }
+  .integrations-image-icons .integrations-image-icons-item:nth-child(6) .active {
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 60px;
+    height: 60px;
+    transform: translate(-50%, -50%);
+    transition: all 250ms linear;
+  }
+  .integrations-image-icons .integrations-image-icons-item:nth-child(6):hover .default {
+    opacity: 0;
+  }
+  .integrations-image-icons .integrations-image-icons-item:nth-child(6):hover .active {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.4);
+  }
+  .integrations-image-icons .integrations-image-icons-item:nth-child(7) {
+    grid-column: 11/12;
+    grid-row: 2/3;
+    position: relative;
+    cursor: pointer;
+  }
+  .integrations-image-icons .integrations-image-icons-item:nth-child(7) .default {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 250ms linear;
+  }
+  .integrations-image-icons .integrations-image-icons-item:nth-child(7) .active {
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 60px;
+    height: 60px;
+    transform: translate(-50%, -50%);
+    transition: all 250ms linear;
+  }
+  .integrations-image-icons .integrations-image-icons-item:nth-child(7):hover .default {
+    opacity: 0;
+  }
+  .integrations-image-icons .integrations-image-icons-item:nth-child(7):hover .active {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.4);
+  }
+  .integrations-image-icons .integrations-image-icons-item:nth-child(8) {
+    grid-column: 5/6;
+    grid-row: 3/3;
+    position: relative;
+    cursor: pointer;
+  }
+  .integrations-image-icons .integrations-image-icons-item:nth-child(8) .default {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 250ms linear;
+  }
+  .integrations-image-icons .integrations-image-icons-item:nth-child(8) .active {
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 60px;
+    height: 60px;
+    transform: translate(-50%, -50%);
+    transition: all 250ms linear;
+  }
+  .integrations-image-icons .integrations-image-icons-item:nth-child(8):hover .default {
+    opacity: 0;
+  }
+  .integrations-image-icons .integrations-image-icons-item:nth-child(8):hover .active {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.4);
+  }
+  .integrations-image-icons .integrations-image-icons-item:nth-child(9) {
+    grid-column: 9/10;
+    grid-row: 3/3;
+    position: relative;
+    cursor: pointer;
+  }
+  .integrations-image-icons .integrations-image-icons-item:nth-child(9) .default {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 250ms linear;
+  }
+  .integrations-image-icons .integrations-image-icons-item:nth-child(9) .active {
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 60px;
+    height: 60px;
+    transform: translate(-50%, -50%);
+    transition: all 250ms linear;
+  }
+  .integrations-image-icons .integrations-image-icons-item:nth-child(9):hover .default {
+    opacity: 0;
+  }
+  .integrations-image-icons .integrations-image-icons-item:nth-child(9):hover .active {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.4);
+  }
+  .integrations-image-icons .integrations-image-icons-item:nth-child(10) {
+    grid-column: 3/4;
+    grid-row: 4/4;
+    position: relative;
+    cursor: pointer;
+  }
+  .integrations-image-icons .integrations-image-icons-item:nth-child(10) .default {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 250ms linear;
+  }
+  .integrations-image-icons .integrations-image-icons-item:nth-child(10) .active {
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 60px;
+    height: 60px;
+    transform: translate(-50%, -50%);
+    transition: all 250ms linear;
+  }
+  .integrations-image-icons .integrations-image-icons-item:nth-child(10):hover .default {
+    opacity: 0;
+  }
+  .integrations-image-icons .integrations-image-icons-item:nth-child(10):hover .active {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.4);
+  }
+  .integrations-image-icons .integrations-image-icons-item:nth-child(11) {
+    grid-column: 7/8;
+    grid-row: 4/4;
+    position: relative;
+    cursor: pointer;
+  }
+  .integrations-image-icons .integrations-image-icons-item:nth-child(11) .default {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 250ms linear;
+  }
+  .integrations-image-icons .integrations-image-icons-item:nth-child(11) .active {
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 60px;
+    height: 60px;
+    transform: translate(-50%, -50%);
+    transition: all 250ms linear;
+  }
+  .integrations-image-icons .integrations-image-icons-item:nth-child(11):hover .default {
+    opacity: 0;
+  }
+  .integrations-image-icons .integrations-image-icons-item:nth-child(11):hover .active {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.4);
+  }
+  .integrations-image-icons .integrations-image-icons-item:nth-child(12) {
+    grid-column: 11/12;
+    grid-row: 4/4;
+    position: relative;
+    cursor: pointer;
+  }
+  .integrations-image-icons .integrations-image-icons-item:nth-child(12) .default {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 250ms linear;
+  }
+  .integrations-image-icons .integrations-image-icons-item:nth-child(12) .active {
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 60px;
+    height: 60px;
+    transform: translate(-50%, -50%);
+    transition: all 250ms linear;
+  }
+  .integrations-image-icons .integrations-image-icons-item:nth-child(12):hover .default {
+    opacity: 0;
+  }
+  .integrations-image-icons .integrations-image-icons-item:nth-child(12):hover .active {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.4);
+  }
+  .integrations-image-icons .integrations-image-icons-item:nth-child(13) {
+    grid-column: 1/2;
+    grid-row: 5/5;
+    position: relative;
+    cursor: pointer;
+  }
+  .integrations-image-icons .integrations-image-icons-item:nth-child(13) .default {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 250ms linear;
+  }
+  .integrations-image-icons .integrations-image-icons-item:nth-child(13) .active {
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 60px;
+    height: 60px;
+    transform: translate(-50%, -50%);
+    transition: all 250ms linear;
+  }
+  .integrations-image-icons .integrations-image-icons-item:nth-child(13):hover .default {
+    opacity: 0;
+  }
+  .integrations-image-icons .integrations-image-icons-item:nth-child(13):hover .active {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.4);
+  }
+  .integrations-image-icons .integrations-image-icons-item:nth-child(14) {
+    grid-column: 5/6;
+    grid-row: 5/5;
+    position: relative;
+    cursor: pointer;
+  }
+  .integrations-image-icons .integrations-image-icons-item:nth-child(14) .default {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 250ms linear;
+  }
+  .integrations-image-icons .integrations-image-icons-item:nth-child(14) .active {
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 60px;
+    height: 60px;
+    transform: translate(-50%, -50%);
+    transition: all 250ms linear;
+  }
+  .integrations-image-icons .integrations-image-icons-item:nth-child(14):hover .default {
+    opacity: 0;
+  }
+  .integrations-image-icons .integrations-image-icons-item:nth-child(14):hover .active {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.4);
+  }
+  .integrations-image-icons .integrations-image-icons-item:nth-child(15) {
+    grid-column: 9/10;
+    grid-row: 5/5;
+    position: relative;
+    cursor: pointer;
+    width: 60px;
+  }
+  .integrations-image-icons .integrations-image-icons-item:nth-child(15) .default {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 250ms linear;
+  }
+  .integrations-image-icons .integrations-image-icons-item:nth-child(15) .active {
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 60px;
+    height: 60px;
+    transform: translate(-50%, -50%);
+    transition: all 250ms linear;
+  }
+  .integrations-image-icons .integrations-image-icons-item:nth-child(15):hover .default {
+    opacity: 0;
+  }
+  .integrations-image-icons .integrations-image-icons-item:nth-child(15):hover .active {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.4);
+  }
+  .integrations-image-icons .integrations-image-icons-item:nth-child(16) {
+    grid-column: 15/16;
+    grid-row: 5/5;
+    position: relative;
+    cursor: pointer;
+  }
+  .integrations-image-icons .integrations-image-icons-item:nth-child(16) .default {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 250ms linear;
+  }
+  .integrations-image-icons .integrations-image-icons-item:nth-child(16) .active {
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 60px;
+    height: 60px;
+    transform: translate(-50%, -50%);
+    transition: all 250ms linear;
+  }
+  .integrations-image-icons .integrations-image-icons-item:nth-child(16):hover .default {
+    opacity: 0;
+  }
+  .integrations-image-icons .integrations-image-icons-item:nth-child(16):hover .active {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.4);
+  }
 }
-
-.integrations-image-icons .integrations-image-icons-item:nth-child(1) {
-  grid-column: 1/2;
-  grid-row: 1/2;
-}
-
-.integrations-image-icons .integrations-image-icons-item:nth-child(2) {
-  grid-column: 3/4;
-  grid-row: 1/2;
-}
-
-.integrations-image-icons .integrations-image-icons-item:nth-child(3) {
-  grid-column: 2/3;
-  grid-row: 2/3;
+@media screen and (max-width: 450px) {
+  .integrations-image-icons {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(7, 80px);
+    width: calc(100% - 20px);
+    margin: 0 auto;
+  }
+  .integrations-image-icons-item {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .integrations-image-icons-item .default {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50px;
+    height: 50px;
+    transform: translate(-50%, -50%);
+  }
+  .integrations-image-icons .integrations-image-icons-item:nth-child(1) {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    position: relative;
+    cursor: pointer;
+  }
+  .integrations-image-icons .integrations-image-icons-item:nth-child(1) .default {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 250ms linear;
+  }
+  .integrations-image-icons .integrations-image-icons-item:nth-child(1) .active {
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 60px;
+    height: 60px;
+    transform: translate(-50%, -50%);
+    transition: all 250ms linear;
+  }
+  .integrations-image-icons .integrations-image-icons-item:nth-child(1):hover .default {
+    opacity: 0;
+  }
+  .integrations-image-icons .integrations-image-icons-item:nth-child(1):hover .active {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.4);
+  }
+  .integrations-image-icons .integrations-image-icons-item:nth-child(2) {
+    grid-column: 11/12;
+    grid-row: 1/2;
+    position: relative;
+    cursor: pointer;
+  }
+  .integrations-image-icons .integrations-image-icons-item:nth-child(2) .default {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 250ms linear;
+    z-index: 1;
+  }
+  .integrations-image-icons .integrations-image-icons-item:nth-child(2) .active {
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 60px;
+    height: 60px;
+    transform: translate(-50%, -50%);
+    transition: all 250ms linear;
+    z-index: 1;
+  }
+  .integrations-image-icons .integrations-image-icons-item:nth-child(2):hover .default {
+    opacity: 0;
+  }
+  .integrations-image-icons .integrations-image-icons-item:nth-child(2):hover .active {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.4);
+  }
+  .integrations-image-icons .integrations-image-icons-item:nth-child(3) {
+    grid-column: 3/4;
+    grid-row: 2/2;
+    position: relative;
+    cursor: pointer;
+  }
+  .integrations-image-icons .integrations-image-icons-item:nth-child(3) .default {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 250ms linear;
+  }
+  .integrations-image-icons .integrations-image-icons-item:nth-child(3) .active {
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 60px;
+    height: 60px;
+    transform: translate(-50%, -50%);
+    transition: all 250ms linear;
+  }
+  .integrations-image-icons .integrations-image-icons-item:nth-child(3):hover .default {
+    opacity: 0;
+  }
+  .integrations-image-icons .integrations-image-icons-item:nth-child(3):hover .active {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.4);
+  }
+  .integrations-image-icons .integrations-image-icons-item:nth-child(4) {
+    grid-column: 7/8;
+    grid-row: 2/2;
+    position: relative;
+    cursor: pointer;
+  }
+  .integrations-image-icons .integrations-image-icons-item:nth-child(4) .default {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 250ms linear;
+  }
+  .integrations-image-icons .integrations-image-icons-item:nth-child(4) .active {
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 60px;
+    height: 60px;
+    transform: translate(-50%, -50%);
+    transition: all 250ms linear;
+  }
+  .integrations-image-icons .integrations-image-icons-item:nth-child(4):hover .default {
+    opacity: 0;
+  }
+  .integrations-image-icons .integrations-image-icons-item:nth-child(4):hover .active {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.4);
+  }
+  .integrations-image-icons .integrations-image-icons-item:nth-child(5) {
+    grid-column: 5/6;
+    grid-row: 3/3;
+    position: relative;
+    cursor: pointer;
+  }
+  .integrations-image-icons .integrations-image-icons-item:nth-child(5) .default {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 250ms linear;
+  }
+  .integrations-image-icons .integrations-image-icons-item:nth-child(5) .active {
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 60px;
+    height: 60px;
+    transform: translate(-50%, -50%);
+    transition: all 250ms linear;
+  }
+  .integrations-image-icons .integrations-image-icons-item:nth-child(5):hover .default {
+    opacity: 0;
+  }
+  .integrations-image-icons .integrations-image-icons-item:nth-child(5):hover .active {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.4);
+  }
+  .integrations-image-icons .integrations-image-icons-item:nth-child(6) {
+    grid-column: 1/2;
+    grid-row: 3/3;
+    position: relative;
+    cursor: pointer;
+  }
+  .integrations-image-icons .integrations-image-icons-item:nth-child(6) .default {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 250ms linear;
+  }
+  .integrations-image-icons .integrations-image-icons-item:nth-child(6) .active {
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 60px;
+    height: 60px;
+    transform: translate(-50%, -50%);
+    transition: all 250ms linear;
+  }
+  .integrations-image-icons .integrations-image-icons-item:nth-child(6):hover .default {
+    opacity: 0;
+  }
+  .integrations-image-icons .integrations-image-icons-item:nth-child(6):hover .active {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.4);
+  }
+  .integrations-image-icons .integrations-image-icons-item:nth-child(7) {
+    grid-column: 11/12;
+    grid-row: 3/3;
+    position: relative;
+    cursor: pointer;
+  }
+  .integrations-image-icons .integrations-image-icons-item:nth-child(7) .default {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 250ms linear;
+  }
+  .integrations-image-icons .integrations-image-icons-item:nth-child(7) .active {
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 60px;
+    height: 60px;
+    transform: translate(-50%, -50%);
+    transition: all 250ms linear;
+  }
+  .integrations-image-icons .integrations-image-icons-item:nth-child(7):hover .default {
+    opacity: 0;
+  }
+  .integrations-image-icons .integrations-image-icons-item:nth-child(7):hover .active {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.4);
+  }
+  .integrations-image-icons .integrations-image-icons-item:nth-child(8) {
+    grid-column: 3/4;
+    grid-row: 4/4;
+    position: relative;
+    cursor: pointer;
+  }
+  .integrations-image-icons .integrations-image-icons-item:nth-child(8) .default {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 250ms linear;
+  }
+  .integrations-image-icons .integrations-image-icons-item:nth-child(8) .active {
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 60px;
+    height: 60px;
+    transform: translate(-50%, -50%);
+    transition: all 250ms linear;
+  }
+  .integrations-image-icons .integrations-image-icons-item:nth-child(8):hover .default {
+    opacity: 0;
+  }
+  .integrations-image-icons .integrations-image-icons-item:nth-child(8):hover .active {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.4);
+  }
+  .integrations-image-icons .integrations-image-icons-item:nth-child(9) {
+    grid-column: 7/7;
+    grid-row: 4/4;
+    position: relative;
+    cursor: pointer;
+  }
+  .integrations-image-icons .integrations-image-icons-item:nth-child(9) .default {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 250ms linear;
+  }
+  .integrations-image-icons .integrations-image-icons-item:nth-child(9) .active {
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 60px;
+    height: 60px;
+    transform: translate(-50%, -50%);
+    transition: all 250ms linear;
+  }
+  .integrations-image-icons .integrations-image-icons-item:nth-child(9):hover .default {
+    opacity: 0;
+  }
+  .integrations-image-icons .integrations-image-icons-item:nth-child(9):hover .active {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.4);
+  }
+  .integrations-image-icons .integrations-image-icons-item:nth-child(10) {
+    grid-column: 1/2;
+    grid-row: 5/5;
+    position: relative;
+    cursor: pointer;
+  }
+  .integrations-image-icons .integrations-image-icons-item:nth-child(10) .default {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 250ms linear;
+  }
+  .integrations-image-icons .integrations-image-icons-item:nth-child(10) .active {
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 60px;
+    height: 60px;
+    transform: translate(-50%, -50%);
+    transition: all 250ms linear;
+  }
+  .integrations-image-icons .integrations-image-icons-item:nth-child(10):hover .default {
+    opacity: 0;
+  }
+  .integrations-image-icons .integrations-image-icons-item:nth-child(10):hover .active {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.4);
+  }
+  .integrations-image-icons .integrations-image-icons-item:nth-child(11) {
+    grid-column: 5/5;
+    grid-row: 5/5;
+    position: relative;
+    cursor: pointer;
+  }
+  .integrations-image-icons .integrations-image-icons-item:nth-child(11) .default {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 250ms linear;
+  }
+  .integrations-image-icons .integrations-image-icons-item:nth-child(11) .active {
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 60px;
+    height: 60px;
+    transform: translate(-50%, -50%);
+    transition: all 250ms linear;
+  }
+  .integrations-image-icons .integrations-image-icons-item:nth-child(11):hover .default {
+    opacity: 0;
+  }
+  .integrations-image-icons .integrations-image-icons-item:nth-child(11):hover .active {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.4);
+  }
+  .integrations-image-icons .integrations-image-icons-item:nth-child(12) {
+    grid-column: 10/12;
+    grid-row: 5/5;
+    position: relative;
+    cursor: pointer;
+  }
+  .integrations-image-icons .integrations-image-icons-item:nth-child(12) .default {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 250ms linear;
+  }
+  .integrations-image-icons .integrations-image-icons-item:nth-child(12) .active {
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 60px;
+    height: 60px;
+    transform: translate(-50%, -50%);
+    transition: all 250ms linear;
+  }
+  .integrations-image-icons .integrations-image-icons-item:nth-child(12):hover .default {
+    opacity: 0;
+  }
+  .integrations-image-icons .integrations-image-icons-item:nth-child(12):hover .active {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.4);
+  }
+  .integrations-image-icons .integrations-image-icons-item:nth-child(13) {
+    grid-column: 3/4;
+    grid-row: 6/6;
+    position: relative;
+    cursor: pointer;
+  }
+  .integrations-image-icons .integrations-image-icons-item:nth-child(13) .default {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 250ms linear;
+  }
+  .integrations-image-icons .integrations-image-icons-item:nth-child(13) .active {
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 60px;
+    height: 60px;
+    transform: translate(-50%, -50%);
+    transition: all 250ms linear;
+  }
+  .integrations-image-icons .integrations-image-icons-item:nth-child(13):hover .default {
+    opacity: 0;
+  }
+  .integrations-image-icons .integrations-image-icons-item:nth-child(13):hover .active {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.4);
+  }
+  .integrations-image-icons .integrations-image-icons-item:nth-child(14) {
+    grid-column: 7/7;
+    grid-row: 6/6;
+    position: relative;
+    cursor: pointer;
+  }
+  .integrations-image-icons .integrations-image-icons-item:nth-child(14) .default {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 250ms linear;
+  }
+  .integrations-image-icons .integrations-image-icons-item:nth-child(14) .active {
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 60px;
+    height: 60px;
+    transform: translate(-50%, -50%);
+    transition: all 250ms linear;
+  }
+  .integrations-image-icons .integrations-image-icons-item:nth-child(14):hover .default {
+    opacity: 0;
+  }
+  .integrations-image-icons .integrations-image-icons-item:nth-child(14):hover .active {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.4);
+  }
+  .integrations-image-icons .integrations-image-icons-item:nth-child(15) {
+    grid-column: 1/2;
+    grid-row: 7/7;
+    position: relative;
+    cursor: pointer;
+    width: 60px;
+  }
+  .integrations-image-icons .integrations-image-icons-item:nth-child(15) .default {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 250ms linear;
+  }
+  .integrations-image-icons .integrations-image-icons-item:nth-child(15) .active {
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 60px;
+    height: 60px;
+    transform: translate(-50%, -50%);
+    transition: all 250ms linear;
+  }
+  .integrations-image-icons .integrations-image-icons-item:nth-child(15):hover .default {
+    opacity: 0;
+  }
+  .integrations-image-icons .integrations-image-icons-item:nth-child(15):hover .active {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.4);
+  }
+  .integrations-image-icons .integrations-image-icons-item:nth-child(16) {
+    grid-column: 11/11;
+    grid-row: 7/7;
+    position: relative;
+    cursor: pointer;
+  }
+  .integrations-image-icons .integrations-image-icons-item:nth-child(16) .default {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 250ms linear;
+  }
+  .integrations-image-icons .integrations-image-icons-item:nth-child(16) .active {
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 60px;
+    height: 60px;
+    transform: translate(-50%, -50%);
+    transition: all 250ms linear;
+  }
+  .integrations-image-icons .integrations-image-icons-item:nth-child(16):hover .default {
+    opacity: 0;
+  }
+  .integrations-image-icons .integrations-image-icons-item:nth-child(16):hover .active {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.4);
+  }
 }/*# sourceMappingURL=main.css.map */
