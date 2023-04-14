@@ -4437,11 +4437,17 @@ img {
   text-align: center;
   letter-spacing: -0.05em;
   color: #bdc9d1;
+  cursor: pointer;
+  transition: color 250ms linear;
+  transition-property: color, background;
 }
 .pay-section-second-data-prompt-button.active {
   color: #ffffff;
   background: #00d254;
-  border-radius: 7px;
+}
+.pay-section-second-data-prompt-button:hover {
+  color: #ffffff;
+  background: #00d254;
 }
 
 .pay-section-second-data-prompt-pool-form {
@@ -4477,7 +4483,7 @@ img {
   box-sizing: border-box;
   width: 100%;
   background: #f9fafc;
-  border: 1px solid rgba(189, 201, 209, 0.5);
+  border: 2px solid rgba(189, 201, 209, 0.5);
   border-radius: 12px;
   padding: 21px;
   padding-left: 100px;
@@ -4487,6 +4493,8 @@ img {
   font-size: 24px;
   line-height: 38px;
   color: #b4bcd3;
+  transition: border 250ms linear;
+  transition-property: border, background;
 }
 .pay-section-second-data-prompt-pool-form-number-input-master {
   position: absolute;
@@ -4502,6 +4510,8 @@ img {
 }
 .pay-section-second-data-prompt-pool-form-number-input:focus {
   outline: none;
+  background: rgba(0, 210, 84, 0.05);
+  border: 2px solid #00d254;
 }
 
 .pay-section-second-data-prompt-pool-form-cvv {
@@ -4551,9 +4561,13 @@ img {
   font-size: 24px;
   line-height: 38px;
   color: #1f2b53;
+  transition: border 250ms linear;
+  transition-property: border, background;
 }
 .pay-section-second-data-prompt-pool-form-cvv-inputs-input:focus {
   outline: none;
+  background: rgba(0, 210, 84, 0.05);
+  border: 1px solid #00d254;
 }
 .pay-section-second-data-prompt-pool-form-cvv-inputs-icon {
   position: absolute;
@@ -4604,6 +4618,9 @@ img {
   text-align: center;
   color: #1f2b53;
 }
+.pay-section-second-data-prompt-pool-form-date-inputs-mobile {
+  display: none;
+}
 
 .pay-section-second-data-prompt-pool-form-date-input {
   width: 100%;
@@ -4619,9 +4636,13 @@ img {
   font-size: 24px;
   line-height: 38px;
   color: #1f2b53;
+  transition: border 250ms linear;
+  transition-property: border, background;
 }
 .pay-section-second-data-prompt-pool-form-date-input:focus {
   outline: none;
+  background: rgba(0, 210, 84, 0.05);
+  border: 1px solid #00d254;
 }
 
 .pay-section-second-data-prompt-pool-form-password {
@@ -4667,9 +4688,13 @@ img {
   font-size: 24px;
   line-height: 38px;
   color: #1f2b53;
+  transition: border 250ms linear;
+  transition-property: border, background;
 }
 .pay-section-second-data-prompt-pool-form-password-input:focus {
   outline: none;
+  background: rgba(0, 210, 84, 0.05);
+  border: 1px solid #00d254;
 }
 
 .pay-section-second-data-prompt-pool-form-submit {
@@ -4694,9 +4719,15 @@ img {
   color: #ffffff;
   background: #00d254;
 }
+.pay-section-second-data-prompt-pool-form-submit .mobile {
+  display: none;
+}
 
 .pay-section-second-data-card {
   width: 40%;
+}
+.pay-section-second-data-card-mobile {
+  display: none;
 }
 
 .pay-section-second-data-card-block {
@@ -4881,6 +4912,422 @@ img {
   color: #7782a3;
 }
 
+@media screen and (max-width: 450px) {
+  .pay-section-first {
+    height: 20px;
+  }
+  .pay-section-three {
+    height: unset;
+    margin-top: 0;
+  }
+  .pay-section-second-data {
+    height: unset;
+    border-radius: 45px;
+    padding: 25px;
+    flex-direction: column;
+  }
+  .pay-section-second-data-prompt {
+    width: 100%;
+  }
+  .pay-section-second-data-prompt-titles {
+    margin-bottom: 13px;
+  }
+  .pay-section-second-data-prompt-titles-link {
+    display: none;
+  }
+  .pay-section-second-data-prompt-buttons {
+    display: none;
+  }
+  .pay-section-second-data-prompt-button {
+    border: 1px solid #bdc9d1;
+    border-radius: 7px;
+    padding: 13px 38px;
+    font-family: "Lexend Exa";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: -0.05em;
+    color: #bdc9d1;
+    cursor: pointer;
+    transition: color 250ms linear;
+    transition-property: color, background;
+  }
+  .pay-section-second-data-prompt-button.active {
+    color: #ffffff;
+    background: #00d254;
+  }
+  .pay-section-second-data-prompt-button:hover {
+    color: #ffffff;
+    background: #00d254;
+  }
+  .pay-section-second-data-prompt-pool-form {
+    display: flex;
+    flex-direction: column;
+  }
+  .pay-section-second-data-prompt-pool-form .block-mobile {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 13px;
+  }
+  .pay-section-second-data-prompt-pool-form-number {
+    margin-bottom: 10px;
+  }
+  .pay-section-second-data-prompt-pool-form-number-title {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 30px;
+    color: #919191;
+  }
+  .pay-section-second-data-prompt-pool-form-number-desc {
+    display: none;
+  }
+  .pay-section-second-data-prompt-pool-form-number-input-card {
+    width: 100%;
+  }
+  .pay-section-second-data-prompt-pool-form-number-input {
+    background: #ffffff;
+    border: 2px solid rgba(189, 201, 209, 0.5);
+    border-radius: 7px;
+    padding: 8px 20px;
+    color: #1f2b53;
+    font-size: 18px;
+    line-height: 38px;
+  }
+  .pay-section-second-data-prompt-pool-form-number-input-master {
+    display: none;
+  }
+  .pay-section-second-data-prompt-pool-form-number-input-accept {
+    display: none;
+  }
+  .pay-section-second-data-prompt-pool-form-number-input:focus {
+    outline: none;
+    background: rgba(0, 210, 84, 0.05);
+    border: 2px solid #00d254;
+  }
+  .pay-section-second-data-prompt-pool-form-cvv {
+    gap: 5px;
+    justify-content: stretch;
+    flex-direction: column;
+    width: 50%;
+    margin-bottom: 10px;
+  }
+  .pay-section-second-data-prompt-pool-form-cvv-titles {
+    width: 100%;
+  }
+  .pay-section-second-data-prompt-pool-form-cvv-titles-title {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 30px;
+    color: #919191;
+  }
+  .pay-section-second-data-prompt-pool-form-cvv-titles-desc {
+    display: none;
+  }
+  .pay-section-second-data-prompt-pool-form-cvv-inputs {
+    position: relative;
+    width: 100%;
+  }
+  .pay-section-second-data-prompt-pool-form-cvv-inputs-input {
+    width: 100%;
+    border: 1px solid rgba(189, 201, 209, 0.5);
+    border-radius: 7px;
+    padding: 8px 20px;
+    font-size: 18px;
+    line-height: 38px;
+    color: #1f2b53;
+  }
+  .pay-section-second-data-prompt-pool-form-cvv-inputs-input:focus {
+    outline: none;
+    background: rgba(0, 210, 84, 0.05);
+    border: 1px solid #00d254;
+  }
+  .pay-section-second-data-prompt-pool-form-cvv-inputs-icon {
+    display: none;
+  }
+  .pay-section-second-data-prompt-pool-form-date {
+    display: flex;
+    gap: 5px;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 50%;
+    margin-bottom: 10px;
+  }
+  .pay-section-second-data-prompt-pool-form-date-titles {
+    width: 100%;
+  }
+  .pay-section-second-data-prompt-pool-form-date-titles-title {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 30px;
+    color: #919191;
+  }
+  .pay-section-second-data-prompt-pool-form-date-titles-desc {
+    display: none;
+  }
+  .pay-section-second-data-prompt-pool-form-date-inputs {
+    display: none;
+  }
+  .pay-section-second-data-prompt-pool-form-date-inputs-mobile {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 38px;
+    text-align: center;
+    color: #1f2b53;
+  }
+  .pay-section-second-data-prompt-pool-form-date-input {
+    width: 100%;
+    border: 1px solid rgba(189, 201, 209, 0.5);
+    border-radius: 7px;
+    padding: 8px 20px;
+    font-size: 18px;
+    line-height: 38px;
+    color: #1f2b53;
+  }
+  .pay-section-second-data-prompt-pool-form-date-input:focus {
+    outline: none;
+    background: rgba(0, 210, 84, 0.05);
+    border: 1px solid #00d254;
+  }
+  .pay-section-second-data-prompt-pool-form-password {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+  }
+  .pay-section-second-data-prompt-pool-form-password-titles {
+    width: 100%;
+  }
+  .pay-section-second-data-prompt-pool-form-password-titles-title {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 30px;
+    color: #919191;
+  }
+  .pay-section-second-data-prompt-pool-form-password-titles-desc {
+    display: none;
+  }
+  .pay-section-second-data-prompt-pool-form-password-input {
+    width: 100%;
+    border: 1px solid rgba(189, 201, 209, 0.5);
+    border-radius: 7px;
+    padding: 8px 20px;
+    font-size: 18px;
+    line-height: 38px;
+    color: #1f2b53;
+  }
+  .pay-section-second-data-prompt-pool-form-password-input:focus {
+    outline: none;
+    background: rgba(0, 210, 84, 0.05);
+    border: 1px solid #00d254;
+  }
+  .pay-section-second-data-prompt-pool-form-submit {
+    display: none;
+  }
+  .pay-section-second-data-prompt-pool-form-submit.mobile {
+    display: flex;
+    justify-content: center;
+    font-family: "Lexend Exa";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 15px;
+    text-align: center;
+    letter-spacing: -0.05em;
+    color: #ffffff;
+    padding: 28px 0px;
+    background: #202020;
+    border-radius: 382.831px;
+    cursor: pointer;
+    transition: color 250ms linear;
+    transition-property: color, background;
+  }
+  .pay-section-second-data-prompt-pool-form-submit.mobile:hover {
+    color: #ffffff;
+    background: #00d254;
+  }
+  .pay-section-three {
+    background: #eff4f8;
+    padding-top: 120px;
+  }
+  .pay-section-second-data-card {
+    display: none;
+  }
+  .pay-section-second-data-card-mobile {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .pay-section-second-data-card-block {
+    background: #eff4f8;
+    padding: 0 20px;
+    padding-bottom: 40px;
+  }
+  .pay-section-second-data-card-plastic {
+    background-image: url("../../assets/images/pay/pay-plastic.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 406px;
+    padding: 55px 36px;
+    display: flex;
+    flex-direction: column;
+    margin-top: -140px;
+    background-blend-mode: overlay, normal, normal;
+    box-shadow: 0px -2px 20px rgba(0, 179, 71, 0.07), 0px 103px 115px rgba(0, 0, 0, 0.03), 0px 43.0309px 70.7697px rgba(0, 0, 0, 0.0359427), 0px 23.0064px 60.5741px rgba(0, 0, 0, 0.0298054), 0px 12.8972px 52.6743px rgba(0, 0, 0, 0.025), 0px 6.84961px 41.3556px rgba(0, 0, 0, 0.0201946);
+    -webkit-backdrop-filter: blur(15px);
+            backdrop-filter: blur(15px);
+    /* Note: backdrop-filter has minimal browser support */
+    box-sizing: border-box;
+    border-radius: 25px;
+  }
+  .pay-section-second-data-card-plastic-icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .pay-section-second-data-card-plastic-info {
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+  }
+  .pay-section-second-data-card-plastic-info-name {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 38px;
+    color: #1f2b53;
+  }
+  .pay-section-second-data-card-plastic-info-number {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 38px;
+    color: #1f2b53;
+    margin-bottom: 20px;
+  }
+  .pay-section-second-data-card-plastic-info-date {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .pay-section-second-data-card-plastic-info-date-text {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 38px;
+    color: #1f2b53;
+  }
+  .pay-section-second-data-card-information {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    margin-top: 45px;
+  }
+  .pay-section-second-data-card-information-titles {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .pay-section-second-data-card-information-titles-title {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 30px;
+    color: #7782a3;
+  }
+  .pay-section-second-data-card-information-titles-desc {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: right;
+    color: #1f2b53;
+  }
+  .pay-section-second-data-card-information-promo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Lexend Exa";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: -0.05em;
+    color: #07bc65;
+    background: rgba(0, 210, 84, 0.15);
+    border-radius: 382.831px;
+  }
+  .pay-section-second-data-card-decor {
+    position: relative;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    margin: 30px 0;
+  }
+  .pay-section-second-data-card-decor-icon {
+    width: 100%;
+  }
+  .pay-section-second-data-card-decor::before {
+    display: none;
+  }
+  .pay-section-second-data-card-decor::after {
+    display: none;
+  }
+  .pay-section-second-data-card-pay {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  .pay-section-second-data-card-pay-desc {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 32px;
+    color: #000000;
+    opacity: 0.4;
+    margin-top: 40px;
+  }
+  .pay-section-second-data-card-pay-content-desc {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 30px;
+    color: #7782a3;
+  }
+  .pay-section-second-data-card-pay-content-sum {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 49px;
+    color: #1e2a52;
+  }
+  .pay-section-second-data-card-pay-content-sum-span {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 49px;
+    color: #7782a3;
+  }
+}
 @media screen and (min-width: 900px) {
   .integrations-image-icons {
     display: grid;
