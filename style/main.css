@@ -4719,7 +4719,7 @@ img {
   color: #ffffff;
   background: #00d254;
 }
-.pay-section-second-data-prompt-pool-form-submit .mobile {
+.pay-section-second-data-prompt-pool-form-submit-mobile {
   display: none;
 }
 
@@ -5132,7 +5132,7 @@ img {
   .pay-section-second-data-prompt-pool-form-submit {
     display: none;
   }
-  .pay-section-second-data-prompt-pool-form-submit.mobile {
+  .pay-section-second-data-prompt-pool-form-submit-mobile {
     display: flex;
     justify-content: center;
     font-family: "Lexend Exa";
@@ -5150,7 +5150,7 @@ img {
     transition: color 250ms linear;
     transition-property: color, background;
   }
-  .pay-section-second-data-prompt-pool-form-submit.mobile:hover {
+  .pay-section-second-data-prompt-pool-form-submit-mobile:hover {
     color: #ffffff;
     background: #00d254;
   }

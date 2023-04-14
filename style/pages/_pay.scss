@@ -402,7 +402,7 @@
     background: #00d254;
   }
 
-  & .mobile {
+  &-mobile {
     display: none;
   }
 }
@@ -877,7 +877,8 @@
 
   .pay-section-second-data-prompt-pool-form-submit {
     display: none;
-    &.mobile {
+
+    &-mobile {
       display: flex;
       justify-content: center;
       font-family: "Lexend Exa";
