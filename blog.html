@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/main.css" />
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="navigation">
+                <a class="logo" href="./index.html">
+                    <img src="./assets/images/logo-black.svg" alt="logo" class="logo-icon" />
+                </a>
+
+                <ul class="menu">
+                    <li class="menu-item">
+                        <a class="menu-link " href="./index.html">Home</a>
+                    </li>
+                    <li class="menu-item">
+                        <div class="menu-link" id="solution">
+                            Solutions<img class="" src="./assets/images/arrow.svg" alt="arrow" id="solution-icon" />
+
+                            <div class="solution-block">
+                                <div class="solution-modal">
+                                    <div class="solution-image">
+                                        <img class="solution-image-img" src="./assets/images/solution/code.png" />
+                                    </div>
+                                    <div class="solution-menu">
+                                        <ul class="solution-menu-list">
+                                            <li class="solution-menu-item">
+                                                <a class="solution-menu-link" href="./qr-codes.html">
+                                                    <img class="solution-menu-link-icon"
+                                                        src="./assets/images/arrow-left.svg" alt="solution" />
+                                                    QR CODES
+                                                </a>
+                                            </li>
+                                            <li class="solution-menu-item">
+                                                <a class="solution-menu-link" href="./bio-pages.html">
+                                                    <img class="solution-menu-link-icon"
+                                                        src="./assets/images/arrow-left.svg" alt="solution" />
+                                                    BIO PAGES</a>
+                                            </li>
+                                            <li class="solution-menu-item">
+                                                <a class="solution-menu-link" href="./file-hosting.html">
+                                                    <img class="solution-menu-link-icon"
+                                                        src="./assets/images/arrow-left.svg" alt="solution" />
+                                                    FILE HOSTING
+                                                </a>
+                                            </li>
+                                            <li class="solution-menu-item">
+                                                <a class="solution-menu-link" href="./dev-api.html">
+                                                    <img class="solution-menu-link-icon"
+                                                        src="./assets/images/arrow-left.svg" alt="solution" />
+                                                    DEVS API</a>
+                                            </li>
+                                            <li class="solution-menu-item">
+                                                <a class="solution-menu-link" href="./help-center.html">
+                                                    <img class="solution-menu-link-icon"
+                                                        src="./assets/images/arrow-left.svg" alt="solution" />
+                                                    HELP CENTER</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="menu-item">
+                        <a class="menu-link" href="./index.html#integration">Integrations</a>
+                    </li>
+                    <li class="menu-item">
+                        <a class="menu-link" href="./index.html#pricing">Pricing</a>
+                    </li>
+                    <li class="menu-item">
+                        <a class="menu-link active">Blog</a>
+                    </li>
+                </ul>
+
+                <div class="setting">
+                    <button class="get-start__black">Get started</button>
+
+                    <div class="setting-lang">
+                        <p class="setting-lang-current">
+                            <img class="setting-lang-current-icon" src="./assets/images/arrow.svg" />
+                            EN
+                        </p>
+                        <ul class="setting-lang-list">
+                            <li class="setting-lang-item">UA</li>
+                            <li class="setting-lang-item">FR</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <button class="menu-mobile-button">
+                    <img class="menu-mobile-button-icon" src="./assets/images/menu-mobile-open.svg" />
+                </button>
+
+                <div class="menu-mobile-modal">
+                    <div class="container">
+                        <a class="menu-mobile-modal-logo" href="./index.html">
+                            <img class="menu-mobile-modal-logo-link" src="./assets/images/logo-black.svg" />
+                        </a>
+
+                        <button class="menu-mobile-modal-close">
+                            <img class="menu-mobile-modal-close-icon" src="./assets/images/menu-mobile-close.svg" />
+                        </button>
+
+                        <div class="menu-mobile-modal-block">
+                            <ul class="menu-mobile-modal-list">
+                                <li class="menu-mobile-modal-list-item">
+                                    <a class="menu-mobile-modal-list-link" href="./index.html">Home</a>
+                                </li>
+                                <li class="menu-mobile-modal-list-item">
+                                    <div class="menu-mobile-modal-list-solution-modal">
+                                        <button class="menu-mobile-modal-list-solution-open">
+                                            solutions
+                                            <img class="menu-mobile-modal-list-solution-open-icon"
+                                                src="./assets/images/arrow.svg" />
+                                        </button>
+
+                                        <div class="menu-mobile-modal-list-solution">
+                                            <a class="menu-mobile-modal-list-solution-link" href="./qr-codes.html">QR
+                                                CODES
+                                            </a>
+                                            <a class="menu-mobile-modal-list-solution-link" href="./bio-pages.html">
+                                                BIO PAGES
+                                            </a>
+                                            <a class="menu-mobile-modal-list-solution-link" href="./file-hosting.html">
+                                                FILE HOSTING
+                                            </a>
+                                            <a class="menu-mobile-modal-list-solution-link" href="./dev-api.html">
+                                                DEVS API
+                                            </a>
+                                            <a class="menu-mobile-modal-list-solution-link" href="./help-center.html">
+                                                HELP CENTER
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="menu-mobile-modal-list-item">
+                                    <a class="menu-mobile-modal-list-link">integrations</a>
+                                </li>
+                                <li class="menu-mobile-modal-list-item">
+                                    <a class="menu-mobile-modal-list-link">pricing</a>
+                                </li>
+                                <li class="menu-mobile-modal-list-item">
+                                    <a class="menu-mobile-modal-list-link">blog</a>
+                                </li>
+                            </ul>
+
+                            <div class="menu-mobile-modal-center">
+                                <a class="get-start__black">Get started</a>
+                            </div>
+
+                            <div class="menu-mobile-modal-footer">
+                                <div class="container">
+                                    <div class="menu-mobile-modal-footer-block">
+                                        <button class="footer-copyright-report">Report</button>
+                                        <div class="setting-lang">
+                                            <p class="setting-lang-current">
+                                                <img class="setting-lang-current-icon"
+                                                    src="./assets/images/arrow.svg" />
+                                                EN
+                                            </p>
+                                            <ul class="setting-lang-list">
+                                                <li class="setting-lang-item">UA</li>
+                                                <li class="setting-lang-item">FR</li>
+                                            </ul>
+                                        </div>
+                                        <img class="footer-copyright-by" src="./assets/images/by-black.svg" alt="by" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+
+    <section class="blog-section">
+        <div class="container">
+            <div class="blog-section-block">
+
+                <div class="blog-section-banner">
+                    <div class="blog-section-banner-slider">
+                        <div class="blog-section-banner-slider-images">
+                            <div class="slider-items">
+                                <div class="blog-section-banner-slider-images-item">
+                                    <img src="./assets/images/blog/blog-slider-1.jpg" alt="slide">
+                                </div>
+                                <div class="blog-section-banner-slider-images-item">
+                                    <img src="./assets/images/blog/blog-slider-1.jpg" alt="slide">
+                                </div>
+                                <div class="blog-section-banner-slider-images-item">
+                                    <img src="./assets/images/blog/blog-slider-1.jpg" alt="slide">
+                                </div>
+                            </div>
+
+                            <div class="blog-section-banner-slider-images-after">
+                                <div class="blog-section-banner-slider-images-after-date">
+                                    <p class="blog-section-banner-slider-images-after-date-text">March 4, 2023</p>
+                                </div>
+
+                                <div class="blog-section-banner-slider-images-after-pagination">
+                                    <button class="blog-section-banner-slider-images-after-pagination-item active">
+
+                                    </button>
+                                    <button class="blog-section-banner-slider-images-after-pagination-item">
+
+                                    </button>
+                                    <button class="blog-section-banner-slider-images-after-pagination-item">
+
+                                    </button>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="blog-section-banner-slider-content">
+                            <div class="blog-section-banner-slider-content-read">
+                                <h2 class="blog-section-banner-slider-content-read-title">articles tittle for one stroke
+                                </h2>
+                                <p class="blog-section-banner-slider-content-read-desc">
+                                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                                    doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
+                                    veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam
+                                    voluptatem quia voluptas sit...
+                                </p>
+                                <button class="blog-section-banner-slider-content-read-button">Read more</button>
+                            </div>
+                            <div class="blog-section-banner-slider-content-controller">
+                                <button class="blog-section-banner-slider-content-controller-next">
+                                    <img class="blog-section-banner-slider-content-controller-next-icon"
+                                        src="./assets/images/blog/arrow-right.svg" />
+                                </button>
+                                <button class="blog-section-banner-slider-content-controller-prev">
+                                    <img class="blog-section-banner-slider-content-controller-prev-icon"
+                                        src="./assets/images/blog/arrow-left.svg" />
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="blog-section-best">
+                    <ul class="blog-section-best-list">
+                        <li class="blog-section-best-item">
+                            <div class="blog-section-best-item-image">
+                                <img class="blog-section-best-item-image-img" src="./assets/images/blog/blog-1.png" />
+                            </div>
+                            <div class="blog-section-best-item-content">
+                                <h3 class="blog-section-best-item-content-title">
+                                    articles tittle for one stroke
+                                </h3>
+                                <p class="blog-section-best-item-content-desc">Sed ut perspiciatis unde omnis iste natus
+                                    error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque
+                                    ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
+                                    explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
+                                    fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi
+                                    nesciunt...</p>
+                                <div class="blog-section-best-item-content-info">
+
+                                    <button class="blog-section-best-item-content-info-button">
+                                        Read more
+                                    </button>
+
+                                    <p class="blog-section-best-item-content-info-date">
+                                        March 4, 2023
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="blog-section-best-item">
+                            <div class="blog-section-best-item-image">
+                                <img class="blog-section-best-item-image-img" src="./assets/images/blog/blog-2.png" />
+                            </div>
+                            <div class="blog-section-best-item-content">
+                                <h3 class="blog-section-best-item-content-title">
+                                    articles tittle for one stroke
+                                </h3>
+                                <p class="blog-section-best-item-content-desc">Sed ut perspiciatis unde omnis iste natus
+                                    error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque
+                                    ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
+                                    explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
+                                    fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi
+                                    nesciunt...</p>
+                                <div class="blog-section-best-item-content-info">
+
+                                    <button class="blog-section-best-item-content-info-button">
+                                        Read more
+                                    </button>
+
+                                    <p class="blog-section-best-item-content-info-date">
+                                        March 4, 2023
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="blog-section-best-item">
+                            <div class="blog-section-best-item-image">
+                                <img class="blog-section-best-item-image-img" src="./assets/images/blog/blog-3.png" />
+                            </div>
+                            <div class="blog-section-best-item-content">
+                                <h3 class="blog-section-best-item-content-title">
+                                    articles tittle for one stroke
+                                </h3>
+                                <p class="blog-section-best-item-content-desc">Sed ut perspiciatis unde omnis iste natus
+                                    error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque
+                                    ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
+                                    explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
+                                    fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi
+                                    nesciunt...</p>
+                                <div class="blog-section-best-item-content-info">
+
+                                    <button class="blog-section-best-item-content-info-button">
+                                        Read more
+                                    </button>
+
+                                    <p class="blog-section-best-item-content-info-date">
+                                        March 4, 2023
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <button class="blog-section-best-all">
+                        Show more news
+                    </button>
+                </div>
+
+                <div class="blog-section-all">
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <footer class="footer">
+        <div class="footer-info">
+            <div class="container">
+                <div class="footer-info-block">
+                    <div class="footer-info-navigation">
+                        <div class="footer-info-logo">
+                            <a class="footer-info-logo-link" href="./index.html">
+                                <img class="footer-info-logo-img" src="./assets/images/logo-white.svg" alt="logo" />
+                            </a>
+                            <div class="setting-lang-white">
+                                <p class="setting-lang-current">
+                                    <img class="setting-lang-current-icon" src="./assets/images/arrow-white.svg" />
+                                    EN
+                                </p>
+                                <ul class="setting-lang-list">
+                                    <li class="setting-lang-item">UA</li>
+                                    <li class="setting-lang-item">FR</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="footer-info-menu">
+                            <ul class="footer-info-menu-list">
+                                <li class="footer-info-menu-item">
+                                    <a class="footer-info-menu-link" href="./index.html">home</a>
+                                </li>
+                                <li class="footer-info-menu-item">
+                                    <a class="footer-info-menu-link">solutions</a>
+                                </li>
+                                <li class="footer-info-menu-item">
+                                    <a class="footer-info-menu-link">integrations</a>
+                                </li>
+                            </ul>
+                            <ul class="footer-info-menu-list">
+                                <li class="footer-info-menu-item">
+                                    <a class="footer-info-menu-link">Pricing</a>
+                                </li>
+                                <li class="footer-info-menu-item">
+                                    <a class="footer-info-menu-link">BLOG</a>
+                                </li>
+                                <li class="footer-info-menu-item">
+                                    <a class="footer-info-menu-link">POLICY</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="footer-info-contacts">
+                        <button class="get-start__white">Get started</button>
+                        <p class="footer-info-contacts-mail">info@DRKTEAM.com</p>
+                        <ul class="footer-info-contacts-social">
+                            <li class="footer-info-contacts-social-item">
+                                <a class="footer-info-contacts-social-link">
+                                    <img class="footer-info-contacts-social-img" alt="social"
+                                        src="./assets/images/social/facebook.svg" />
+                                </a>
+                            </li>
+                            <li class="footer-info-contacts-social-item">
+                                <a class="footer-info-contacts-social-link">
+                                    <img class="footer-info-contacts-social-img" alt="social"
+                                        src="./assets/images/social/instagram.svg" />
+                                </a>
+                            </li>
+                            <li class="footer-info-contacts-social-item">
+                                <a class="footer-info-contacts-social-link">
+                                    <img class="footer-info-contacts-social-img" alt="social"
+                                        src="./assets/images/social/youtube.svg" />
+                                </a>
+                            </li>
+                            <li class="footer-info-contacts-social-item">
+                                <a class="footer-info-contacts-social-link">
+                                    <img class="footer-info-contacts-social-img" alt="social"
+                                        src="./assets/images/social/telegram.svg" />
+                                </a>
+                            </li>
+                            <li class="footer-info-contacts-social-item">
+                                <a class="footer-info-contacts-social-link">
+                                    <img class="footer-info-contacts-social-img" alt="social"
+                                        src="./assets/images/social/twiter.svg" />
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                <div class="footer-copyright-block">
+                    <button class="footer-copyright-report">Report</button>
+                    <p class="footer-copyright-info">© Copyright information 2022</p>
+                    <img class="footer-copyright-by" src="./assets/images/by.svg" alt="by" />
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="./js/slider-blog.js"></script>
+    <script src="./js/solution-menu.js"></script>
+    <script src="./js/mobile-menu.js"></script>
+</body>
+
+</html>

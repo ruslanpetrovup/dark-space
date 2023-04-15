@@ -1,0 +1,312 @@
+.blog-section {
+  padding: 50px 0;
+  padding-bottom: 140px;
+  background: #eef2f6;
+}
+
+.blog-section-banner {
+  box-shadow: 0px -2px 20px rgba(0, 179, 71, 0.07),
+    0px 103px 115px rgba(0, 0, 0, 0.03),
+    0px 43.0309px 70.7697px rgba(0, 0, 0, 0.0359427),
+    0px 23.0064px 60.5741px rgba(0, 0, 0, 0.0298054),
+    0px 12.8972px 52.6743px rgba(0, 0, 0, 0.025),
+    0px 6.84961px 41.3556px rgba(0, 0, 0, 0.0201946);
+}
+
+.blog-section-banner-slider-images {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+
+  .slider-items {
+    display: flex;
+    width: 300%;
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
+  }
+
+  &-item {
+    width: 33.33%;
+    height: 100%;
+
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &-after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 210, 84, 0.7);
+
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+
+    &-date {
+      padding: 20px 0 20px 35px;
+      &-text {
+        font-family: "Proba Pro";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 32px;
+        color: #ffffff;
+      }
+    }
+
+    &-pagination {
+      background: rgba(0, 210, 84, 0.5);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 12px;
+      max-width: 153px;
+      padding: 0px 27px;
+      min-width: calc(153px - (27px * 2));
+      border-left: 1px solid #bdc9d1;
+
+      &-item {
+        position: relative;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        border: 2px solid transparent;
+
+        &::after {
+          content: "";
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          width: 70%;
+          height: 70%;
+          border-radius: 50%;
+          background: rgba(255, 255, 255, 0.5);
+          transform: translate(-50%, -50%);
+        }
+
+        &.active {
+          border: 2px solid #ffffff;
+        }
+      }
+    }
+  }
+}
+
+.blog-section-banner-slider-content {
+  display: flex;
+  box-sizing: border-box;
+  background: #ffffff;
+
+  &-read {
+    padding: 50px 35px;
+
+    &-title {
+      font-family: "Josefin Sans";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 44px;
+      text-transform: uppercase;
+
+      color: #000000;
+      margin-bottom: 10px;
+    }
+
+    &-desc {
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 32px;
+      color: rgba(0, 0, 0, 0.75);
+      margin-bottom: 30px;
+    }
+
+    &-button {
+      font-family: "Lexend Exa";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 34px;
+      text-align: center;
+
+      color: #b3b3b3;
+      padding: 10px 50px;
+      border: 1px solid #b3b3b3;
+      border-radius: 1000px;
+      cursor: pointer;
+    }
+  }
+
+  &-controller {
+    display: flex;
+    flex-direction: column;
+    min-width: 153px;
+    max-width: 153px;
+
+    &-next {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 50%;
+      border: 1px solid #bdc9d1;
+      transition: border 350ms linear;
+      transition-property: border, background;
+      cursor: pointer;
+
+      &:hover {
+        background: linear-gradient(
+            0deg,
+            rgba(0, 210, 84, 0.1),
+            rgba(0, 210, 84, 0.1)
+          ),
+          #ffffff;
+        border: 1px solid #00d254;
+      }
+    }
+    &-prev {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 50%;
+      border: 1px solid #bdc9d1;
+      transition: border 350ms linear;
+      transition-property: border, background;
+      cursor: pointer;
+
+      &:hover {
+        background: linear-gradient(
+            0deg,
+            rgba(0, 210, 84, 0.1),
+            rgba(0, 210, 84, 0.1)
+          ),
+          #ffffff;
+        border: 1px solid #00d254;
+      }
+    }
+  }
+}
+
+.blog-section-best {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  background: #ffffff;
+  box-shadow: 0px -2px 20px rgba(0, 179, 71, 0.07),
+    0px 103px 115px rgba(0, 0, 0, 0.03),
+    0px 43.0309px 70.7697px rgba(0, 0, 0, 0.0359427),
+    0px 23.0064px 60.5741px rgba(0, 0, 0, 0.0298054),
+    0px 12.8972px 52.6743px rgba(0, 0, 0, 0.025),
+    0px 6.84961px 41.3556px rgba(0, 0, 0, 0.0201946);
+  padding-bottom: 60px;
+
+  &-all {
+    font-family: "Lexend Exa";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 34px;
+    text-align: center;
+
+    color: #b3b3b3;
+    cursor: pointer;
+
+    padding: 12px 90px;
+    border: 1px solid #b3b3b3;
+    border-radius: 7px;
+    margin-top: 40px;
+  }
+}
+
+.blog-section-best-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.blog-section-best-item {
+  display: flex;
+  gap: 40px;
+  padding: 37px 46px;
+}
+
+.blog-section-best-item-image {
+  &-img {
+    width: 100%;
+  }
+}
+
+.blog-section-best-item-content {
+  border-bottom: 2px solid #d9d9d9;
+  &-title {
+    font-family: "Josefin Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 44px;
+    text-transform: uppercase;
+
+    color: #000000;
+    margin-bottom: 10px;
+  }
+
+  &-desc {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    color: rgba(0, 0, 0, 0.75);
+    margin-bottom: 25px;
+    max-width: 800px;
+  }
+
+  &-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &-button {
+      font-family: "Lexend Exa";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 34px;
+      text-align: center;
+
+      color: #b3b3b3;
+      padding: 10px 50px;
+      border: 1px solid #b3b3b3;
+      border-radius: 1000px;
+      cursor: pointer;
+      margin-bottom: 45px;
+    }
+
+    &-date {
+      position: relative;
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 40px;
+      color: rgba(0, 0, 0, 0.8);
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        right: calc(100% + 15px);
+        transform: translateY(-50%);
+        width: 20px;
+        height: 20px;
+        background-color: #01d153;
+      }
+    }
+  }
+}
