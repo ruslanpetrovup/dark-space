@@ -5,6 +5,14 @@ const prevBtn = document.querySelector(
 const nextBtn = document.querySelector(
   ".blog-section-banner-slider-content-controller-next"
 );
+
+const prevBtnMobile = document.querySelector(
+  ".blog-section-banner-controller-mobile-prev"
+);
+const nextBtnMobile = document.querySelector(
+  ".blog-section-banner-controller-mobile-next"
+);
+
 const sliderItemWidth = document.querySelector(
   ".blog-section-banner-slider-images-item"
 ).clientWidth;
@@ -66,6 +74,54 @@ nextBtn.addEventListener("click", () => {
 
   const paginationItems = document.querySelectorAll(
     ".blog-section-banner-slider-images-after-pagination-item"
+  );
+
+  for (item of paginationItems) {
+    item.classList.remove("active");
+  }
+
+  paginationItems[currentIndex].classList.add("active");
+
+  dateCurrent.textContent = dateList[currentIndex];
+  titleCurrent.textContent = titleList[currentIndex];
+  descCurrent.textContent = descList[currentIndex];
+
+  sliderItems.style.transform = `translateX(-${
+    currentIndex * sliderItemWidth
+  }px)`;
+});
+
+prevBtnMobile.addEventListener("click", () => {
+  currentIndex--;
+  if (currentIndex < 0) {
+    currentIndex = 2;
+  }
+
+  const paginationItems = document.querySelectorAll(
+    ".blog-section-banner-controller-mobile-pagination-item"
+  );
+  for (item of paginationItems) {
+    item.classList.remove("active");
+  }
+  paginationItems[currentIndex].classList.add("active");
+
+  dateCurrent.textContent = dateList[currentIndex];
+  titleCurrent.textContent = titleList[currentIndex];
+  descCurrent.textContent = descList[currentIndex];
+
+  sliderItems.style.transform = `translateX(-${
+    currentIndex * sliderItemWidth
+  }px)`;
+});
+
+nextBtnMobile.addEventListener("click", () => {
+  currentIndex++;
+  if (currentIndex > 2) {
+    currentIndex = 0;
+  }
+
+  const paginationItems = document.querySelectorAll(
+    ".blog-section-banner-controller-mobile-pagination-item"
   );
 
   for (item of paginationItems) {
