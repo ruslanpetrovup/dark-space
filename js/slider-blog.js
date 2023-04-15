@@ -118,11 +118,13 @@ prevBtnMobile.addEventListener("click", () => {
   paginationItems[currentIndex].classList.add("active");
 
   dateCurrent.textContent = dateList[currentIndex];
-  titleCurrent.textContent = titleList[currentIndex];
-  descCurrent.textContent = descList[currentIndex];
 
   sliderItems.style.transform = `translateX(-${
     currentIndex * sliderItemWidth
+  }px)`;
+
+  sliderItemsContent.style.transform = `translateX(-${
+    currentIndex * sliderItemsContentWidth
   }px)`;
 });
 
@@ -143,10 +145,12 @@ nextBtnMobile.addEventListener("click", () => {
   paginationItems[currentIndex].classList.add("active");
 
   dateCurrent.textContent = dateList[currentIndex];
-  titleCurrent.textContent = titleList[currentIndex];
-  descCurrent.textContent = descList[currentIndex];
 
   sliderItems.style.transform = `translateX(-${
     currentIndex * sliderItemWidth
+  }px)`;
+
+  sliderItemsContent.style.transform = `translateX(-${
+    currentIndex * sliderItemsContentWidth
   }px)`;
 });
