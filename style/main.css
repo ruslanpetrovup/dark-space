@@ -5562,6 +5562,19 @@ img {
 }
 .blog-section-banner-slider-content-read {
   padding: 50px 35px;
+  width: 33.33%;
+  height: 100%;
+}
+.blog-section-banner-slider-content-read-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+.blog-section-banner-slider-content-read-items {
+  display: flex;
+  width: 300%;
+  height: 100%;
+  transition: transform 0.5s ease-in-out;
 }
 .blog-section-banner-slider-content-read-title {
   font-family: "Josefin Sans";

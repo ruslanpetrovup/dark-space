@@ -1,4 +1,8 @@
 const sliderItems = document.querySelector(".slider-items");
+const sliderItemsContent = document.querySelector(
+  ".blog-section-banner-slider-content-read-items"
+);
+
 const prevBtn = document.querySelector(
   ".blog-section-banner-slider-content-controller-prev"
 );
@@ -15,6 +19,10 @@ const nextBtnMobile = document.querySelector(
 
 const sliderItemWidth = document.querySelector(
   ".blog-section-banner-slider-images-item"
+).clientWidth;
+
+const sliderItemsContentWidth = document.querySelector(
+  ".blog-section-banner-slider-content-read"
 ).clientWidth;
 
 const dateCurrent = document.querySelector(
@@ -58,11 +66,13 @@ prevBtn.addEventListener("click", () => {
   paginationItems[currentIndex].classList.add("active");
 
   dateCurrent.textContent = dateList[currentIndex];
-  titleCurrent.textContent = titleList[currentIndex];
-  descCurrent.textContent = descList[currentIndex];
 
   sliderItems.style.transform = `translateX(-${
     currentIndex * sliderItemWidth
+  }px)`;
+
+  sliderItemsContent.style.transform = `translateX(-${
+    currentIndex * sliderItemsContentWidth
   }px)`;
 });
 
@@ -83,11 +93,13 @@ nextBtn.addEventListener("click", () => {
   paginationItems[currentIndex].classList.add("active");
 
   dateCurrent.textContent = dateList[currentIndex];
-  titleCurrent.textContent = titleList[currentIndex];
-  descCurrent.textContent = descList[currentIndex];
 
   sliderItems.style.transform = `translateX(-${
     currentIndex * sliderItemWidth
+  }px)`;
+
+  sliderItemsContent.style.transform = `translateX(-${
+    currentIndex * sliderItemsContentWidth
   }px)`;
 });
 

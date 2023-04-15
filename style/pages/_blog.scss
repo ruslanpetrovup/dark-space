@@ -108,6 +108,21 @@
 
   &-read {
     padding: 50px 35px;
+    width: 33.33%;
+    height: 100%;
+
+    &-container {
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+    }
+
+    &-items {
+      display: flex;
+      width: 300%;
+      height: 100%;
+      transition: transform 0.5s ease-in-out;
+    }
 
     &-title {
       font-family: "Josefin Sans";
