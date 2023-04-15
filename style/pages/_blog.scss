@@ -80,6 +80,7 @@
         height: 16px;
         border-radius: 50%;
         border: 2px solid transparent;
+        cursor: pointer;
 
         &::after {
           content: "";
@@ -396,6 +397,7 @@
           border-radius: 50%;
           border: 1px solid transparent;
           transition: border 250ms linear;
+          cursor: pointer;
 
           &::after {
             content: "";

@@ -5539,6 +5539,7 @@ img {
   height: 16px;
   border-radius: 50%;
   border: 2px solid transparent;
+  cursor: pointer;
 }
 .blog-section-banner-slider-images-after-pagination-item::after {
   content: "";
@@ -5813,6 +5814,7 @@ img {
     border-radius: 50%;
     border: 1px solid transparent;
     transition: border 250ms linear;
+    cursor: pointer;
   }
   .blog-section-banner-controller-mobile-pagination-item::after {
     content: "";

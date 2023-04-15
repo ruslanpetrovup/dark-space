@@ -2,6 +2,13 @@ const sliderItems = document.querySelector(".slider-items");
 const sliderItemsContent = document.querySelector(
   ".blog-section-banner-slider-content-read-items"
 );
+const paginationButtons = document.querySelector(
+  ".blog-section-banner-slider-images-after-pagination"
+);
+
+const paginationButtonsMobile = document.querySelector(
+  ".blog-section-banner-controller-mobile-pagination"
+);
 
 const prevBtn = document.querySelector(
   ".blog-section-banner-slider-content-controller-prev"
@@ -17,13 +24,31 @@ const nextBtnMobile = document.querySelector(
   ".blog-section-banner-controller-mobile-next"
 );
 
-const sliderItemWidth = document.querySelector(
+let sliderItemWidth = document.querySelector(
   ".blog-section-banner-slider-images-item"
 ).clientWidth;
 
-const sliderItemsContentWidth = document.querySelector(
+let sliderItemsContentWidth = document.querySelector(
   ".blog-section-banner-slider-content-read"
 ).clientWidth;
+
+window.addEventListener("resize", () => {
+  sliderItemWidth = document.querySelector(
+    ".blog-section-banner-slider-images-item"
+  ).clientWidth;
+
+  sliderItemsContentWidth = document.querySelector(
+    ".blog-section-banner-slider-content-read"
+  ).clientWidth;
+
+  sliderItems.style.transform = `translateX(-${
+    currentIndex * sliderItemWidth
+  }px)`;
+
+  sliderItemsContent.style.transform = `translateX(-${
+    currentIndex * sliderItemsContentWidth
+  }px)`;
+});
 
 const dateCurrent = document.querySelector(
   ".blog-section-banner-slider-images-after-date-text"
@@ -40,16 +65,6 @@ const descCurrent = document.querySelector(
 let currentIndex = 0;
 
 const dateList = ["March 4, 2023", "March 3, 2023", "March 2, 2023"];
-const titleList = [
-  "articles tittle for one stroke 1",
-  "articles tittle for one stroke 2 ",
-  "articles tittle for one stroke 3",
-];
-const descList = [
-  "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit...",
-  "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit...",
-  "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit...",
-];
 
 prevBtn.addEventListener("click", () => {
   currentIndex--;
@@ -152,5 +167,51 @@ nextBtnMobile.addEventListener("click", () => {
 
   sliderItemsContent.style.transform = `translateX(-${
     currentIndex * sliderItemsContentWidth
+  }px)`;
+});
+
+paginationButtons.addEventListener("click", ({ target }) => {
+  if (target.nodeName !== "BUTTON") return;
+
+  const currentPosition = Number(target.dataset.slide) - 1;
+
+  const paginationItems = document.querySelectorAll(
+    ".blog-section-banner-slider-images-after-pagination-item"
+  );
+
+  for (item of paginationItems) {
+    item.classList.remove("active");
+  }
+
+  target.classList.add("active");
+  sliderItems.style.transform = `translateX(-${
+    currentPosition * sliderItemWidth
+  }px)`;
+
+  sliderItemsContent.style.transform = `translateX(-${
+    currentPosition * sliderItemsContentWidth
+  }px)`;
+});
+
+paginationButtonsMobile.addEventListener("click", ({ target }) => {
+  if (target.nodeName !== "LI") return;
+
+  const currentPosition = Number(target.dataset.slide) - 1;
+
+  const paginationItems = document.querySelectorAll(
+    ".blog-section-banner-controller-mobile-pagination-item"
+  );
+
+  for (item of paginationItems) {
+    item.classList.remove("active");
+  }
+
+  target.classList.add("active");
+  sliderItems.style.transform = `translateX(-${
+    currentPosition * sliderItemWidth
+  }px)`;
+
+  sliderItemsContent.style.transform = `translateX(-${
+    currentPosition * sliderItemsContentWidth
   }px)`;
 });
