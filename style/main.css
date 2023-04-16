@@ -5676,6 +5676,176 @@ img {
 
 .blog-section-best {
   display: flex;
+  background: #ffffff;
+  box-shadow: 0px -2px 20px rgba(0, 179, 71, 0.07), 0px 103px 115px rgba(0, 0, 0, 0.03), 0px 43.0309px 70.7697px rgba(0, 0, 0, 0.0359427), 0px 23.0064px 60.5741px rgba(0, 0, 0, 0.0298054), 0px 12.8972px 52.6743px rgba(0, 0, 0, 0.025), 0px 6.84961px 41.3556px rgba(0, 0, 0, 0.0201946);
+  margin-top: 50px;
+}
+.blog-section-best-first {
+  width: 50%;
+}
+.blog-section-best-first-more-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 130px 0;
+  background-image: url("../../assets/images/blog/best-1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.blog-section-best-first-more-image-button {
+  font-family: "Lexend Exa";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 40px;
+  text-align: center;
+  color: #ffffff;
+  padding: 13px 33px;
+  background: rgba(0, 0, 0, 0.3);
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  -webkit-backdrop-filter: blur(7.5px);
+          backdrop-filter: blur(7.5px);
+  border-radius: 1000px;
+}
+.blog-section-best-first-content {
+  padding: 30px 35px;
+}
+.blog-section-best-first-content-date {
+  position: relative;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 40px;
+  color: rgba(0, 0, 0, 0.8);
+  margin-left: 35px;
+}
+.blog-section-best-first-content-date::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: calc(100% + 15px);
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  background-color: #01d153;
+}
+.blog-section-best-first-content-title {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 44px;
+  text-transform: uppercase;
+  color: #000000;
+  margin-bottom: 10px;
+}
+.blog-section-best-first-content-desc {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: rgba(0, 0, 0, 0.75);
+  margin-bottom: 25px;
+  max-width: 610px;
+}
+.blog-section-best-second {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+.blog-section-best-second-block {
+  display: flex;
+  height: calc((100% - 70px) / 2);
+}
+.blog-section-best-second-block:first-child {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.blog-section-best-second-block:first-child .blog-section-best-second-content {
+  margin-right: -15px;
+}
+.blog-section-best-second-block:last-child .blog-section-best-second-content {
+  margin-left: -15px;
+}
+.blog-section-best-second-more {
+  min-width: calc(50% + 17px);
+}
+.blog-section-best-second-more-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  background-image: url("../../assets/images/blog/best-2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.blog-section-best-second-more-image-button {
+  font-family: "Lexend Exa";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 40px;
+  text-align: center;
+  color: #ffffff;
+  padding: 13px 33px;
+  background: rgba(0, 0, 0, 0.3);
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  -webkit-backdrop-filter: blur(7.5px);
+          backdrop-filter: blur(7.5px);
+  border-radius: 1000px;
+}
+.blog-section-best-second-content {
+  min-width: calc(50% - 70px);
+  padding: 30px 35px;
+}
+.blog-section-best-second-content-date {
+  position: relative;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 40px;
+  color: rgba(0, 0, 0, 0.8);
+  margin-left: 35px;
+}
+.blog-section-best-second-content-date::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: calc(100% + 15px);
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  background-color: #01d153;
+}
+.blog-section-best-second-content-title {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 44px;
+  text-transform: uppercase;
+  color: #000000;
+  margin-bottom: 10px;
+  max-width: 255px;
+}
+.blog-section-best-second-content-desc {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: rgba(0, 0, 0, 0.75);
+  margin-bottom: 25px;
+  max-width: 268px;
+}
+
+.blog-section-all {
+  display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 50px;
@@ -5683,7 +5853,7 @@ img {
   box-shadow: 0px -2px 20px rgba(0, 179, 71, 0.07), 0px 103px 115px rgba(0, 0, 0, 0.03), 0px 43.0309px 70.7697px rgba(0, 0, 0, 0.0359427), 0px 23.0064px 60.5741px rgba(0, 0, 0, 0.0298054), 0px 12.8972px 52.6743px rgba(0, 0, 0, 0.025), 0px 6.84961px 41.3556px rgba(0, 0, 0, 0.0201946);
   padding-bottom: 60px;
 }
-.blog-section-best-all {
+.blog-section-all-button {
   font-family: "Lexend Exa";
   font-style: normal;
   font-weight: 500;
@@ -5698,25 +5868,25 @@ img {
   margin-top: 40px;
 }
 
-.blog-section-best-list {
+.blog-section-all-list {
   display: flex;
   flex-direction: column;
 }
 
-.blog-section-best-item {
+.blog-section-all-item {
   display: flex;
   gap: 40px;
   padding: 37px 46px;
 }
 
-.blog-section-best-item-image-img {
+.blog-section-all-item-image-img {
   width: 100%;
 }
 
-.blog-section-best-item-content {
+.blog-section-all-item-content {
   border-bottom: 2px solid #d9d9d9;
 }
-.blog-section-best-item-content-title {
+.blog-section-all-item-content-title {
   font-family: "Josefin Sans";
   font-style: normal;
   font-weight: 700;
@@ -5726,7 +5896,7 @@ img {
   color: #000000;
   margin-bottom: 10px;
 }
-.blog-section-best-item-content-desc {
+.blog-section-all-item-content-desc {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
@@ -5736,12 +5906,12 @@ img {
   margin-bottom: 25px;
   max-width: 800px;
 }
-.blog-section-best-item-content-info {
+.blog-section-all-item-content-info {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.blog-section-best-item-content-info-button {
+.blog-section-all-item-content-info-button {
   font-family: "Lexend Exa";
   font-style: normal;
   font-weight: 500;
@@ -5755,7 +5925,7 @@ img {
   cursor: pointer;
   margin-bottom: 45px;
 }
-.blog-section-best-item-content-info-date {
+.blog-section-all-item-content-info-date {
   position: relative;
   font-family: "Montserrat";
   font-style: normal;
@@ -5764,10 +5934,10 @@ img {
   line-height: 40px;
   color: rgba(0, 0, 0, 0.8);
 }
-.blog-section-best-item-content-info-date-mobile {
+.blog-section-all-item-content-info-date-mobile {
   display: none;
 }
-.blog-section-best-item-content-info-date::after {
+.blog-section-all-item-content-info-date::after {
   content: "";
   position: absolute;
   top: 50%;
@@ -5853,35 +6023,92 @@ img {
     display: none;
   }
   .blog-section-best {
+    flex-direction: column;
+    margin-top: 100px;
+  }
+  .blog-section-best-first {
+    width: 100%;
+  }
+  .blog-section-best-first-more-image {
+    padding: 50px 0;
+  }
+  .blog-section-best-first-content-title {
+    font-size: 26px;
+    line-height: 37px;
+    max-width: unset;
+  }
+  .blog-section-best-first-content-desc {
+    font-size: 16px;
+    line-height: 30px;
+    max-width: unset;
+  }
+  .blog-section-best-second {
+    flex-direction: column;
+    width: 100%;
+  }
+  .blog-section-best-second-block {
+    flex-direction: column;
+    height: unset;
+  }
+  .blog-section-best-second-block:first-child {
+    flex-direction: column;
+  }
+  .blog-section-best-second-block:first-child .blog-section-best-second-content {
+    margin-right: 0;
+  }
+  .blog-section-best-second-block:last-child .blog-section-best-second-content {
+    margin-left: 0;
+  }
+  .blog-section-best-second-more {
+    min-width: 100%;
+  }
+  .blog-section-best-second-more-image {
+    padding: 50px 0;
+    background-image: url("../../assets/images/blog/best-1.png") !important;
+  }
+  .blog-section-best-second-content {
+    min-width: unset;
+  }
+  .blog-section-best-second-content-title {
+    font-size: 26px;
+    line-height: 37px;
+    max-width: 100%;
+  }
+  .blog-section-best-second-content-desc {
+    font-size: 16px;
+    line-height: 30px;
+    max-width: 100%;
+  }
+  .blog-section-all {
     margin-top: 110px;
     padding: 20px;
     padding-bottom: 60px;
   }
-  .blog-section-best-all {
+  .blog-section-all-button {
     font-size: 18px;
     line-height: 34px;
     padding: 12px 0px;
     width: 100%;
   }
-  .blog-section-best-item {
+  .blog-section-all-item {
     flex-direction: column;
     padding: 20px 0px;
   }
-  .blog-section-best-item-content-title {
+  .blog-section-all-item-content-title {
     font-size: 26px;
     line-height: 37px;
   }
-  .blog-section-best-item-content-desc {
+  .blog-section-all-item-content-desc {
     font-size: 16px;
     line-height: 30px;
   }
-  .blog-section-best-item-content-info-button {
+  .blog-section-all-item-content-info-button {
     width: 100%;
   }
-  .blog-section-best-item-content-info-date {
+  .blog-section-all-item-content-info-date {
     display: none;
   }
-  .blog-section-best-item-content-info-date-mobile {
+  .blog-section-all-item-content-info-date-mobile {
     display: flex;
     position: relative;
     font-family: "Montserrat";
@@ -5893,7 +6120,7 @@ img {
     margin-left: 40px;
     margin-bottom: 18px;
   }
-  .blog-section-best-item-content-info-date-mobile::after {
+  .blog-section-all-item-content-info-date-mobile::after {
     content: "";
     position: absolute;
     top: 50%;

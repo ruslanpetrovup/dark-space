@@ -1,3 +1,5 @@
+const slider = document.querySelector(".blog-section-banner-slider");
+
 const sliderItems = document.querySelector(".slider-items");
 const sliderItemsContent = document.querySelector(
   ".blog-section-banner-slider-content-read-items"
@@ -61,37 +63,14 @@ const titleCurrent = document.querySelector(
 const descCurrent = document.querySelector(
   ".blog-section-banner-slider-content-read-desc"
 );
+const dateList = ["March 4, 2023", "March 3, 2023", "March 2, 2023"];
 
 let currentIndex = 0;
 
-const dateList = ["March 4, 2023", "March 3, 2023", "March 2, 2023"];
+let touchStartX = null;
+let touchEndX = null;
 
-prevBtn.addEventListener("click", () => {
-  currentIndex--;
-  if (currentIndex < 0) {
-    currentIndex = 2;
-  }
-
-  const paginationItems = document.querySelectorAll(
-    ".blog-section-banner-slider-images-after-pagination-item"
-  );
-  for (item of paginationItems) {
-    item.classList.remove("active");
-  }
-  paginationItems[currentIndex].classList.add("active");
-
-  dateCurrent.textContent = dateList[currentIndex];
-
-  sliderItems.style.transform = `translateX(-${
-    currentIndex * sliderItemWidth
-  }px)`;
-
-  sliderItemsContent.style.transform = `translateX(-${
-    currentIndex * sliderItemsContentWidth
-  }px)`;
-});
-
-nextBtn.addEventListener("click", () => {
+const swipeNext = () => {
   currentIndex++;
   if (currentIndex > 2) {
     currentIndex = 0;
@@ -116,9 +95,34 @@ nextBtn.addEventListener("click", () => {
   sliderItemsContent.style.transform = `translateX(-${
     currentIndex * sliderItemsContentWidth
   }px)`;
-});
+};
 
-prevBtnMobile.addEventListener("click", () => {
+const swipePrev = () => {
+  currentIndex--;
+  if (currentIndex < 0) {
+    currentIndex = 2;
+  }
+
+  const paginationItems = document.querySelectorAll(
+    ".blog-section-banner-slider-images-after-pagination-item"
+  );
+  for (item of paginationItems) {
+    item.classList.remove("active");
+  }
+  paginationItems[currentIndex].classList.add("active");
+
+  dateCurrent.textContent = dateList[currentIndex];
+
+  sliderItems.style.transform = `translateX(-${
+    currentIndex * sliderItemWidth
+  }px)`;
+
+  sliderItemsContent.style.transform = `translateX(-${
+    currentIndex * sliderItemsContentWidth
+  }px)`;
+};
+
+const swipePrevMobile = () => {
   currentIndex--;
   if (currentIndex < 0) {
     currentIndex = 2;
@@ -141,9 +145,9 @@ prevBtnMobile.addEventListener("click", () => {
   sliderItemsContent.style.transform = `translateX(-${
     currentIndex * sliderItemsContentWidth
   }px)`;
-});
+};
 
-nextBtnMobile.addEventListener("click", () => {
+const swipeNextMobile = () => {
   currentIndex++;
   if (currentIndex > 2) {
     currentIndex = 0;
@@ -168,7 +172,15 @@ nextBtnMobile.addEventListener("click", () => {
   sliderItemsContent.style.transform = `translateX(-${
     currentIndex * sliderItemsContentWidth
   }px)`;
-});
+};
+
+prevBtn.addEventListener("click", swipePrev);
+
+nextBtn.addEventListener("click", swipeNext);
+
+prevBtnMobile.addEventListener("click", swipePrevMobile);
+
+nextBtnMobile.addEventListener("click", swipeNextMobile);
 
 paginationButtons.addEventListener("click", ({ target }) => {
   if (target.nodeName !== "BUTTON") return;
