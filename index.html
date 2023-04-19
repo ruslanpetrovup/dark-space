@@ -8,6 +8,57 @@
   <link rel="stylesheet" href="./style/main.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
   <title>Document</title>
+
+  <style>
+    /* svg icons */
+    .close-line::after,
+    .close-line::before {
+      display: none;
+    }
+
+    .integrations-image-icons-item.line-left::before {
+      content: "";
+      width: 130px;
+      height: 1px;
+      border: 0;
+      border-bottom: 1px solid #00D254;
+      border-style: dashed;
+      position: absolute;
+      left: 2vw;
+      top: -1.5vw;
+      transform: rotate(-41deg);
+      z-index: -1;
+    }
+
+    .integrations-image-icons-item.line-right::after {
+      content: "";
+      width: 120px;
+      height: 1px;
+      border: 0;
+      border-bottom: 1px solid #00D254;
+      border-style: dashed;
+      position: absolute;
+      bottom: -1.7vw;
+      left: 2.3vw;
+      transform: rotate(42deg);
+      z-index: -1;
+    }
+
+
+/* add triangle to photo */
+
+
+.photo-container {
+  position: relative;
+    width: 100%;
+    max-width: 409px;
+}
+
+.blog-item-image {
+  position: relative;
+
+}
+  </style>
 </head>
 
 <body>
@@ -387,7 +438,7 @@
           <img class="integrations-image-img" style="display: none;" src="./assets/images/integration.svg" />
 
           <div class="integrations-image-icons">
-            <div class="integrations-image-icons-item">
+            <div class="integrations-image-icons-item line-right">
               <img src="./assets/images/integration-icons/adroll.svg" alt="" class="default" />
               <img src="./assets/images/integration-icons/adroll-active.svg" class="active" />
 
@@ -401,7 +452,7 @@
 
             </div>
 
-            <div class="integrations-image-icons-item">
+            <div class="integrations-image-icons-item line-left close-line">
               <img src="./assets/images/integration-icons/twitter.svg" alt="" class="default" />
               <img src="./assets/images/integration-icons/twitter-active.svg" alt="" class="active" />
 
@@ -413,13 +464,13 @@
 
 
             </div>
-            <div class="integrations-image-icons-item">
+            <div class="integrations-image-icons-item line-right">
               <img src="./assets/images/integration-icons/quora.svg" alt="" class="default" />
               <img src="./assets/images/integration-icons/quora-active.svg" alt="" class="active" />
 
 
             </div>
-            <div class="integrations-image-icons-item">
+            <div class="integrations-image-icons-item line-left">
               <img src="./assets/images/integration-icons/bing.svg" alt="" class="default" />
               <img src="./assets/images/integration-icons/bing-active.svg" alt="" class="active" />
 
@@ -429,7 +480,7 @@
               <img src="./assets/images/integration-icons/pinterest.svg" alt="" class="default" />
               <img src="./assets/images/integration-icons/pinterest-active.svg" alt="" class="active" />
             </div>
-            <div class="integrations-image-icons-item">
+            <div class="integrations-image-icons-item line-right line-left">
               <img src="./assets/images/integration-icons/linkedin.svg" alt="" class="default" />
               <img src="./assets/images/integration-icons/linkedin-active.svg" alt="" class="active" />
 
@@ -441,13 +492,13 @@
 
 
             </div>
-            <div class="integrations-image-icons-item">
+            <div class="integrations-image-icons-item line-left">
               <img src="./assets/images/integration-icons/tiktok.svg" alt="" class="default" />
               <img src="./assets/images/integration-icons/tiktok-active.svg" alt="" class="active" />
 
 
             </div>
-            <div class="integrations-image-icons-item">
+            <div class="integrations-image-icons-item line-right">
               <img src="./assets/images/integration-icons/shortcuts.svg" alt="" class="default" />
               <img src="./assets/images/integration-icons/shortcuts-active.svg" alt="" class="active" />
 
@@ -459,7 +510,7 @@
 
 
             </div>
-            <div class="integrations-image-icons-item">
+            <div class="integrations-image-icons-item line-left">
               <img src="./assets/images/integration-icons/zapier.svg" alt="" class="default" />
               <img src="./assets/images/integration-icons/zapier-active.svg" alt="" class="active" />
             </div>
@@ -469,7 +520,7 @@
               <img src="./assets/images/integration-icons/snapschat-active.svg" alt="" class="active" />
             </div>
 
-            <div class="integrations-image-icons-item">
+            <div class="integrations-image-icons-item line-right close-line">
               <img src="./assets/images/integration-icons/reddit.svg" class="default" alt="" />
               <img src="./assets/images/integration-icons/reddit-active.svg" class="active" alt="integration-icon" />
             </div>
@@ -610,7 +661,10 @@
       <h2 class="blog-title">Blog</h2>
       <ul class="blog-list">
         <li class="blog-item">
-          <img class="blog-item-image" src="./assets/images/blog/dia.png" alt="blog" />
+          <div class="photo-container">
+            <div class="triangle"></div>
+            <img class="blog-item-image" src="./assets/images/blog/dia.png" alt="blog" />
+          </div>
           <div class="blog-item-content">
             <div class="blog-item-content-titles">
               <h3 class="blog-item-content-title">
